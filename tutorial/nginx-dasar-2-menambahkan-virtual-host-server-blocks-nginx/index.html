@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pendahuluan Pada panduan sebelumnya, kita sudah belajar bagaimana cara memasang Nginx pada Centos 7 dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx
+Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautkan kedua domain tersebut dengan sebuah VPS yang kita punya, maka kita perlu membuat sebuah virtual host agar kita bisa membedakan lokasi file masing-masing untuk domain tersebut di VPS kita." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx :: Nixpoin">
+<meta property="og:description" content="Pendahuluan Pada panduan sebelumnya, kita sudah belajar bagaimana cara memasang Nginx pada Centos 7 dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx
+Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautkan kedua domain tersebut dengan sebuah VPS yang kita punya, maka kita perlu membuat sebuah virtual host agar kita bisa membedakan lokasi file masing-masing untuk domain tersebut di VPS kita." />
+<meta property="og:url" content="/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/" />
+<meta property="og:site_name" content="Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2019-02-12 00:07:43 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/">Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2019-02-12 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="pendahuluan">Pendahuluan<a href="#pendahuluan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Pada panduan sebelumnya, kita sudah belajar bagaimana <a href="https://nixpoin.com/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/">cara memasang Nginx pada Centos 7</a> dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx</p>
+<p>Misalnya kita punya 2 domain yaitu <code>meja.com</code> dan <code>kursi.com</code> dan kita ingin menautkan kedua domain tersebut dengan sebuah VPS yang kita punya, maka kita perlu membuat sebuah virtual host agar kita bisa membedakan lokasi file masing-masing untuk domain tersebut di VPS kita.</p>
+<h2 id="mempersiapkan-root-directory">Mempersiapkan root directory<a href="#mempersiapkan-root-directory" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Kita perlu mempersiapkan root directory untuk masing-masing domain, biasanya default root directory nginx adalah <code>/var/www/html</code> tapi kadang folder defaultnya ada di <code>/usr/share/nginx/html</code><br>
+Pada pemasangan Nginx kali ini ada di <code>/usr/share/nginx/html</code> sehingga saya akan membuat folder root masing-masing domain di folder tersebut.</p>
+<p>Buat folder untuk masing-masing domain dengan perintah</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo mkdir -p /usr/share/nginx/html/meja.com
+sudo mkdir -p /usr/share/nginx/html/kursi.com
+</code></pre><p>Setelah itu kita ubah hak milik folder yang baru saja kita buat agar user kita punya akses</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo chown -R $USER:$USER /usr/share/nginx/html/kursi.com/
+sudo chown -R $USER:$USER /usr/share/nginx/html/meja.com/
+</code></pre><p>Kalau kita menjalankan perintah</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;ls -l /usr/share/nginx/html/
+</code></pre><p>Maka Hasilnya akan seperti berikut, yang mana <code>nixpoin</code> adalah user milik saya</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:21 kursi.com
+drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:22 meja.com
+</code></pre><p>Lalu buat sebuah file index.html sederhana di kedua folder tersebut</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;nano /usr/share/nginx/html/meja.com/index.html
+</code></pre><p>Lalu isikan baris html berikut</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;meja.com&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;ini adalah situs meja.com&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;        
+</code></pre><p>Buat juga file index.html untuk situs kursi.com</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;nano /usr/share/nginx/html/kursi.com/index.html
+</code></pre><p>Isi dengan</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;kursi.com&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;ini adalah situs kursi.com&lt;/h1&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h2 id="buat-server-blocks-untuk-masing-masing-domain">Buat server blocks untuk masing-masing domain<a href="#buat-server-blocks-untuk-masing-masing-domain" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Edit file <code>/etc/nginx/nginx.conf</code> dan pastikan ada baris berikut di bagian http</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;include /etc/nginx/conf.d/*.conf;
+</code></pre><!-- raw HTML omitted -->
+<p>Lalu buat file virtual host untuk masing-masing domain di folder <code>/etc/nginx/conf.d/</code></p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/nginx/conf.d/kursi-com.conf
+</code></pre><p>Isikan baris di bawah ini</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;server {
+        listen 80;
+        listen [::]:80;
+
+        root /usr/share/nginx/html/kursi.com;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name kursi.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre><p>Buat juga virtual host untuk domain <code>meja.com</code></p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/nginx/conf.d/meja-com.conf
+</code></pre><pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;server {
+        listen 80;
+        listen [::]:80;
+
+        root /usr/share/nginx/html/meja.com;
+        index index.html index.htm index.nginx-debian.html;
+
+        server_name meja.com;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}
+</code></pre><p>Sekarang kita cek apakah ada kesalahan dalam konfigurasi kita</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nginx -t
+</code></pre><p>Jika semuanya sudah benar maka hasilnya seperti</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;nginx: configuration file /etc/nginx/nginx.conf test is successful
+</code></pre><p>Terakhir, restart Nginx dengan perintah</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo systemctl restart nginx
+</code></pre><h2 id="pointing-domain">Pointing Domain<a href="#pointing-domain" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Proses terakhir adalah mengarahkan domain kalian ke IPv4 VPS kalian menggunakan <code>@ record</code></p>
+<p>jika sudah maka domain kalian sudah terhubung dengan VPS, dan ketika membuka tautan domain kalian akan muncul seperti berikut</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

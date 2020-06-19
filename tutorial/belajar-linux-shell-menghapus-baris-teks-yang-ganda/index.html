@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Belajar Linux Shell : Menghapus Baris Teks Yang Ganda :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
+Kita bisa menggunakan perintah sort dan uniq
+Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Belajar Linux Shell : Menghapus Baris Teks Yang Ganda :: Nixpoin">
+<meta property="og:description" content="Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
+Kita bisa menggunakan perintah sort dan uniq
+Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda." />
+<meta property="og:url" content="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/" />
+<meta property="og:site_name" content="Belajar Linux Shell : Menghapus Baris Teks Yang Ganda" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2018-12-28 17:35:58 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/">Belajar Linux Shell : Menghapus Baris Teks Yang Ganda</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2018-12-28 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?<br>
+Kita bisa menggunakan perintah sort dan uniq</p>
+<h2 id="cara-menggunakan-perintah-sort-dan-uniq">Cara menggunakan perintah sort dan uniq<a href="#cara-menggunakan-perintah-sort-dan-uniq" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Contohnya kita punya file belajar.txt yang berisi</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Budi pergi ke sekolah
+Rudi membeli buku
+Ani pergi ke sekolah
+Toni membeli buku
+Budi pergi ke sekolah
+Toni membeli buku
+Budi pergi ke sekolah
+</code></pre><p>Kita ingin menghapus baris teks yang ganda.<br>
+Sekarang kita coba menjalankan perintah</p>
+<pre><code>sort belajar.txt | uniq -u
+</code></pre><p>maka hasilnya</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Ani pergi ke sekolah&lt;br&gt;&lt;/br&gt;Rudi membeli buku
+</code></pre><p>Perintah di atas akan menghapus semua baris ganda yang pertama dan yang selanjut, lalu bagaimana kalau hanya ingin menghapus baris ganda kedua dan selanjutnya? cukup gunakan perintah sort -u, contohnya;</p>
+<pre><code> sort -u belajar.txt
+</code></pre><p>atau</p>
+<pre><code>sort belajar.txt | uniq
+</code></pre><p>Hasilnya seperti</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Ani pergi ke sekolah&lt;br&gt;&lt;/br&gt;Budi pergi ke sekolah&lt;br&gt;&lt;/br&gt;Rudi membeli buku&lt;br&gt;&lt;/br&gt;Toni membeli buku
+</code></pre><h2 id="menyimpan-hasil-sort-dan-uniq">Menyimpan hasil sort dan uniq<a href="#menyimpan-hasil-sort-dan-uniq" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<!-- raw HTML omitted -->
+<p>Untuk menyimpan hanya baris yang tidak ada baris gandanya maka gunakan</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt; sort belajar.txt | uniq -u &gt; output.txt&lt;br&gt;&lt;/br&gt;
+</code></pre><p>Untuk menghapus bari ganda kedua maka gunakan</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt; sort belajar.txt | uniq &gt; output.txt
+</code></pre><p>Untuk lebih lengkapnya bisa kalian baca di</p>
+<p><a href="https://linux.die.net/man/1/uniq">https://linux.die.net/man/1/uniq</a></p>
+<p>dan di</p>
+<p><a href="https://linux.die.net/man/1/sort">https://linux.die.net/man/1/sort</a></p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

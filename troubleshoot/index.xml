@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Troubleshoots on Nixpoin</title>
+    <link>/troubleshoot/</link>
+    <description>Recent content in Troubleshoots on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 12 Jan 2019 17:34:34 +0700</lastBuildDate>
+    
+	<atom:link href="/troubleshoot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mengatasi Error WPS Office &amp;#8220;some formula symbols might not be displayed correctly due to missing fonts&amp;#8221;</title>
+      <link>/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/</link>
+      <pubDate>Sat, 12 Jan 2019 17:34:34 +0700</pubDate>
+      
+      <guid>/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/</guid>
+      <description>Salah satu error yang muncul setelah menginstall WPS Office adalah ada beberapa font yang belum terinstall, sehingga muncul peringatan error some “formula symbols might not be displayed correctly due to missing fonts”, untuk mengatasi error tersebut, kita perlu menginstall beberapa font ke sistem OS kita.
+Step Pertama : install git &amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo apt install git Step kedua : clone file dari Github Clone repository berikut https://github.com/IamDH4/ttf-wps-fonts
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;git clone https://github.com/IamDH4/ttf-wps-fonts.git Step Ketiga : install fonts Sekarang kita install font yang barusan kita clone / download</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pendahuluan Digital Ocean adalah salah satu penyedia layanan cloud hosting server dengan harga yang terbilang kompetitif. Sejak tulisan ini ditulis, sudah ada 7 data center yang lokasi di berbagai negara.
+Sayangnya, sampa sekarang Digital Ocean belum menyediakan sistem operasi windows untuk VPS (droplet) nya tapi kita mengakalinya dan kali ini kita akan belajar untuk menginstall sistem operasi Windows 10 di VPS Digital Ocean.
+Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian inginkan (sesuaikan dengan kebutuhan kalian), sistem operasi bebas tapi dalam panduan kali ini saya menggunakan Ubuntu 18." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean :: Nixpoin">
+<meta property="og:description" content="Pendahuluan Digital Ocean adalah salah satu penyedia layanan cloud hosting server dengan harga yang terbilang kompetitif. Sejak tulisan ini ditulis, sudah ada 7 data center yang lokasi di berbagai negara.
+Sayangnya, sampa sekarang Digital Ocean belum menyediakan sistem operasi windows untuk VPS (droplet) nya tapi kita mengakalinya dan kali ini kita akan belajar untuk menginstall sistem operasi Windows 10 di VPS Digital Ocean.
+Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian inginkan (sesuaikan dengan kebutuhan kalian), sistem operasi bebas tapi dalam panduan kali ini saya menggunakan Ubuntu 18." />
+<meta property="og:url" content="/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/" />
+<meta property="og:site_name" content="Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2019-02-15 23:29:28 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/">Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2019-02-15 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="pendahuluan">Pendahuluan<a href="#pendahuluan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Digital Ocean adalah salah satu penyedia layanan cloud hosting server dengan harga yang terbilang kompetitif. Sejak tulisan ini ditulis, sudah ada 7 data center yang lokasi di berbagai negara.</p>
+<p>Sayangnya, sampa sekarang Digital Ocean belum menyediakan sistem operasi windows untuk VPS (droplet) nya tapi kita mengakalinya dan kali ini kita akan belajar untuk menginstall sistem operasi Windows 10 di VPS Digital Ocean.</p>
+<h2 id="buat-droplet">Buat Droplet<a href="#buat-droplet" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian inginkan (sesuaikan dengan kebutuhan kalian), sistem operasi bebas tapi dalam panduan kali ini saya menggunakan Ubuntu 18.04 64 Bit dan lokasi bebas dan yang terpenting adalah jangan mencentang pilihan User Data</p>
+<h2 id="masuk-mode-recovery">Masuk Mode Recovery<a href="#masuk-mode-recovery" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Setelah kita berhasil membuat sebuah VPS (droplet) selanjutnya kita ubah VPS kita ke mode recovery, caranya :</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Masuk ke VPS yang sedang dalam mode recovery menggunakan putty dengan user root tapi <strong>gunakan password yang muncul di jendela recovery bukan yang dikirimkan lewat email</strong></p>
+<p>Setelah berhasil masuk kemudian jalankan perintah di bawah ini</p>
+<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;wget -O- https://archive.org/download/10.ENT.x64.EVAL.USEnglish_201902/10.ENT.x64.EVAL.US-English.gz | gunzip | dd of=/dev/vda
+</code></pre><h2 id="matikan-mode-recovery">Matikan Mode Recovery<a href="#matikan-mode-recovery" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Setelah proses di atas selesai sekarang kita matikan mode recovery di VPS kita, caranya :</p>
+<ul>
+<li>Matikan VPS</li>
+<li>Ubah recovery ke Boot from Hard Drive</li>
+<li>Hidupkan kembali VPS</li>
+</ul>
+<h2 id="setting-ip-address-windows-10">Setting IP Address Windows 10<a href="#setting-ip-address-windows-10" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Buka lagi halaman console maka akan muncul tampilan Windows 10, kalian bisa login dengan<br>
+<strong>Username: WhatUpTime.com<br>
+Password: P@ssword64</strong></p>
+<p>Untuk setingan IP Address nya samakan saja dengan yang ada di jendela console</p>
+<!-- raw HTML omitted -->
+<p>Proses terakhir adalah mengganti password Windows kalian agar lebih aman.</p>
+<p>Selamat mencoba!</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

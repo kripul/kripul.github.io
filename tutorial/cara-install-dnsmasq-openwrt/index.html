@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>[ HOW TO ] Install DNSCrypt di OpenWrt :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DNSCrypt
+ NOTE : Penulis tidak bertanggung jawab atas dosa-dosa yang anda dapat dikarenakan penyalahgunaan panduan ini
+ Karena seringnya hasil googling nyasar ke Reddit tapi situs Reddit diblokir oleh ISP-ISP Indonesia, akhirnya cari cara paling enak untuk buka blokiran ISP, pake VPN? Bisa tapi harus ngonekin ke VPN dulu sebelum buka Reddit dan kadang bikin lemot ke beberapa situs lain. Pakai Proxy? Ya sama aja kayak VPN kadang bikin lemot." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/cara-install-dnsmasq-openwrt/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="@Kripul_" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="[ HOW TO ] Install DNSCrypt di OpenWrt :: Nixpoin">
+<meta property="og:description" content="Karena seringnya hasil googling nyasar ke Reddit tapi situs Reddit diblokir oleh ISP-ISP Indonesia, akhirnya cari cara paling enak untuk buka blokiran ISP" />
+<meta property="og:url" content="/tutorial/cara-install-dnsmasq-openwrt/" />
+<meta property="og:site_name" content="[ HOW TO ] Install DNSCrypt di OpenWrt" />
+
+  <meta property="og:image" content="/img/dnscrypt1.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2017-04-21 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/cara-install-dnsmasq-openwrt/">[ HOW TO ] Install DNSCrypt di OpenWrt</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2017-04-21 
+      </span>
+    
+    
+    <span class="post-author">::
+      @Kripul_
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="/tags/openwrt/">openwrt</a>&nbsp;
+    
+    #<a href="/tags/dnscrypt/">dnscrypt</a>&nbsp;
+    
+    #<a href="/tags/tutorial/">tutorial</a>&nbsp;
+    
+  </span>
+  
+
+  
+    <img src="/img/dnscrypt1.png" class="post-cover" alt="[ HOW TO ] Install DNSCrypt di OpenWrt" />
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>DNSCrypt</p>
+<blockquote>
+<p><strong>NOTE : Penulis tidak bertanggung jawab atas dosa-dosa yang anda dapat dikarenakan penyalahgunaan panduan ini</strong></p>
+</blockquote>
+<p>Karena seringnya hasil googling nyasar ke Reddit tapi situs Reddit diblokir oleh ISP-ISP Indonesia, akhirnya cari cara paling enak untuk buka blokiran ISP, pake VPN? Bisa tapi harus ngonekin ke VPN dulu sebelum buka Reddit dan kadang bikin lemot ke beberapa situs lain. Pakai Proxy? Ya sama aja kayak VPN kadang bikin lemot. Pakai DNS google? sudah tidak mempan karena ISP sudah pakai DNS Tranparent alias memaksa semua request port 53 (DNS) ke server DNS mereka.</p>
+<!-- raw HTML omitted -->
+
+  <figure class="left" >
+    <img src="/img/dnscrypt1.png"   />
+    
+  </figure>
+
+
+<p>Solusinya pakai DNSCrypt saja, maksudnya? Sama halnya SSL yang mengubah HTTP menjadi HTTPS, DNSCrypt mengubah DNS request yang biasa aja menjadi encrypted DNS request.</p>
+<h2 id="install-dnscrypt">Install DNSCrypt<a href="#install-dnscrypt" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Jalankan perintah di bawah ini</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">opkg update
+opkg install dnscrypt-proxy
+</code></pre></div><h2 id="setting-agar-dnscrypt-otomatis-jalan">Setting agar DNSCrypt otomatis jalan<a href="#setting-agar-dnscrypt-otomatis-jalan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Oke. DNSCrypt sudah diiinstall, tapi kalau router reboot, DNSCrypt belum bisa bangkit sendiri.</p>
+<p>Tinggal masukin baris dibawah ini di <code>/etc/rc.local</code> sebelum baris yang tulisannya <code>exit 0</code> yang ada di paling bawah.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sleep <span style="color:#ae81ff">10</span>
+/etc/init.d/dnscrypt-proxy start
+</code></pre></div><h2 id="setting-dnsmasq-di-openwrt">Setting Dnsmasq di OpenWRT<a href="#setting-dnsmasq-di-openwrt" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Biasanya OpenWrt pakai Dnsmasq buat handle DNS di router, kita setting agar Dnsmasq pakai DNSCrypt
+edit file <code>/etc/config/dhcp</code></p>
+<p>rubah biar jadi kayak gini</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">config Dnsmasq
+    option domainneeded         <span style="color:#ae81ff">1</span>
+    option boguspriv            <span style="color:#ae81ff">1</span>
+    option filterwin2k          <span style="color:#ae81ff">0</span>
+    option localise_queries     <span style="color:#ae81ff">1</span>
+    option rebind_protection    <span style="color:#ae81ff">1</span>
+    option rebind_localhost     <span style="color:#ae81ff">1</span>
+    option local                <span style="color:#e6db74">&#39;/lan/&#39;</span>
+    option domain               <span style="color:#e6db74">&#39;lan&#39;</span>
+    option expandhosts          <span style="color:#ae81ff">1</span>
+    option nonegcache           <span style="color:#ae81ff">0</span>
+    option authoritative        <span style="color:#ae81ff">1</span>
+    option readethers           <span style="color:#ae81ff">1</span>
+    option leasefile            <span style="color:#e6db74">&#39;/tmp/dhcp.leases&#39;</span>
+<span style="color:#75715e">#   option resolvfile           &#39;/tmp/resolv.conf.auto&#39;</span>
+    option noresolv             <span style="color:#ae81ff">1</span>
+    list server                 <span style="color:#e6db74">&#39;127.0.0.1#5353&#39;</span>
+    list server                 <span style="color:#e6db74">&#39;/pool.ntp.org/208.67.222.222&#39;</span>
+<span style="color:#75715e">#   list server                 &#39;208.67.222.222&#39;</span>
+<span style="color:#75715e">#   list server                 &#39;208.67.220.220&#39;</span>
+</code></pre></div><ul>
+<li>kita mendisable <code>/tmp/resolv.conf.auto</code> biar OpenWrt tidak menggunakan DNS dari operator.</li>
+<li><code>noresolv</code> juga didisable dengan diberi nilai 1 biar OpenWrt tidak menggunakan DNS dari operator.</li>
+<li>tambah list server <code>127.0.0.1#5353</code> biar Dnsmasq menggunakan DNSCrypt sebagai dns resolver.</li>
+<li>kalau baris <code>/pool.ntp.org/208.67.222.222</code> ini untuk pengecualian, jadi kalo akses ntp enggak lewat DNSCrypt.</li>
+</ul>
+<p>Selanjutnya reboot router atau restart Dnsmasq pakai perintah dibawah ini</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/etc/init.d/dnsmasq restart
+</code></pre></div><h2 id="selesai">Selesai<a href="#selesai" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Sekarang semua device yang tersambung dengan router bisa bebas internetan tanpa terkena blokir dari ISP.</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Belajar Linux Shell : Menghapus Baris Teks Yang Ganda</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/">
+                <span class="button__text">Bagaimana Cara Berkontribusi Pada Proyek yang di Github</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

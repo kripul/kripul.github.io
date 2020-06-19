@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Mengganti Timezone di Ubuntu 18.04 Server :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
+Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;timedatectl Hasilnya seperti
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Universal time: Kam 2019-01-24 03:41:21 UTC&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; RTC time: n/a&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Time zone: UTC (EST, -0500)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; NTP enabled: n/a&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; NTP synchronized: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; RTC in local TZ: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; DST active: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Last DST change: DST ended at&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2018-11-04 01:59:59 EDT&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2018-11-04 01:00:00 EST&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Next DST change: DST begins (the clock jumps one hour forward) at&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2019-03-10 01:59:59 EST&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2019-03-10 03:00:00 EDT Atau bisa juga menggunakan perintah" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/mengganti-timezone-di-ubuntu-18-04-server/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Mengganti Timezone di Ubuntu 18.04 Server :: Nixpoin">
+<meta property="og:description" content="Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
+Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;timedatectl Hasilnya seperti
+&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Universal time: Kam 2019-01-24 03:41:21 UTC&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; RTC time: n/a&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Time zone: UTC (EST, -0500)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; NTP enabled: n/a&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; NTP synchronized: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; RTC in local TZ: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; DST active: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Last DST change: DST ended at&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2018-11-04 01:59:59 EDT&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2018-11-04 01:00:00 EST&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Next DST change: DST begins (the clock jumps one hour forward) at&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2019-03-10 01:59:59 EST&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2019-03-10 03:00:00 EDT Atau bisa juga menggunakan perintah" />
+<meta property="og:url" content="/tutorial/mengganti-timezone-di-ubuntu-18-04-server/" />
+<meta property="og:site_name" content="Mengganti Timezone di Ubuntu 18.04 Server" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2019-01-24 11:04:42 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/mengganti-timezone-di-ubuntu-18-04-server/">Mengganti Timezone di Ubuntu 18.04 Server</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2019-01-24 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="pendahuluan">Pendahuluan<a href="#pendahuluan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.</p>
+<h2 id="mengecek-timezone-di-server-ubuntu-1804">Mengecek Timezone di Server Ubuntu 18.04<a href="#mengecek-timezone-di-server-ubuntu-1804" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;timedatectl
+</code></pre><p>Hasilnya seperti</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Universal time: Kam 2019-01-24 03:41:21 UTC&lt;br&gt;&lt;/br&gt;         RTC time: n/a&lt;br&gt;&lt;/br&gt;        Time zone: UTC (EST, -0500)&lt;br&gt;&lt;/br&gt;      NTP enabled: n/a&lt;br&gt;&lt;/br&gt; NTP synchronized: no&lt;br&gt;&lt;/br&gt;  RTC in local TZ: no&lt;br&gt;&lt;/br&gt;       DST active: no&lt;br&gt;&lt;/br&gt;  Last DST change: DST ended at&lt;br&gt;&lt;/br&gt;                   Min 2018-11-04 01:59:59 EDT&lt;br&gt;&lt;/br&gt;                   Min 2018-11-04 01:00:00 EST&lt;br&gt;&lt;/br&gt;  Next DST change: DST begins (the clock jumps one hour forward) at&lt;br&gt;&lt;/br&gt;                   Min 2019-03-10 01:59:59 EST&lt;br&gt;&lt;/br&gt;                   Min 2019-03-10 03:00:00 EDT
+</code></pre><p>Atau bisa juga menggunakan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;cat /etc/timezone
+</code></pre><h2 id="mengganti-timezone-dengan-timedatectl">Mengganti timezone dengan timedatectl<a href="#mengganti-timezone-dengan-timedatectl" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Sebelum mengganti timezone, kita harus mencari tahu format timezone yang digunakan untuk daerah kita, Biasanya formatnya adalah <code>Benua/Kotabesar</code> yang bisa kita lihat di link berikut <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List">https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List</a></p>
+<p>Karena kita berada di Indonesia, kita gunakan timezone <code>Asia/Jakarta</code></p>
+<p>Jalankan perintah di bawah ini untuk mengganti timezone kita menjadi ke <code>Asia/Jakarta</code></p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo timedatectl set-timezone Asia/Jakarta
+</code></pre><p>Untuk mengecek apakah jam di server kita sudah berubah, jalankan lagi perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;timedatectl
+</code></pre><p>atau perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;date
+</code></pre><p>Selamat Mencoba!</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

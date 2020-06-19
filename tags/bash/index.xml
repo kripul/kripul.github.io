@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on Nixpoin</title>
+    <link>/tags/bash/</link>
+    <description>Recent content in bash on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Ekstrak File Tar Gz di Linux dan MacOS</title>
+      <link>/tutorial/cara-ekstrak-file-tar-gz-di-linux-dan-macos/</link>
+      <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/cara-ekstrak-file-tar-gz-di-linux-dan-macos/</guid>
+      <description>Jika kalian adalah termasuk orang sedang belajar dengan Open Source, sudah pasti kalian akan sering menjumpai file berektensi .tar.gz. Paket program atau aplikasi open source umumnya tersedia dalam format .tar.gz dan .zip.
+Di sistem operasi berbasis Unix seperti Linux dan MacOS sudah terinstall perintah tar kependekan dari “Tape ARchive” yang fungsinya untuk membuat dan mengekstrak arsip tar dan perintah tar ini mendukung tipe kompresi yang sangat banyak seperti gzip, bzip2, lzip, lzma, lzop dan xz</description>
+    </item>
+    
+  </channel>
+</rss>

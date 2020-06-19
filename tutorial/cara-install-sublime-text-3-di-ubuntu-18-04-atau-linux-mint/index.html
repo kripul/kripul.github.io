@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Cara Install Sublime Text 3 di Ubuntu 18.04 atau Linux Mint :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pendahuluan Sublime Text adalah salah satu teks editor favorit saya, Sublime sangat powerfull dan banyak sekali plugin-plugin yang bermanfaat. Sublime sendiri dapat berjalan di sistem berbasin Windows, MacOS atau pun Linux.
+Kali ini kita akan mencoba untuk menginstall Sublime Text 3 di Ubuntu atau pun Linux Mint.
+Untuk Linux Mint sendiri sudah menyediakan Sublime Text di repositori mereka tapi biasanya paket tersebut bukan paket terbaru. Maka kali ini kita akan menginstall Sublime Text menggunakan repositori dari PPA pihak Sublime Text" />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cara Install Sublime Text 3 di Ubuntu 18.04 atau Linux Mint :: Nixpoin">
+<meta property="og:description" content="Pendahuluan Sublime Text adalah salah satu teks editor favorit saya, Sublime sangat powerfull dan banyak sekali plugin-plugin yang bermanfaat. Sublime sendiri dapat berjalan di sistem berbasin Windows, MacOS atau pun Linux.
+Kali ini kita akan mencoba untuk menginstall Sublime Text 3 di Ubuntu atau pun Linux Mint.
+Untuk Linux Mint sendiri sudah menyediakan Sublime Text di repositori mereka tapi biasanya paket tersebut bukan paket terbaru. Maka kali ini kita akan menginstall Sublime Text menggunakan repositori dari PPA pihak Sublime Text" />
+<meta property="og:url" content="/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/" />
+<meta property="og:site_name" content="Cara Install Sublime Text 3 di Ubuntu 18.04 atau Linux Mint" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2019-01-25 23:10:18 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/">Cara Install Sublime Text 3 di Ubuntu 18.04 atau Linux Mint</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2019-01-25 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="pendahuluan">Pendahuluan<a href="#pendahuluan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Sublime Text adalah salah satu teks editor favorit saya, Sublime sangat powerfull dan banyak sekali plugin-plugin yang bermanfaat. Sublime sendiri dapat berjalan di sistem berbasin Windows, MacOS atau pun Linux.</p>
+<p>Kali ini kita akan mencoba untuk menginstall Sublime Text 3 di Ubuntu atau pun Linux Mint.</p>
+<p>Untuk Linux Mint sendiri sudah menyediakan Sublime Text di repositori mereka tapi biasanya paket tersebut bukan paket terbaru. Maka kali ini kita akan menginstall Sublime Text menggunakan repositori dari PPA pihak Sublime Text</p>
+<h2 id="tambahkan-repositori-sublime3">Tambahkan Repositori Sublime3<a href="#tambahkan-repositori-sublime3" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Jalankan perintah di bawah ini</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;echo &quot;deb https://download.sublimetext.com/ apt/stable/&quot; | sudo tee /etc/apt/sources.list.d/sublime-text.list
+</code></pre><p>Selanjutnya kita download GPG key dari repositori Sublime3 dan menambahkannya ke apt key dengan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+</code></pre><h2 id="install-sublime-text-3">Install Sublime Text 3<a href="#install-sublime-text-3" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Setelah menambahkan repositori, kita harus melakukan update repositori kita dulu</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-get update
+</code></pre><p>Proses selanjutnya adalah instalasi Sublime Text, kita bisa menginstall Sublime Text 3 dengan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-get install sublime-text
+</code></pre><p>Tunggu sampai selesai.</p>
+<p>Selamat Mencoba!</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

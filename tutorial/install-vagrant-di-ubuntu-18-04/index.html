@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Install Vagrant di Ubuntu 18.04 :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Apa Itu Vagrant? Mungkin diantara kita masih belum familiar dengan nama Vagrant, Secara definisi Vagrant adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
+Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="/tutorial/install-vagrant-di-ubuntu-18-04/" />
+
+
+
+
+<link rel="stylesheet" href="/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Install Vagrant di Ubuntu 18.04 :: Nixpoin">
+<meta property="og:description" content="Apa Itu Vagrant? Mungkin diantara kita masih belum familiar dengan nama Vagrant, Secara definisi Vagrant adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
+Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul." />
+<meta property="og:url" content="/tutorial/install-vagrant-di-ubuntu-18-04/" />
+<meta property="og:site_name" content="Install Vagrant di Ubuntu 18.04" />
+
+  
+    <meta property="og:image" content="/img/favicon/orange.png">
+  
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2019-01-16 13:52:05 &#43;0700 &#43;07" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="/tutorial/install-vagrant-di-ubuntu-18-04/">Install Vagrant di Ubuntu 18.04</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2019-01-16 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="apa-itu-vagrant">Apa Itu Vagrant?<a href="#apa-itu-vagrant" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Mungkin diantara kita masih belum familiar dengan nama Vagrant, Secara definisi Vagrant adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.</p>
+<p>Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.</p>
+<h2 id="install-virtual-box">Install Virtual Box<a href="#install-virtual-box" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Kita membutuhkan Virtual Box untuk menjalankan VM yang dibuat oleh Vagrant, untuk menginstall Virtual Box gunakan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install virtualbox
+</code></pre><h2 id="install-vagrant">Install Vagrant<a href="#install-vagrant" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Selanjutnya kita install vagrant dengan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install vagrant
+</code></pre><p>Sampai disini proses instal Vagrant sudah selesai, kita bisa mencoba membuat Virtual Machine.</p>
+<h2 id="membuat-virtual-machine">Membuat Virtual Machine<a href="#membuat-virtual-machine" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Sekarang kita coba membuat sebuah VM dengan OS Centos 7</p>
+<p>Buat folder bernama centos7</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;mkdir centos7&lt;br&gt;&lt;/br&gt;cd centos7
+</code></pre><p>Selanjutnya kita melakukan inisiasi dengan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant init centos/7
+</code></pre><p>Setelah menjalan perintah di atas maka di folder centos7 akan ada sebuah file “Vagrantfile” berisi konfigurasi Virtual Machine kita nantinya.</p>
+<p>Selanjutnya kita menghidupkan VM yang kita buat tadi dengan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant up
+</code></pre><p>Karena ini adalah proses pertama, biasanya vagrant akan mendownload sebuah file box / image terlebih dahulu.</p>
+<p>Kalian bisa mencari file image / box lainnya di situs resmi vagrant <a href="https://app.vagrantup.com/boxes/search">https://app.vagrantup.com/boxes/search</a></p>
+<p>Jika proses sudah selesai kita bisa mengecek apakah VM sudah benar-benar hidup dengan perintah</p>
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant status
+</code></pre><!-- raw HTML omitted -->
+<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant ssh
+</code></pre><h2 id="perintah-lainnya">Perintah Lainnya<a href="#perintah-lainnya" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>untuk mematikan VM : <code>vagrant halt</code></p>
+<p>Untuk menambahkan/mendownload box : <code>vagrant box add namabox</code></p>
+<p>Selamat mencoba!</p>
+
+      </div></div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="/assets/main.js"></script>
+<script src="/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
