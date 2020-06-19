@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Nixpoin</title>
+    <link>/tags/python/</link>
+    <description>Recent content in Python on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Jan 2019 04:08:49 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04</title>
+      <link>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</link>
+      <pubDate>Mon, 14 Jan 2019 04:08:49 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</guid>
+      <description>Apa Itu Phyton? Phyton adalah salah satu bahasa pemograman yang populer di dunia, karena simple dan sangat mudah dipelajari bagi pemula. Kita bisa membuat game, website, aplikasi desktop dengan Phyton. Dan Phyton dapat berjalan di Linux, Windows ataupun MacOs
+Phyton 3.7 adalah versi Phyton mayor rilis terbaru yang memuat beberapa pembaharuan, kalian bisa melihat pembaharuan lengkapnya disini https://docs.python.org/3/whatsnew/3.7.html
+Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 namun bisa juga diterapkan di Ubuntu 16.</description>
+    </item>
+    
+  </channel>
+</rss>

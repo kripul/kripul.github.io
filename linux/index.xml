@@ -25,14 +25,16 @@ Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi
     <item>
       <title>Melakukan Benchmark Menggunakan GeekBench di Linux</title>
       <link>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</link>
-      <pubDate>Tue, 26 Feb 2019 02:05:52 +0700</pubDate>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
       <guid>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</guid>
       <description>Pendahuluan Ingin mengetahui kempuan prosesor kalian?
 GeekBecnh adalah salah satu perangkat lunak yang bisa kita gunakan untuk mengetahui kemampuan prosesor komputer, ponsel pintar atau server kita.
-Download GeekBench &amp;lt;pre class=&amp;quot;EnlighterJSRAW&amp;quot; data-enlighter-group=&amp;quot;&amp;quot; data-enlighter-highlight=&amp;quot;&amp;quot; data-enlighter-language=&amp;quot;generic&amp;quot; data-enlighter-linenumbers=&amp;quot;&amp;quot; data-enlighter-lineoffset=&amp;quot;&amp;quot; data-enlighter-theme=&amp;quot;&amp;quot; data-enlighter-title=&amp;quot;&amp;quot;&amp;gt;wget http://cdn.geekbench.com/Geekbench-4.3.3-Linux.tar.gz Atau download GeekBench di link berikut http://www.geekbench.com/download/linux/ untuk mendapatkan versi terbarunya
+Download GeekBench wget http://cdn.geekbench.com/Geekbench-4.3.3-Linux.tar.gz Atau download GeekBench di link berikut http://www.geekbench.com/download/linux/ untuk mendapatkan versi terbarunya
 Kemudian ekstrak file yang kita download tadi
-&amp;lt;pre class=&amp;quot;EnlighterJSRAW&amp;quot; data-enlighter-group=&amp;quot;&amp;quot; data-enlighter-highlight=&amp;quot;&amp;quot; data-enlighter-language=&amp;quot;generic&amp;quot; data-enlighter-linenumbers=&amp;quot;&amp;quot; data-enlighter-lineoffset=&amp;quot;&amp;quot; data-enlighter-theme=&amp;quot;&amp;quot; data-enlighter-title=&amp;quot;&amp;quot;&amp;gt;tar -xvf Geekbench*.tar.gz Menjalankan bencmark Pindah ke folder hasil ekstrak</description>
+tar -xvf Geekbench*.tar.gz Menjalankan bencmark Pindah ke folder hasil ekstrak
+cd Geekbench-4.3.3-Linux Lalu jalankan benchmark
+./geekbench4 Tunggu proses sampai selesai dan setelah proses selesai maka akan muncul link hasil bencmark kita.</description>
     </item>
     
   </channel>

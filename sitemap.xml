@@ -28,11 +28,6 @@
   </url>
   
   <url>
-    <loc>/tags/tutorial/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/vps/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -63,8 +58,28 @@
   </url>
   
   <url>
+    <loc>/tags/pptp/</loc>
+    <lastmod>2019-12-17T00:00:44+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/</loc>
     <lastmod>2019-12-17T00:00:44+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ubuntu/</loc>
+    <lastmod>2019-12-17T00:00:44+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vpn/</loc>
+    <lastmod>2019-12-17T00:00:44+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/benchmark/</loc>
+    <lastmod>2019-02-27T20:52:41+07:00</lastmod>
   </url>
   
   <url>
@@ -84,7 +99,7 @@
   
   <url>
     <loc>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</loc>
-    <lastmod>2019-02-26T02:05:52+07:00</lastmod>
+    <lastmod>2019-02-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -93,8 +108,33 @@
   </url>
   
   <url>
+    <loc>/tags/opencv/</loc>
+    <lastmod>2019-02-25T13:45:43+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tutorial/</loc>
+    <lastmod>2019-02-25T13:45:43+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/</loc>
     <lastmod>2019-02-15T23:29:28+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/digital-ocean/</loc>
+    <lastmod>2019-02-15T23:29:28+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/centos/</loc>
+    <lastmod>2019-02-12T00:07:43+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nginx/</loc>
+    <lastmod>2019-02-12T00:07:43+07:00</lastmod>
   </url>
   
   <url>
@@ -113,12 +153,27 @@
   </url>
   
   <url>
+    <loc>/tags/gnome/</loc>
+    <lastmod>2019-01-29T23:32:02+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/cara-install-wine-4-di-ubuntu-18-04/</loc>
     <lastmod>2019-01-26T14:42:37+07:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/wine/</loc>
+    <lastmod>2019-01-26T14:42:37+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/</loc>
+    <lastmod>2019-01-25T23:10:18+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sublime-text/</loc>
     <lastmod>2019-01-25T23:10:18+07:00</lastmod>
   </url>
   
@@ -143,6 +198,16 @@
   </url>
   
   <url>
+    <loc>/tags/timezone/</loc>
+    <lastmod>2019-01-24T11:04:42+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dropbox/</loc>
+    <lastmod>2019-01-20T22:26:15+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</loc>
     <lastmod>2019-01-20T22:26:15+07:00</lastmod>
   </url>
@@ -153,12 +218,27 @@
   </url>
   
   <url>
+    <loc>/tags/gradle/</loc>
+    <lastmod>2019-01-17T14:28:49+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/install-vagrant-di-ubuntu-18-04/</loc>
     <lastmod>2019-01-16T13:52:05+07:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/vagrant/</loc>
+    <lastmod>2019-01-16T13:52:05+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</loc>
+    <lastmod>2019-01-14T04:08:49+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/python/</loc>
     <lastmod>2019-01-14T04:08:49+07:00</lastmod>
   </url>
   
@@ -178,7 +258,17 @@
   </url>
   
   <url>
+    <loc>/tags/wps/</loc>
+    <lastmod>2019-01-12T17:34:34+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/install-nodejs-di-ubuntu-linux-mint/</loc>
+    <lastmod>2019-01-11T08:19:12+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nodejs/</loc>
     <lastmod>2019-01-11T08:19:12+07:00</lastmod>
   </url>
   
@@ -188,17 +278,47 @@
   </url>
   
   <url>
+    <loc>/tags/vnc/</loc>
+    <lastmod>2019-01-10T07:47:10+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</loc>
     <lastmod>2019-01-09T09:57:41+07:00</lastmod>
   </url>
   
   <url>
+    <loc>/tags/oh-my-zsh/</loc>
+    <lastmod>2019-01-09T09:57:41+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/zsh/</loc>
+    <lastmod>2019-01-09T09:57:41+07:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</loc>
-    <lastmod>2019-01-08T07:37:18+07:00</lastmod>
+    <lastmod>2019-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/linux-mint/</loc>
+    <lastmod>2019-01-08T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bash/</loc>
+    <lastmod>2018-12-28T17:35:58+07:00</lastmod>
   </url>
   
   <url>
     <loc>/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</loc>
+    <lastmod>2018-12-28T17:35:58+07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sort/</loc>
     <lastmod>2018-12-28T17:35:58+07:00</lastmod>
   </url>
   
@@ -209,7 +329,7 @@
   
   <url>
     <loc>/review/review-nat-vps-dari-mrvm-net/</loc>
-    <lastmod>2018-12-27T03:09:03+07:00</lastmod>
+    <lastmod>2018-12-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -224,11 +344,6 @@
   
   <url>
     <loc>/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/</loc>
-    <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bash/</loc>
     <lastmod>2017-04-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -260,11 +375,6 @@
   <url>
     <loc>/tags/openwrt/</loc>
     <lastmod>2017-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tutorial/hai/</loc>
-    <lastmod>2015-01-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>

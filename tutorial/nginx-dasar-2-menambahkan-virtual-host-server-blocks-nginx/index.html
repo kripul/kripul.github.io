@@ -43,9 +43,7 @@ Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautk
 <meta property="og:url" content="/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/" />
 <meta property="og:site_name" content="Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/nginx-logo.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -96,6 +94,14 @@ Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautk
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -113,6 +119,14 @@ Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautk
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -146,33 +160,45 @@ Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautk
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
+    
+    #<a href="/tags/centos/">Centos</a>&nbsp;
+    
+    #<a href="/tags/nginx/">Nginx</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/nginx-logo.png" class="post-cover" alt="Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx" />
   
 
   
 
   <div class="post-content"><div>
         <h2 id="pendahuluan">Pendahuluan<a href="#pendahuluan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Pada panduan sebelumnya, kita sudah belajar bagaimana <a href="https://nixpoin.com/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/">cara memasang Nginx pada Centos 7</a> dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx</p>
+<p>Pada panduan sebelumnya, kita sudah belajar bagaimana <a href="/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/">cara memasang Nginx pada Centos 7</a> dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx</p>
 <p>Misalnya kita punya 2 domain yaitu <code>meja.com</code> dan <code>kursi.com</code> dan kita ingin menautkan kedua domain tersebut dengan sebuah VPS yang kita punya, maka kita perlu membuat sebuah virtual host agar kita bisa membedakan lokasi file masing-masing untuk domain tersebut di VPS kita.</p>
 <h2 id="mempersiapkan-root-directory">Mempersiapkan root directory<a href="#mempersiapkan-root-directory" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Kita perlu mempersiapkan root directory untuk masing-masing domain, biasanya default root directory nginx adalah <code>/var/www/html</code> tapi kadang folder defaultnya ada di <code>/usr/share/nginx/html</code><br>
 Pada pemasangan Nginx kali ini ada di <code>/usr/share/nginx/html</code> sehingga saya akan membuat folder root masing-masing domain di folder tersebut.</p>
 <p>Buat folder untuk masing-masing domain dengan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo mkdir -p /usr/share/nginx/html/meja.com
+<pre><code>sudo mkdir -p /usr/share/nginx/html/meja.com
 sudo mkdir -p /usr/share/nginx/html/kursi.com
 </code></pre><p>Setelah itu kita ubah hak milik folder yang baru saja kita buat agar user kita punya akses</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo chown -R $USER:$USER /usr/share/nginx/html/kursi.com/
+<pre><code>sudo chown -R $USER:$USER /usr/share/nginx/html/kursi.com/
 sudo chown -R $USER:$USER /usr/share/nginx/html/meja.com/
 </code></pre><p>Kalau kita menjalankan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;ls -l /usr/share/nginx/html/
+<pre><code>ls -l /usr/share/nginx/html/
 </code></pre><p>Maka Hasilnya akan seperti berikut, yang mana <code>nixpoin</code> adalah user milik saya</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:21 kursi.com
+<pre><code>drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:21 kursi.com
 drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:22 meja.com
 </code></pre><p>Lalu buat sebuah file index.html sederhana di kedua folder tersebut</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;nano /usr/share/nginx/html/meja.com/index.html
+<pre><code>nano /usr/share/nginx/html/meja.com/index.html
 </code></pre><p>Lalu isikan baris html berikut</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;&lt;html&gt;
+<pre><code>&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;meja.com&lt;/title&gt;
     &lt;/head&gt;
@@ -181,9 +207,9 @@ drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:22 meja.com
     &lt;/body&gt;
 &lt;/html&gt;        
 </code></pre><p>Buat juga file index.html untuk situs kursi.com</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;nano /usr/share/nginx/html/kursi.com/index.html
+<pre><code>nano /usr/share/nginx/html/kursi.com/index.html
 </code></pre><p>Isi dengan</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;&lt;html&gt;
+<pre><code>&lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;kursi.com&lt;/title&gt;
     &lt;/head&gt;
@@ -193,12 +219,19 @@ drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:22 meja.com
 &lt;/html&gt;
 </code></pre><h2 id="buat-server-blocks-untuk-masing-masing-domain">Buat server blocks untuk masing-masing domain<a href="#buat-server-blocks-untuk-masing-masing-domain" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Edit file <code>/etc/nginx/nginx.conf</code> dan pastikan ada baris berikut di bagian http</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;include /etc/nginx/conf.d/*.conf;
-</code></pre><!-- raw HTML omitted -->
+<pre><code>include /etc/nginx/conf.d/*.conf;
+</code></pre>
+  <figure class="left" >
+    <img src="/img/nginx-serverblocks.png"   />
+    
+  </figure>
+
+
+<p>Dengan menambahkan baris di atas maka semua file berextensi <code>.conf</code> akan diload oleh Nginx</p>
 <p>Lalu buat file virtual host untuk masing-masing domain di folder <code>/etc/nginx/conf.d/</code></p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/nginx/conf.d/kursi-com.conf
+<pre><code>sudo nano /etc/nginx/conf.d/kursi-com.conf
 </code></pre><p>Isikan baris di bawah ini</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;server {
+<pre><code>server {
         listen 80;
         listen [::]:80;
 
@@ -212,8 +245,8 @@ drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:22 meja.com
         }
 }
 </code></pre><p>Buat juga virtual host untuk domain <code>meja.com</code></p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/nginx/conf.d/meja-com.conf
-</code></pre><pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;server {
+<pre><code>sudo nano /etc/nginx/conf.d/meja-com.conf
+</code></pre><pre><code>server {
         listen 80;
         listen [::]:80;
 
@@ -227,18 +260,51 @@ drwxr-xr-x. 2 nixpoin nixpoin    6 Feb 11 16:22 meja.com
         }
 }
 </code></pre><p>Sekarang kita cek apakah ada kesalahan dalam konfigurasi kita</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nginx -t
+<pre><code>sudo nginx -t
 </code></pre><p>Jika semuanya sudah benar maka hasilnya seperti</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;nginx: configuration file /etc/nginx/nginx.conf test is successful
+<pre><code>nginx: configuration file /etc/nginx/nginx.conf test is successful
 </code></pre><p>Terakhir, restart Nginx dengan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo systemctl restart nginx
+<pre><code>sudo systemctl restart nginx
 </code></pre><h2 id="pointing-domain">Pointing Domain<a href="#pointing-domain" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Proses terakhir adalah mengarahkan domain kalian ke IPv4 VPS kalian menggunakan <code>@ record</code></p>
 <p>jika sudah maka domain kalian sudah terhubung dengan VPS, dan ketika membuka tautan domain kalian akan muncul seperti berikut</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+  <figure class="left" >
+    <img src="/img/nginx-serverblocks-2.png"   />
+    
+  </figure>
+
+
+<p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/">
+                <span class="button__text">Nginx Dasar : #1 Cara instal Nginx pada Centos 7</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

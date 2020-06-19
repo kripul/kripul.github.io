@@ -45,9 +45,7 @@ Persiapan Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dah
 <meta property="og:url" content="/tutorial/cara-install-wine-4-di-ubuntu-18-04/" />
 <meta property="og:site_name" content="Cara Install Wine 4 di Ubuntu 18.04" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/wine.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -98,6 +96,14 @@ Persiapan Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dah
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -115,6 +121,14 @@ Persiapan Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dah
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -148,7 +162,17 @@ Persiapan Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dah
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/ubuntu/">Ubuntu</a>&nbsp;
+    
+    #<a href="/tags/wine/">Wine</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/wine.png" class="post-cover" alt="Cara Install Wine 4 di Ubuntu 18.04" />
   
 
   
@@ -159,26 +183,53 @@ Persiapan Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dah
 <p>Tulisan kali ini kita akan membahas cara install Wine 4 di Ubuntu 18.04, paket Wine sudah ada di repositori resmi Ubuntu 18.04 tetapi paket tersebut versi 3 bukan versi 4.</p>
 <h2 id="persiapan">Persiapan<a href="#persiapan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dahulu dukungan 32bit terlebih dahulu dengan menjalankan perintah dibawah ini</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo dpkg --add-architecture i386 
+<pre><code>sudo dpkg --add-architecture i386 
 </code></pre><h2 id="tambahkan-repositori-wine">Tambahkan repositori Wine<a href="#tambahkan-repositori-wine" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Download key dan tambahkan key tersebut ke sistem</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;wget -nc https://dl.winehq.org/wine-builds/winehq.key&lt;br&gt;&lt;/br&gt;sudo apt-key add winehq.key
+<pre><code>wget -nc https://dl.winehq.org/wine-builds/winehq.key&lt;br&gt;&lt;/br&gt;sudo apt-key add winehq.key
 </code></pre><p>Lalu tambahkan repositori</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
+<pre><code>sudo apt-add-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ bionic main'
 </code></pre><p>Jangan lupa update repositori</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt update
+<pre><code>sudo apt update
 </code></pre><h2 id="install-wine-4">Install Wine 4<a href="#install-wine-4" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Ada beberapa versi Wine yang bisa kita install, versi stabil, developer, dan staging</p>
 <p>Untuk versi stabil</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install --install-recommends winehq-stable
+<pre><code>sudo apt install --install-recommends winehq-stable
 </code></pre><p>Untuk versi developer</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install --install-recommends winehq-devel
+<pre><code>sudo apt install --install-recommends winehq-devel
 </code></pre><p>Untuk versi staging</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install --install-recommends winehq-staging
+<pre><code>sudo apt install --install-recommends winehq-staging
 </code></pre><p>Proses install sudah selesai.</p>
 <p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-vncserver-dan-gnome-di-ubuntu-18-04-server/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install VNCServer dan Gnome di Ubuntu 18.04 Server</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/">
+                <span class="button__text">Cara Install Sublime Text 3 di Ubuntu 18.04 atau Linux Mint</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NodeJs on Nixpoin</title>
+    <link>/tags/nodejs/</link>
+    <description>Recent content in NodeJs on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 11 Jan 2019 08:19:12 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/nodejs/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install NodeJs di Ubuntu / Linux Mint</title>
+      <link>/tutorial/install-nodejs-di-ubuntu-linux-mint/</link>
+      <pubDate>Fri, 11 Jan 2019 08:19:12 +0700</pubDate>
+      
+      <guid>/tutorial/install-nodejs-di-ubuntu-linux-mint/</guid>
+      <description>Install NodeJs di Ubuntu / Linux Mint Ada dua cara untuk menginstall node.js di Ubuntu / Linux Mint, yaitu menggunakan repositori dari pihak Ubuntu atau menggunakan repositori NodeSource
+Perbedaannya adalah, kita bisa memilih versi node.js jika kita menggunakan repositori dari NodeSource, untuk sekarang versi LTS dari Node.Js adalah versi 10 tetapi kalau kita menggunakan repositori resmi dari Ubuntu 18.04 masih menggunakan Node.Js versi 8
+Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita dengan</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,10 +6,22 @@
     <description>Recent content in bash on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 21 Apr 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Dec 2018 17:35:58 +0700</lastBuildDate>
     
 	<atom:link href="/tags/bash/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Belajar Linux Shell : Menghapus Baris Teks Yang Ganda</title>
+      <link>/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</link>
+      <pubDate>Fri, 28 Dec 2018 17:35:58 +0700</pubDate>
+      
+      <guid>/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</guid>
+      <description>Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
+Kita bisa menggunakan perintah sort dan uniq
+Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
+Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda.</description>
+    </item>
     
     <item>
       <title>Cara Ekstrak File Tar Gz di Linux dan MacOS</title>

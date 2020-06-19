@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gradle on Nixpoin</title>
+    <link>/tags/gradle/</link>
+    <description>Recent content in gradle on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jan 2019 14:28:49 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/gradle/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Install Gradle di Sistem Operasi Centos 7</title>
+      <link>/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</link>
+      <pubDate>Thu, 17 Jan 2019 14:28:49 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</guid>
+      <description>Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
+Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
+Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
+sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini</description>
+    </item>
+    
+  </channel>
+</rss>

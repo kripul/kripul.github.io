@@ -43,9 +43,7 @@ Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan 
 <meta property="og:url" content="/tutorial/install-vagrant-di-ubuntu-18-04/" />
 <meta property="og:site_name" content="Install Vagrant di Ubuntu 18.04" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/vagrant-logo.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -96,6 +94,14 @@ Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan 
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -113,6 +119,14 @@ Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan 
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -146,7 +160,19 @@ Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan 
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
+    
+    #<a href="/tags/ubuntu/">Ubuntu</a>&nbsp;
+    
+    #<a href="/tags/vagrant/">Vagrant</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/vagrant-logo.png" class="post-cover" alt="Install Vagrant di Ubuntu 18.04" />
   
 
   
@@ -157,32 +183,69 @@ Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan 
 <p>Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.</p>
 <h2 id="install-virtual-box">Install Virtual Box<a href="#install-virtual-box" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Kita membutuhkan Virtual Box untuk menjalankan VM yang dibuat oleh Vagrant, untuk menginstall Virtual Box gunakan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install virtualbox
+<pre><code>sudo apt install virtualbox
 </code></pre><h2 id="install-vagrant">Install Vagrant<a href="#install-vagrant" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Selanjutnya kita install vagrant dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install vagrant
+<pre><code>sudo apt install vagrant
 </code></pre><p>Sampai disini proses instal Vagrant sudah selesai, kita bisa mencoba membuat Virtual Machine.</p>
 <h2 id="membuat-virtual-machine">Membuat Virtual Machine<a href="#membuat-virtual-machine" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Sekarang kita coba membuat sebuah VM dengan OS Centos 7</p>
 <p>Buat folder bernama centos7</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;mkdir centos7&lt;br&gt;&lt;/br&gt;cd centos7
+<pre><code>mkdir centos7
+cd centos7
 </code></pre><p>Selanjutnya kita melakukan inisiasi dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant init centos/7
-</code></pre><p>Setelah menjalan perintah di atas maka di folder centos7 akan ada sebuah file “Vagrantfile” berisi konfigurasi Virtual Machine kita nantinya.</p>
+<pre><code>vagrant init centos/7
+</code></pre><p>Setelah menjalan perintah di atas maka di folder centos7 akan ada sebuah file <code>Vagrantfile</code> berisi konfigurasi Virtual Machine kita nantinya.</p>
 <p>Selanjutnya kita menghidupkan VM yang kita buat tadi dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant up
+<pre><code>vagrant up
 </code></pre><p>Karena ini adalah proses pertama, biasanya vagrant akan mendownload sebuah file box / image terlebih dahulu.</p>
 <p>Kalian bisa mencari file image / box lainnya di situs resmi vagrant <a href="https://app.vagrantup.com/boxes/search">https://app.vagrantup.com/boxes/search</a></p>
 <p>Jika proses sudah selesai kita bisa mengecek apakah VM sudah benar-benar hidup dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant status
-</code></pre><!-- raw HTML omitted -->
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;vagrant ssh
+<pre><code>vagrant status
+</code></pre>
+  <figure class="left" >
+    <img src="/img/vagrant-status.png"   />
+    
+  </figure>
+
+
+<p>Lalu untuk login ke VM kita, jalankan</p>
+<pre><code>vagrant ssh
 </code></pre><h2 id="perintah-lainnya">Perintah Lainnya<a href="#perintah-lainnya" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>untuk mematikan VM : <code>vagrant halt</code></p>
-<p>Untuk menambahkan/mendownload box : <code>vagrant box add namabox</code></p>
-<p>Selamat mencoba!</p>
+<p>untuk mematikan VM :</p>
+<pre><code>vagrant halt
+</code></pre><p>Untuk menambahkan/mendownload box :</p>
+<pre><code>vagrant box add namabox
+</code></pre><p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install Gradle di Sistem Operasi Centos 7</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/">
+                <span class="button__text">Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

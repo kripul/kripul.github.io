@@ -94,6 +94,14 @@ Di sistem operasi berbasis Unix seperti Linux dan MacOS sudah terinstall perinta
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -111,6 +119,14 @@ Di sistem operasi berbasis Unix seperti Linux dan MacOS sudah terinstall perinta
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -166,21 +182,21 @@ Di sistem operasi berbasis Unix seperti Linux dan MacOS sudah terinstall perinta
 <p>Di tutorial kali ini kita akan belajar cara mengekstrak file arsip tar</p>
 <h2 id="ekstrak-file-targz">Ekstrak File tar.gz<a href="#ekstrak-file-targz" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Untuk mengekstrak file <code>tar.gz</code> kita bisa menggunakan opsi <code>--extract</code> atau <code>-x</code> , kemudia opsi <code>f</code> untuk menentukan nama file yang ingin kita ekstrak</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -xf namafile.tar.gz
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -xf namafile.tar.bz2
-</code></pre></div><p>Perintah tar secara otomatis mendeteksi algoritma kompresi file tersebut.</p>
+<pre><code>tar -xf namafile.tar.gz
+</code></pre><pre><code>tar -xf namafile.tar.bz2
+</code></pre><p>Perintah tar secara otomatis mendeteksi algoritma kompresi file tersebut.</p>
 <p>Kita bisa menambahkan opsi <code>v</code> untuk mode verbose sehingga menampilkan file apa saja yang diekstrak</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -xvf namafile.tar.gz
-</code></pre></div><h2 id="menentukan-lokasi-hasil-ekstrak-file-tar">Menentukan Lokasi Hasil Ekstrak File Tar<a href="#menentukan-lokasi-hasil-ekstrak-file-tar" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>tar -xvf namafile.tar.gz
+</code></pre><h2 id="menentukan-lokasi-hasil-ekstrak-file-tar">Menentukan Lokasi Hasil Ekstrak File Tar<a href="#menentukan-lokasi-hasil-ekstrak-file-tar" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Tambahkan opsi <code>-C</code> untuk menspesifikkan lokasi dari hasil ekstrak</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -xvf namafile.tar.gz -C /home/nixpoin/files
-</code></pre></div><h2 id="melihat-isi-file-tar">Melihat Isi File tar<a href="#melihat-isi-file-tar" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>tar -xvf namafile.tar.gz -C /home/nixpoin/files
+</code></pre><h2 id="melihat-isi-file-tar">Melihat Isi File tar<a href="#melihat-isi-file-tar" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Sebelum mengekstrak, ada baiknya kita mengintip apa saja isi file tar yang ingin kita ekstrak, caranya</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -tvf namafile.tar.gz
-</code></pre></div><h2 id="ekstrak-satu-file">Ekstrak satu file<a href="#ekstrak-satu-file" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<pre><code>tar -tvf namafile.tar.gz
+</code></pre><h2 id="ekstrak-satu-file">Ekstrak satu file<a href="#ekstrak-satu-file" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Kita juga bisa mengekstrak beberapa file saja yang kita inginkan,</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">tar -xvf namafile.tar.gz namafiledidalamfiletar.jpg
-</code></pre></div><!-- raw HTML omitted -->
+<pre><code>tar -xvf namafile.tar.gz namafiledidalamfiletar.jpg
+</code></pre><p>Mudah bukan? Untuk belajar perintah tar lebih lanjut silahkan baca di <a href="https://linux.die.net/man/1/tar">https://linux.die.net/man/1/tar</a></p>
 
       </div></div>
 
@@ -200,13 +216,6 @@ Di sistem operasi berbasis Unix seperti Linux dan MacOS sudah terinstall perinta
             </a>
         </span>
         
-        
-        <span class="button next">
-            <a href="/tutorial/hai/">
-                <span class="button__text">Just Say Hi!</span>
-                <span class="button__icon">→</span>
-            </a>
-        </span>
         
     </div>
 </div>

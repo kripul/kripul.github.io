@@ -9,7 +9,7 @@
 <meta name="description" content="Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
 Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
 Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini" />
+sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini" />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/" />
@@ -34,7 +34,7 @@ Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita a
 
   <meta name="twitter:site" content="" />
 
-<meta name="twitter:creator" content="Nixpoin" />
+<meta name="twitter:creator" content="@Kripul_" />
 
 
 <meta property="og:locale" content="en" />
@@ -43,13 +43,11 @@ Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita a
 <meta property="og:description" content="Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
 Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
 Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini" />
+sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini" />
 <meta property="og:url" content="/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/" />
 <meta property="og:site_name" content="Cara Install Gradle di Sistem Operasi Centos 7" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/gradle-logo.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -100,6 +98,14 @@ Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita a
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -117,6 +123,14 @@ Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita a
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -144,13 +158,27 @@ Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita a
     
     
     <span class="post-author">::
-      Nixpoin
+      @Kripul_
     </span>
     
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/linux/">Linux</a>&nbsp;
+    
+    #<a href="/tags/centos/">Centos</a>&nbsp;
+    
+    #<a href="/tags/gradle/">gradle</a>&nbsp;
+    
+    #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/gradle-logo.png" class="post-cover" alt="Cara Install Gradle di Sistem Operasi Centos 7" />
   
 
   
@@ -161,29 +189,70 @@ Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita a
 <p>Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya</p>
 <h2 id="install-openjdk">Install OpenJDK<a href="#install-openjdk" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo yum install java-1.8.0-openjdk-devel 
+<pre><code>sudo yum install java-1.8.0-openjdk-devel 
 </code></pre><p>Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;java -version
-</code></pre><!-- raw HTML omitted -->
+<pre><code>java -version
+</code></pre>
+  <figure class="left" >
+    <img src="/img/java-version.png"   />
+    
+  </figure>
+
+
+<h2 id="install-gradle">Install Gradle<a href="#install-gradle" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Download Gradle dari situs resminya <a href="https://gradle.org/releases/,">https://gradle.org/releases/,</a> pada tulisan ini dibuat versi terbarunya adalah 5.1.1</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;wget https://downloads.gradle.org/distributions/gradle-5.1.1-bin.zip
+<pre><code>wget https://downloads.gradle.org/distributions/gradle-5.1.1-bin.zip
 </code></pre><p>Selanjutnya kita extract file Gradle yang kita download tadi ke folder <code>/opt/gradle</code></p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo unzip -d /opt/gradle gradle-5.1.1-bin.zip
+<pre><code>sudo unzip -d /opt/gradle gradle-5.1.1-bin.zip
 </code></pre><h2 id="setting-environment-variable-untuk-gradle">Setting environment variable untuk Gradle<a href="#setting-environment-variable-untuk-gradle" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Buat sebuah file gradle.sh di folder <code>/etc/profile.d/</code> dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo nano /etc/profile.d/gradle.sh
+<pre><code>sudo nano /etc/profile.d/gradle.sh
 </code></pre><p>Lalu pastekan baris berikut</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;export GRADLE_HOME=/opt/gradle/gradle-5.1.1&lt;br&gt;&lt;/br&gt;export PATH=${GRADLE_HOME}/bin:${PATH}
+<pre><code>export GRADLE_HOME=/opt/gradle/gradle-5.1.1&lt;br&gt;&lt;/br&gt;export PATH=${GRADLE_HOME}/bin:${PATH}
 </code></pre><p>Selanjutnya kita jadikan file gradle.sh tersebut menjadi executable</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo chmod +x /etc/profile.d/gradle.sh
+<pre><code>sudo chmod +x /etc/profile.d/gradle.sh
 </code></pre><p>Lanjut kita akan meng-load file tersebut dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;source /etc/profile.d/gradle.sh
+<pre><code>source /etc/profile.d/gradle.sh
 </code></pre><p>Proses instal Gradle sudah selesai, seperti biasa kita perlu cek terlebih dahulu apakah sudah berhasil atau belum proses instalnya.<br>
 Jalankan perintah berikut</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;gradle -v
-</code></pre><!-- raw HTML omitted -->
+<pre><code>gradle -v
+</code></pre><p>
+  <figure class="left" >
+    <img src="/img/gradle-v.png"   />
+    
+  </figure>
+
+
+Proses install Gradle di sistem operasi Centos 7 sudah selesai, selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Memunculkan Icon Dropbox di Elementary OS Juno</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/install-vagrant-di-ubuntu-18-04/">
+                <span class="button__text">Install Vagrant di Ubuntu 18.04</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

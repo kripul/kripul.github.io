@@ -17,7 +17,7 @@
       <pubDate>Wed, 27 Feb 2019 20:52:41 +0700</pubDate>
       
       <guid>/review/review-vps-digital-ocean-40-lokasi-london/</guid>
-      <description>Spesifikasi &amp;lt;pre class=&amp;quot;EnlighterJSRAW&amp;quot; data-enlighter-group=&amp;quot;&amp;quot; data-enlighter-highlight=&amp;quot;&amp;quot; data-enlighter-language=&amp;quot;generic&amp;quot; data-enlighter-linenumbers=&amp;quot;&amp;quot; data-enlighter-lineoffset=&amp;quot;&amp;quot; data-enlighter-theme=&amp;quot;&amp;quot; data-enlighter-title=&amp;quot;&amp;quot;&amp;gt;CPU model : Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz Number of cores : 4 CPU frequency : 2294.608 MHz Total size of Disk : 155.1 GB (2.1 GB Used) Total amount of Mem : 7976 MB (101 MB Used) Total amount of Swap : 0 MB (0 MB Used) System uptime : 0 days, 0 hour 0 min Load average : 0.</description>
+      <description>Spesifikasi CPU model : Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz Number of cores : 4 CPU frequency : 2294.608 MHz Total size of Disk : 155.1 GB (2.1 GB Used) Total amount of Mem : 7976 MB (101 MB Used) Total amount of Swap : 0 MB (0 MB Used) System uptime : 0 days, 0 hour 0 min Load average : 0.33, 0.08, 0.02 OS : Ubuntu 18.04.2 LTS Arch : x86_64 (64 Bit) Kernel : 4.</description>
     </item>
     
     <item>
@@ -26,7 +26,7 @@
       <pubDate>Wed, 27 Feb 2019 15:59:42 +0700</pubDate>
       
       <guid>/review/review-vps-digital-ocean-40-lokasi-singapore/</guid>
-      <description>Spesifikasi &amp;lt;pre class=&amp;quot;EnlighterJSRAW&amp;quot; data-enlighter-group=&amp;quot;&amp;quot; data-enlighter-highlight=&amp;quot;&amp;quot; data-enlighter-language=&amp;quot;generic&amp;quot; data-enlighter-linenumbers=&amp;quot;&amp;quot; data-enlighter-lineoffset=&amp;quot;&amp;quot; data-enlighter-theme=&amp;quot;&amp;quot; data-enlighter-title=&amp;quot;&amp;quot;&amp;gt;CPU model : Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz Number of cores : 4 CPU frequency : 2294.608 MHz Total size of Disk : 155.1 GB (1.0 GB Used) Total amount of Mem : 7976 MB (104 MB Used) Total amount of Swap : 0 MB (0 MB Used) System uptime : 0 days, 0 hour 3 min Load average : 0.</description>
+      <description>Spesifikasi CPU model : Intel(R) Xeon(R) Gold 6140 CPU @ 2.30GHz Number of cores : 4 CPU frequency : 2294.608 MHz Total size of Disk : 155.1 GB (1.0 GB Used) Total amount of Mem : 7976 MB (104 MB Used) Total amount of Swap : 0 MB (0 MB Used) System uptime : 0 days, 0 hour 3 min Load average : 0.01, 0.03, 0.00 OS : Ubuntu 18.04.2 LTS Arch : x86_64 (64 Bit) Kernel : 4.</description>
     </item>
     
     <item>
@@ -35,9 +35,7 @@
       <pubDate>Sun, 13 Jan 2019 11:18:54 +0700</pubDate>
       
       <guid>/review/review-bechmark-contabo-vps/</guid>
-      <description>Spesifikasi &amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;CPU model : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;Number of cores : 4&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;CPU frequency : 2399.996 MHz&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;Total size of Disk : 195.9 GB (13.1 GB Used)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;Total amount of Mem : 7976 MB (359 MB Used)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;Total amount of Swap : 2047 MB (0 MB Used)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;OS : Ubuntu 18.04.1 LTS&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;Arch : x86_64 (64 Bit)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt;Kernel : 4.15.0-39-generic Hasil Benchmark Berikut hasil dari bench.sh
-Hasil dari traceroute menggunakan koneksi smartfren
-(+) Murah, dengan harga 4 euro mendapatkan spesifikasi yang wah</description>
+      <description>Spesifikasi CPU model : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz Number of cores : 4 CPU frequency : 2399.996 MHz Total size of Disk : 195.9 GB (13.1 GB Used) Total amount of Mem : 7976 MB (359 MB Used) Total amount of Swap : 2047 MB (0 MB Used) OS : Ubuntu 18.04.1 LTS Arch : x86_64 (64 Bit) Kernel : 4.15.0-39-generic Hasil Benchmark Berikut hasil dari bench.sh</description>
     </item>
     
     <item>
@@ -46,36 +44,17 @@ Hasil dari traceroute menggunakan koneksi smartfren
       <pubDate>Fri, 28 Dec 2018 09:26:53 +0700</pubDate>
       
       <guid>/review/review-vmware-vps-dari-hostigger-com/</guid>
-      <description>Spesifikasi CPU model : Intel(R) Xeon(R) CPU E7- 4870 @ 2.40GHz
-Number of cores : 2
-CPU frequency : 2397.400 MHz
-Total size of Disk : 57.5 GB (6.9 GB Used)
-Total amount of Mem : 5967 MB (248 MB Used)
-Total amount of Swap : 2047 MB (0 MB Used)
-OS : Ubuntu 16.04.5 LTS
-Arch : x86_64 (64 Bit)
-Kernel : 4.4.0-87-generic
-Link Pembelian https://client.hostigger.com/?cmd=cart&amp;amp;action=add&amp;amp;id=1357&amp;amp;affid=162
+      <description>Spesifikasi CPU model : Intel(R) Xeon(R) CPU E7- 4870 @ 2.40GHz Number of cores : 2 CPU frequency : 2397.400 MHz Total size of Disk : 57.5 GB (6.9 GB Used) Total amount of Mem : 5967 MB (248 MB Used) Total amount of Swap : 2047 MB (0 MB Used) OS : Ubuntu 16.04.5 LTS Arch : x86\_64 (64 Bit) Kernel : 4.4.0-87-generic Link Pembelian https://client.hostigger.com/?cmd=cart&amp;amp;action=add&amp;amp;id=1357&amp;amp;affid=162
 Lokasi : Amerika</description>
     </item>
     
     <item>
       <title>Review NAT VPS dari MRVM.NET</title>
       <link>/review/review-nat-vps-dari-mrvm-net/</link>
-      <pubDate>Thu, 27 Dec 2018 03:09:03 +0700</pubDate>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       
       <guid>/review/review-nat-vps-dari-mrvm-net/</guid>
-      <description>Review NAT VPS dari MR VM MRVM.NET  Spesifikasi
-CPU model : Intel Core Processor (Skylake, IBRS)
-Number of cores : 1
-CPU frequency : 3599.994 MHz
-Total size of Disk : 2.0 GB (0.5 GB Used)
-Total amount of Mem : 128 MB (8 MB Used)
-Total amount of Swap : 512 MB (0 MB Used)
-OS : CentOS 7.2.1511
-Arch : x86_64 (64 Bit)
-Kernel : 3.10.0-862.11.6.vz7.64.
-Link Pembelian https://clients.</description>
+      <description>Review NAT VPS dari MR VM MRVM.NET  Spesifikasi  CPU model : Intel Core Processor (Skylake, IBRS) Number of cores : 1 CPU frequency : 3599.994 MHz Total size of Disk : 2.0 GB (0.5 GB Used) Total amount of Mem : 128 MB (8 MB Used) Total amount of Swap : 512 MB (0 MB Used) OS : CentOS 7.2.1511 Arch : x86\_64 (64 Bit) Kernel : 3.10.0-862.11.6.vz7.64. Link Pembelian https://clients.</description>
     </item>
     
   </channel>

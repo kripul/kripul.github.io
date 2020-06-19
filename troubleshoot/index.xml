@@ -18,8 +18,8 @@
       
       <guid>/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/</guid>
       <description>Salah satu error yang muncul setelah menginstall WPS Office adalah ada beberapa font yang belum terinstall, sehingga muncul peringatan error some “formula symbols might not be displayed correctly due to missing fonts”, untuk mengatasi error tersebut, kita perlu menginstall beberapa font ke sistem OS kita.
-Step Pertama : install git &amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo apt install git Step kedua : clone file dari Github Clone repository berikut https://github.com/IamDH4/ttf-wps-fonts
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;git clone https://github.com/IamDH4/ttf-wps-fonts.git Step Ketiga : install fonts Sekarang kita install font yang barusan kita clone / download</description>
+Untuk mengatasi error some formula symbols might not be displayed correctly due to missing fonts cukup mudah,
+Step Pertama : install git sudo apt install git Step kedua : clone file dari Github Clone repository berikut https://github.</description>
     </item>
     
   </channel>

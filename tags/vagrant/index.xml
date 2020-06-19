@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vagrant on Nixpoin</title>
+    <link>/tags/vagrant/</link>
+    <description>Recent content in Vagrant on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Jan 2019 13:52:05 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Install Vagrant di Ubuntu 18.04</title>
+      <link>/tutorial/install-vagrant-di-ubuntu-18-04/</link>
+      <pubDate>Wed, 16 Jan 2019 13:52:05 +0700</pubDate>
+      
+      <guid>/tutorial/install-vagrant-di-ubuntu-18-04/</guid>
+      <description>Apa Itu Vagrant? Mungkin diantara kita masih belum familiar dengan nama Vagrant, Secara definisi Vagrant adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
+Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.</description>
+    </item>
+    
+  </channel>
+</rss>

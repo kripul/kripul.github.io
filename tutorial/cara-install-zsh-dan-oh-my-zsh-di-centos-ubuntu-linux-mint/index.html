@@ -43,9 +43,7 @@
 <meta property="og:url" content="/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/" />
 <meta property="og:site_name" content="Cara Install zsh dan oh-my-zsh di Centos, Ubuntu, Linux Mint" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/oh-my-zsh.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -96,6 +94,14 @@
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -113,6 +119,14 @@
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -146,7 +160,19 @@
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
+    
+    #<a href="/tags/zsh/">ZSH</a>&nbsp;
+    
+    #<a href="/tags/oh-my-zsh/">Oh-my-zsh</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/oh-my-zsh.png" class="post-cover" alt="Cara Install zsh dan oh-my-zsh di Centos, Ubuntu, Linux Mint" />
   
 
   
@@ -161,26 +187,68 @@
 <p>Lalu, bagaimana cara menginstallnya?</p>
 <h2 id="step-pertama--install-git-zsh-dan-curl">Step pertama : Install git, zsh dan curl<a href="#step-pertama--install-git-zsh-dan-curl" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>untuk debian, ubuntu, linux mint, gunakan perintah berikut</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt install zsh git curl
+<pre><code>sudo apt install zsh git curl
 </code></pre><p>untuk Centos, gunakan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo yum install zsh git curl
+<pre><code>sudo yum install zsh git curl
 </code></pre><p>setelah itu kita cek apa benar zsh sudah terinstall di sistem kita dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;zsh --version
-</code></pre><!-- raw HTML omitted -->
+<pre><code>zsh --version
+</code></pre>
+  <figure class="left" >
+    <img src="/img/zsh2.png"   />
+    
+  </figure>
+
+
+<h2 id="step-kedua--install-oh-my-zsh">Step kedua : Install oh-my-zsh<a href="#step-kedua--install-oh-my-zsh" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Selanjutnya kita akan mempercantik tampilan dari zsh dengan oh-my-zsh<br>
 jalankan perintah di bawah ini untuk menginstall oh-my-zsh, nanti akan diminta untuk memasukkan password root, untuk mengubah dengan shell dari bash ke zsh</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
-</code></pre><!-- raw HTML omitted -->
+<pre><code>sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)&quot;
+</code></pre>
+  <figure class="left" >
+    <img src="/img/zsh.png"   />
+    
+  </figure>
+
+
+<h2 id="step-ketiga--ubah-tema-bawaan-dari-oh-my-zsh">Step ketiga : Ubah tema bawaan dari oh-my-zsh<a href="#step-ketiga--ubah-tema-bawaan-dari-oh-my-zsh" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Kalian bisa mencari banyak sekali tema oh-my-zsh di link berikut</p>
-<p><a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">https://github.com/robbyrussell/oh-my-zsh/wiki/themes</a></p>
-<p>Untuk mengubah temanya, edit file ~/.zshrc</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt; nano ~/.zshrc
+<p>(<a href="https://github.com/robbyrussell/oh-my-zsh/wiki/themes">https://github.com/robbyrussell/oh-my-zsh/wiki/themes</a>)</p>
+<p>Untuk mengubah temanya, edit file <code>~/.zshrc</code></p>
+<pre><code>nano ~/.zshrc
 </code></pre><p>Ganti nilai dari ZSH_THEME sesuai dengan selera kalian. Tekan CTRL + x untuk menyimpan hasil perubahan.</p>
 <!-- raw HTML omitted -->
+<h2 id="step-keempat--logout-dari-os">Step Keempat : logout dari OS<a href="#step-keempat--logout-dari-os" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Dan silahkan Login lagi untuk melihat perubahan di terminal kalian.</p>
 <p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install VNC Viewer di Ubuntu / Linux Mint</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/">
+                <span class="button__text">Cara Install Dropbox Di Ubuntu / Linux Mint</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

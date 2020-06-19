@@ -9,7 +9,7 @@
 <meta name="description" content="Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
 Kita bisa menggunakan perintah sort dan uniq
 Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda." />
+Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda." />
 <meta name="keywords" content="" />
 <meta name="robots" content="noodp" />
 <link rel="canonical" href="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/" />
@@ -34,7 +34,7 @@ Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt ya
 
   <meta name="twitter:site" content="" />
 
-<meta name="twitter:creator" content="Nixpoin" />
+<meta name="twitter:creator" content="@Kripul_" />
 
 
 <meta property="og:locale" content="en" />
@@ -43,13 +43,11 @@ Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt ya
 <meta property="og:description" content="Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
 Kita bisa menggunakan perintah sort dan uniq
 Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda." />
+Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda." />
 <meta property="og:url" content="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/" />
 <meta property="og:site_name" content="Belajar Linux Shell : Menghapus Baris Teks Yang Ganda" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/bash.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -100,6 +98,14 @@ Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt ya
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -117,6 +123,14 @@ Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt ya
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -144,13 +158,23 @@ Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt ya
     
     
     <span class="post-author">::
-      Nixpoin
+      @Kripul_
     </span>
     
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/bash/">bash</a>&nbsp;
+    
+    #<a href="/tags/sort/">sort</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/bash.png" class="post-cover" alt="Belajar Linux Shell : Menghapus Baris Teks Yang Ganda" />
   
 
   
@@ -160,7 +184,7 @@ Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt ya
 Kita bisa menggunakan perintah sort dan uniq</p>
 <h2 id="cara-menggunakan-perintah-sort-dan-uniq">Cara menggunakan perintah sort dan uniq<a href="#cara-menggunakan-perintah-sort-dan-uniq" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Contohnya kita punya file belajar.txt yang berisi</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Budi pergi ke sekolah
+<pre><code>Budi pergi ke sekolah
 Rudi membeli buku
 Ani pergi ke sekolah
 Toni membeli buku
@@ -171,25 +195,56 @@ Budi pergi ke sekolah
 Sekarang kita coba menjalankan perintah</p>
 <pre><code>sort belajar.txt | uniq -u
 </code></pre><p>maka hasilnya</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Ani pergi ke sekolah&lt;br&gt;&lt;/br&gt;Rudi membeli buku
+<pre><code>Ani pergi ke sekolah
+Rudi membeli buku
 </code></pre><p>Perintah di atas akan menghapus semua baris ganda yang pertama dan yang selanjut, lalu bagaimana kalau hanya ingin menghapus baris ganda kedua dan selanjutnya? cukup gunakan perintah sort -u, contohnya;</p>
 <pre><code> sort -u belajar.txt
 </code></pre><p>atau</p>
 <pre><code>sort belajar.txt | uniq
 </code></pre><p>Hasilnya seperti</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;Ani pergi ke sekolah&lt;br&gt;&lt;/br&gt;Budi pergi ke sekolah&lt;br&gt;&lt;/br&gt;Rudi membeli buku&lt;br&gt;&lt;/br&gt;Toni membeli buku
+<pre><code>Ani pergi ke sekolah
+Budi pergi ke sekolah
+Rudi membeli buku
+Toni membeli buku
 </code></pre><h2 id="menyimpan-hasil-sort-dan-uniq">Menyimpan hasil sort dan uniq<a href="#menyimpan-hasil-sort-dan-uniq" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<!-- raw HTML omitted -->
+<p>Selanjutnya kita akan mencoba menyimpan hasil dari perintah di atas</p>
 <p>Untuk menyimpan hanya baris yang tidak ada baris gandanya maka gunakan</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt; sort belajar.txt | uniq -u &gt; output.txt&lt;br&gt;&lt;/br&gt;
+<pre><code>sort belajar.txt | uniq -u &gt; output.txt
 </code></pre><p>Untuk menghapus bari ganda kedua maka gunakan</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt; sort belajar.txt | uniq &gt; output.txt
+<pre><code>sort belajar.txt | uniq &gt; output.txt
 </code></pre><p>Untuk lebih lengkapnya bisa kalian baca di</p>
 <p><a href="https://linux.die.net/man/1/uniq">https://linux.die.net/man/1/uniq</a></p>
 <p>dan di</p>
 <p><a href="https://linux.die.net/man/1/sort">https://linux.die.net/man/1/sort</a></p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install Dropbox Di Ubuntu / Linux Mint</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/cara-install-dnsmasq-openwrt/">
+                <span class="button__text">[ HOW TO ] Install DNSCrypt di OpenWrt</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

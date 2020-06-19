@@ -38,14 +38,11 @@ Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses o
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Cara Install PPTP VPN Ubuntu 18.04 server :: Nixpoin">
-<meta property="og:description" content="PPTP atau The Point-to-Point Tunneling Protocol adalah salah satu jenis VPN yang sering digunakan untuk point to point / menghubungkan dua jaringan network yang berbeda.
-Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses oleh kantor B atau sebaliknya, sama seperti OpenVPN, semua transmisi data juga terenkripsi sehingga semua transmisi data aman. Bedanya, jika OpenVPN bisa berjalan dengan jaringan UDP dan TCP maka PPTP hanya bisa menggunakan jaringan TCP saja." />
+<meta property="og:description" content="PPTP atau The Point-to-Point Tunneling Protocol adalah salah satu jenis VPN yang sering digunakan untuk point to point / menghubungkan dua jaringan network yang berbeda." />
 <meta property="og:url" content="/tutorial/cara-install-pptp-vpn-ubuntu-18-04-server/" />
 <meta property="og:site_name" content="Cara Install PPTP VPN Ubuntu 18.04 server" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/ubuntu-logo.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -96,6 +93,14 @@ Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses o
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -113,6 +118,14 @@ Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses o
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -146,7 +159,19 @@ Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses o
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/pptp/">PPTP</a>&nbsp;
+    
+    #<a href="/tags/ubuntu/">Ubuntu</a>&nbsp;
+    
+    #<a href="/tags/vpn/">VPN</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/ubuntu-logo.png" class="post-cover" alt="Cara Install PPTP VPN Ubuntu 18.04 server" />
   
 
   
@@ -156,51 +181,71 @@ Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses o
 Misalnya kita ingin menghubungkan jaringan lokal di kantor A agar bisa diakses oleh kantor B atau sebaliknya, sama seperti OpenVPN, semua transmisi data juga terenkripsi sehingga semua transmisi data aman. Bedanya, jika OpenVPN bisa berjalan dengan jaringan UDP dan TCP maka PPTP hanya bisa menggunakan jaringan TCP saja.</p>
 <h2 id="install-paket-pptp">Install paket PPTP<a href="#install-paket-pptp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Lakukan update repositori lebih dahulu</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo apt update
+<pre><code>sudo apt update
 </code></pre><p>Lalu install paket PPTP</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo apt install pptpd -y
+<pre><code>sudo apt install pptpd -y
 </code></pre><h2 id="menambahkan-dns">Menambahkan DNS<a href="#menambahkan-dns" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Paket PPTP sudah terinstall sekarang kita tinggal menkonfigurasinya, yang pertama kita ubah adalah setingan DNS yang akan digunakan oleh si client dari PPTP VPN<br>
 edit file /etc/ppp/pptpd-options</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/ppp/pptpd-options
+<pre><code>sudo nano /etc/ppp/pptpd-options
 </code></pre><p>Lalu tambahkan baris</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;ms-dns 8.8.8.8
+<pre><code>ms-dns 8.8.8.8
 ms-dns 8.8.4.4
 </code></pre><p>Kalian bisa juga menggunakan DNS dari Cloudflare atau DNS lainnya.</p>
 <h2 id="menambahkan-user-vpn-pptp">Menambahkan user VPN PPTP<a href="#menambahkan-user-vpn-pptp" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Edit file /etc/ppp/chap-secrets</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/ppp/chap-secrets
+<pre><code>sudo nano /etc/ppp/chap-secrets
 </code></pre><p>Untuk menambahkan user, tambahkan baris baru dengan format</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;namauser1    pptpd   passworduser1   *
+<pre><code>namauser1    pptpd   passworduser1   *
 namauser2    pptpd   passworduser2   *
 </code></pre><h2 id="konfigurasi-alokasi-private-ip">Konfigurasi Alokasi Private IP<a href="#konfigurasi-alokasi-private-ip" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>User sudah berhasil ditambahkan, sekarang kita konfigurasi private IP yang akan didapatkan oleh client VPN PPTP<br>
 Ubah file /etc/pptpd.conf</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/pptpd.conf
+<pre><code>sudo nano /etc/pptpd.conf
 </code></pre><p>Lalu tambahkan bari berikut</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;localip 10.0.0.1
+<pre><code>localip 10.0.0.1
 remoteip 10.0.0.100-200
 </code></pre><h2 id="aktifkan-ip-forwading">Aktifkan IP Forwading<a href="#aktifkan-ip-forwading" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Fungsi dari IP Forwading ini adalah agar client bisa melakukan koneksi ke internet melalui PPTP VPN server.</p>
 <p>Ubah file /etc/sysctl.conf\</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo nano /etc/sysctl.conf
+<pre><code>sudo nano /etc/sysctl.conf
 </code></pre><p>Lalu tambahkan baris berikut</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;net.ipv4.ip_forward = 1
+<pre><code>net.ipv4.ip_forward = 1
 </code></pre><p>Sekarang kita aktifkan konfigurasi barunya dengan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo sysctl -p
+<pre><code>sudo sysctl -p
 </code></pre><p>Selanjutnya tambahkan firewall iptables agar client bisa melakukan koneksi ke internet melalui interface netwrok server kita.</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+<pre><code>sudo iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
 </code></pre><p>Disini interface jaringan saya menggunakan eth0, silahkan cek interface network kalian dengan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;ip address
+<pre><code>ip address
 </code></pre><h2 id="jalankan-pptp-vpn">Jalankan PPTP VPN<a href="#jalankan-pptp-vpn" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Oke, ini proses terakhir yaitu mengaktifkan PPTP nya dengan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo systemctl start pptpd
+<pre><code>sudo systemctl start pptpd
 </code></pre><p>Lalu kita tambahkan agar proses PPTP nya autostart dengan perintah</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;sudo systemctl enable pptpd
+<pre><code>sudo systemctl enable pptpd
 </code></pre><p>Proses sudah selesai, sekarang kita bisa menggunakan VPN PPTP di device kita.</p>
 <p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="/tutorial/cara-install-opencv-di-ubuntu/">
+                <span class="button__text">Cara Install OpenCV di Ubuntu</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

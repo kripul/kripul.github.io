@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Digital Ocean on Nixpoin</title>
+    <link>/tags/digital-ocean/</link>
+    <description>Recent content in Digital Ocean on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Feb 2019 23:29:28 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/digital-ocean/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean</title>
+      <link>/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/</link>
+      <pubDate>Fri, 15 Feb 2019 23:29:28 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/</guid>
+      <description>Pendahuluan Digital Ocean adalah salah satu penyedia layanan cloud hosting server dengan harga yang terbilang kompetitif. Sejak tulisan ini ditulis, sudah ada 7 data center yang lokasi di berbagai negara.
+Sayangnya, sampa sekarang Digital Ocean belum menyediakan sistem operasi windows untuk VPS (droplet) nya tapi kita mengakalinya dan kali ini kita akan belajar untuk menginstall sistem operasi Windows 10 di VPS Digital Ocean.
+Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian inginkan (sesuaikan dengan kebutuhan kalian), sistem operasi bebas tapi dalam panduan kali ini saya menggunakan Ubuntu 18.</description>
+    </item>
+    
+  </channel>
+</rss>

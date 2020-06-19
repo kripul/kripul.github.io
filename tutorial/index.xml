@@ -60,7 +60,7 @@ Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautk
       <pubDate>Fri, 08 Feb 2019 01:14:03 +0700</pubDate>
       
       <guid>/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</guid>
-      <description>Pengenalan Nginx, dibaca &amp;lt;em&amp;gt;engine x&amp;lt;/em&amp;gt; adalah free dan open source program yang bisa menangani reserve proxy atau web server seperti Apache2 dengan kelebihan lebih ringan dibandingkan dengan Apache2.
+      <description>Pengenalan Nginx, dibaca engine x adalah free dan open source program yang bisa menangani reserve proxy atau web server seperti Apache2 dengan kelebihan lebih ringan dibandingkan dengan Apache2.
 Dibandingkan dengan Apache2, Nginx mampu menangani koneksi yang lebih banyak namun dengan penggunan resource yang lebih kecil.
 Tutorial kali ini kita akan membahas cara menginstal Nginx di sistem operasi Centos 7.
 Ada dua cara untuk menginstal Nginx, dengan paket manager YUM atau menginstalnya dari source code.</description>
@@ -74,7 +74,7 @@ Ada dua cara untuk menginstal Nginx, dengan paket manager YUM atau menginstalnya
       <guid>/tutorial/cara-install-vncserver-dan-gnome-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Kadang kita butuh mengubah server kita menjadi desktop untuk beberapa keperluan padahal kalau kita membeli sebuah VPS biasanya sistem operasi yang terinstall adalah Ubuntu versi server yang hanya ada akses CLI saja.
 Pada tutorial kali ini kita akan mencoba menginstall Gnome dan VNCServer agar VPS kita mempunya tampilan dekstop
-Upgrade sistem operasi &amp;lt;pre class=&amp;quot;EnlighterJSRAW&amp;quot; data-enlighter-group=&amp;quot;&amp;quot; data-enlighter-highlight=&amp;quot;&amp;quot; data-enlighter-language=&amp;quot;shell&amp;quot; data-enlighter-linenumbers=&amp;quot;&amp;quot; data-enlighter-lineoffset=&amp;quot;&amp;quot; data-enlighter-theme=&amp;quot;&amp;quot; data-enlighter-title=&amp;quot;&amp;quot;&amp;gt;sudo apt-get update sudo apt-get upgrade Install Gnome Agar Ubuntu server kita memiliki tampilan sebagaimana Ubuntu desktop, kita harus menginstall paket Gnome dan beberapa paket pendukungnya dengan perintah berikut berikut</description>
+Upgrade sistem operasi sudo apt-get update sudo apt-get upgrade Install Gnome Agar Ubuntu server kita memiliki tampilan sebagaimana Ubuntu desktop, kita harus menginstall paket Gnome dan beberapa paket pendukungnya dengan perintah berikut berikut</description>
     </item>
     
     <item>
@@ -107,8 +107,8 @@ Untuk Linux Mint sendiri sudah menyediakan Sublime Text di repositori mereka tap
       <guid>/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
 Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;timedatectl Hasilnya seperti
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Universal time: Kam 2019-01-24 03:41:21 UTC&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; RTC time: n/a&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Time zone: UTC (EST, -0500)&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; NTP enabled: n/a&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; NTP synchronized: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; RTC in local TZ: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; DST active: no&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Last DST change: DST ended at&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2018-11-04 01:59:59 EDT&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2018-11-04 01:00:00 EST&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Next DST change: DST begins (the clock jumps one hour forward) at&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2019-03-10 01:59:59 EST&amp;lt;br&amp;gt;&amp;lt;/br&amp;gt; Min 2019-03-10 03:00:00 EDT Atau bisa juga menggunakan perintah</description>
+timedatectl Hasilnya seperti
+Universal time: Kam 2019-01-24 03:41:21 UTC RTC time: n/a Time zone: UTC (EST, -0500) NTP enabled: n/a NTP synchronized: no RTC in local TZ: no DST active: no Last DST change: DST ended at Min 2018-11-04 01:59:59 EDT Min 2018-11-04 01:00:00 EST Next DST change: DST begins (the clock jumps one hour forward) at Min 2019-03-10 01:59:59 EST Min 2019-03-10 03:00:00 EDT Atau bisa juga menggunakan perintah</description>
     </item>
     
     <item>
@@ -118,12 +118,12 @@ Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan 
       
       <guid>/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</guid>
       <description>Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
+Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
 Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb Install file wingpanel-indicator-ayatana
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;OnlyShowIn=Unity;GNOME; dan ubah menjadi
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;OnlyShowIn=Unity;GNOME;Phanteon; Proses terakhir, silahkan log out atau restart OS kalian dan icon indicator yang sebelumnya tidak muncul di Elementary OS Juno sudah muncul.</description>
+wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb Install file wingpanel-indicator-ayatana
+sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
+sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
+OnlyShowIn=Unity;GNOME; dan ubah menjadi</description>
     </item>
     
     <item>
@@ -135,7 +135,7 @@ Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatan
       <description>Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
 Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
 Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini</description>
+sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini</description>
     </item>
     
     <item>
@@ -180,7 +180,7 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
 VNC bekerja pada model client/server. Sebuah VNC Viewer (atau client) diinstall pada komputer lokal dan dihubungkan dengan server yang harus diinstall di komputer remote.
 Cara Install VNC Client dari RealVNC 1. Download VNC Viewer Download menggunakan browser kalian di link berikut, pilih DEB X64
 https://www.realvnc.com/en/connect/download/viewer/linux/
-Pindah ke folder hasil download</description>
+2. Install VNC Viewer Pindah ke folder hasil download</description>
     </item>
     
     <item>
@@ -196,7 +196,7 @@ Pindah ke folder hasil download</description>
     <item>
       <title>Cara Install Dropbox Di Ubuntu / Linux Mint</title>
       <link>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</link>
-      <pubDate>Tue, 08 Jan 2019 07:37:18 +0700</pubDate>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
       
       <guid>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</guid>
       <description>Cara Install Dropbox Di Ubuntu / Linux Mint Dropbox adalah salah satu penyedia file sharing untuk berbagi data ataupun file berkas, tersedia layanan berbasis Free dan Premium.
@@ -215,7 +215,7 @@ cd Downloads Lalu install</description>
       <description>Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
 Kita bisa menggunakan perintah sort dan uniq
 Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
-&amp;lt;pre class=&amp;quot;wp-block-preformatted&amp;quot;&amp;gt;Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda.</description>
+Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda.</description>
     </item>
     
     <item>
@@ -247,16 +247,6 @@ Menggunakan perangkat lunak open source tentunya sangat baik, karena selain tida
       <guid>/tutorial/cara-ekstrak-file-tar-gz-di-linux-dan-macos/</guid>
       <description>Jika kalian adalah termasuk orang sedang belajar dengan Open Source, sudah pasti kalian akan sering menjumpai file berektensi .tar.gz. Paket program atau aplikasi open source umumnya tersedia dalam format .tar.gz dan .zip.
 Di sistem operasi berbasis Unix seperti Linux dan MacOS sudah terinstall perintah tar kependekan dari “Tape ARchive” yang fungsinya untuk membuat dan mengekstrak arsip tar dan perintah tar ini mendukung tipe kompresi yang sangat banyak seperti gzip, bzip2, lzip, lzma, lzop dan xz</description>
-    </item>
-    
-    <item>
-      <title>Just Say Hi!</title>
-      <link>/tutorial/hai/</link>
-      <pubDate>Sun, 25 Jan 2015 00:00:00 +0000</pubDate>
-      
-      <guid>/tutorial/hai/</guid>
-      <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec interdum metus. Aenean rutrum ligula sodales ex auctor, sed tempus dui mollis. Curabitur ipsum dui, aliquet nec commodo at, tristique eget ante. Donec quis dolor nec nunc mollis interdum vel in purus. Sed vitae leo scelerisque, sollicitudin elit sed, congue ante. In augue nisl, vestibulum commodo est a, tristique porttitor est. Proin laoreet iaculis ornare. Nullam ut neque quam.
- Fusce pharetra suscipit orci nec tempor.</description>
     </item>
     
   </channel>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>opencv on Nixpoin</title>
+    <link>/tags/opencv/</link>
+    <description>Recent content in opencv on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 25 Feb 2019 13:45:43 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/opencv/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Install OpenCV di Ubuntu</title>
+      <link>/tutorial/cara-install-opencv-di-ubuntu/</link>
+      <pubDate>Mon, 25 Feb 2019 13:45:43 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-opencv-di-ubuntu/</guid>
+      <description>Pengenalan OpenCV (Open Source Computer Vision Library) adalah sebuah pustaka perangkat lunak yang berguna sebagai pengelolaan citra dinamis secara real-time, OpenCV dikembangkan oleh Intel.
+OpenCV merupakan open source computer vision library untuk bahasa pemrograman C/C++, dan telah dikembangkan ke phyton, java, matlab
+Ada dua cara untuk menginstall OpenCV
+Install OpenCV Menggunakan Repositori Resmi Ubuntu Sangat mudah menginstall OpenCV menggunakan repositori resmi Ubuntu, tapi biasanya paket yang tersedia bukan paket yang terbaru, untuk menginstallnya jalankan perintah berikut</description>
+    </item>
+    
+  </channel>
+</rss>

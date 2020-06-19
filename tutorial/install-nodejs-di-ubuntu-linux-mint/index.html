@@ -45,9 +45,7 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
 <meta property="og:url" content="/tutorial/install-nodejs-di-ubuntu-linux-mint/" />
 <meta property="og:site_name" content="Install NodeJs di Ubuntu / Linux Mint" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/Node.js_logo.svg_.png">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -98,6 +96,14 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -115,6 +121,14 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -148,7 +162,19 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
+    
+    #<a href="/tags/nodejs/">NodeJs</a>&nbsp;
+    
+    #<a href="/tags/ubuntu/">Ubuntu</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/Node.js_logo.svg_.png" class="post-cover" alt="Install NodeJs di Ubuntu / Linux Mint" />
   
 
   
@@ -159,25 +185,54 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
 <p>Perbedaannya adalah, kita bisa memilih versi node.js jika kita menggunakan repositori dari NodeSource, untuk sekarang versi LTS dari Node.Js adalah versi 10 tetapi kalau kita menggunakan repositori resmi dari Ubuntu 18.04 masih menggunakan Node.Js versi 8</p>
 <h2 id="install-nodejs-menggunakan-repositori-ubuntu">Install Node.Js menggunakan repositori Ubuntu<a href="#install-nodejs-menggunakan-repositori-ubuntu" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>update dahulu repositori kita dengan</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-get update
+<pre><code>sudo apt-get update
 </code></pre><p>Lalu Install Node.Js dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-get install nodejs
+<pre><code>sudo apt-get install nodejs
 </code></pre><p>Sekarang kita cek versi yang terinstall</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;nodejs -v
+<pre><code>nodejs -v
 </code></pre><p>Hasilnya seperti gambar di bawah</p>
 <!-- raw HTML omitted -->
+<h2 id="install-nodejs-menggunakan-repositori-nodesource">Install Node.js menggunakan repositori NodeSource<a href="#install-nodejs-menggunakan-repositori-nodesource" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Sebelumnya, kita uninstall dulu Node.Js yang sudah kita install barusan dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-get remove nodejs
+<pre><code>sudo apt-get remove nodejs
 </code></pre><p>Selanjutnya kita download file sh dari NodeSource, file sh ini akan menambahkan PPA dari NodeSource ke repositori kita</p>
 <pre><code>curl -sL https://deb.nodesource.com/setup_10.x -o nodesource_setup.sh
 </code></pre><p>Jalankan file nodesource_setup.sh dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;bash nodesource_setup.sh
+<pre><code>bash nodesource_setup.sh
 </code></pre><p>PPA dari NodeSource sudah ditambahkan, sekarang kita install Node.Js dengan perintah</p>
-<pre><code>&lt;pre class=&quot;wp-block-preformatted&quot;&gt;sudo apt-get install nodejs
+<pre><code>sudo apt-get install nodejs
 </code></pre><p>Sekarang kita coba cek versi Node.js yang tersintall</p>
 <!-- raw HTML omitted -->
+<p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/">
+                <span class="button__text">Cara Install VNC Viewer di Ubuntu / Linux Mint</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

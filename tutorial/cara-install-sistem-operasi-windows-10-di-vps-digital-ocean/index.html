@@ -39,15 +39,11 @@ Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean :: Nixpoin">
-<meta property="og:description" content="Pendahuluan Digital Ocean adalah salah satu penyedia layanan cloud hosting server dengan harga yang terbilang kompetitif. Sejak tulisan ini ditulis, sudah ada 7 data center yang lokasi di berbagai negara.
-Sayangnya, sampa sekarang Digital Ocean belum menyediakan sistem operasi windows untuk VPS (droplet) nya tapi kita mengakalinya dan kali ini kita akan belajar untuk menginstall sistem operasi Windows 10 di VPS Digital Ocean.
-Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian inginkan (sesuaikan dengan kebutuhan kalian), sistem operasi bebas tapi dalam panduan kali ini saya menggunakan Ubuntu 18." />
+<meta property="og:description" content="Digital Ocean adalah salah satu penyedia layanan cloud hosting server dengan harga yang terbilang kompetitif. Sejak tulisan ini ditulis, sudah ada 7 data center yang lokasi di berbagai negara." />
 <meta property="og:url" content="/tutorial/cara-install-sistem-operasi-windows-10-di-vps-digital-ocean/" />
 <meta property="og:site_name" content="Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean" />
 
-  
-    <meta property="og:image" content="/img/favicon/orange.png">
-  
+  <meta property="og:image" content="/img/digitalocean-logo.jpg">
 
 <meta property="og:image:width" content="2048">
 <meta property="og:image:height" content="1024">
@@ -98,6 +94,14 @@ Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian
         
       
         
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
           <li><a href="/tutorial">Tutorial</a></li>
         
       
@@ -115,6 +119,14 @@ Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian
     
       
         <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
       
     
       
@@ -148,7 +160,17 @@ Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian
   </div>
 
   
+  <span class="post-tags">
+    
+    #<a href="/tags/digital-ocean/">Digital Ocean</a>&nbsp;
+    
+    #<a href="/tags/vps/">VPS</a>&nbsp;
+    
+  </span>
+  
 
+  
+    <img src="/img/digitalocean-logo.jpg" class="post-cover" alt="Cara Install Sistem Operasi Windows 10 di VPS Digital Ocean" />
   
 
   
@@ -161,11 +183,31 @@ Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian
 <p>Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian inginkan (sesuaikan dengan kebutuhan kalian), sistem operasi bebas tapi dalam panduan kali ini saya menggunakan Ubuntu 18.04 64 Bit dan lokasi bebas dan yang terpenting adalah jangan mencentang pilihan User Data</p>
 <h2 id="masuk-mode-recovery">Masuk Mode Recovery<a href="#masuk-mode-recovery" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Setelah kita berhasil membuat sebuah VPS (droplet) selanjutnya kita ubah VPS kita ke mode recovery, caranya :</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
+
+  <figure class="left" >
+    <img src="/img/digitaloceanrecovery.png"   />
+    
+  </figure>
+
+
+<ul>
+<li>Matikan VPS kita.</li>
+<li>Ubah ke recovery ke Boot from Recovery ISO.</li>
+<li>Kemudian hidupkan kembali VPSnya</li>
+<li>Lalu masuk ke console.<br>
+Nanti akan muncul jendela browser dengan gambar di bawah ini, catat password sementara boot recovery, jika tidak muncul seperti gambar di bawah, silahkan tekan ENTER</li>
+</ul>
+
+  <figure class="left" >
+    <img src="/img/digitaloceanrecovery2.png"   />
+    
+  </figure>
+
+
+<h2 id="install-windows-10">Install Windows 10<a href="#install-windows-10" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Masuk ke VPS yang sedang dalam mode recovery menggunakan putty dengan user root tapi <strong>gunakan password yang muncul di jendela recovery bukan yang dikirimkan lewat email</strong></p>
 <p>Setelah berhasil masuk kemudian jalankan perintah di bawah ini</p>
-<pre><code>&lt;pre class=&quot;EnlighterJSRAW&quot; data-enlighter-group=&quot;&quot; data-enlighter-highlight=&quot;&quot; data-enlighter-language=&quot;generic&quot; data-enlighter-linenumbers=&quot;&quot; data-enlighter-lineoffset=&quot;&quot; data-enlighter-theme=&quot;&quot; data-enlighter-title=&quot;&quot;&gt;wget -O- https://archive.org/download/10.ENT.x64.EVAL.USEnglish_201902/10.ENT.x64.EVAL.US-English.gz | gunzip | dd of=/dev/vda
+<pre><code>wget -O- https://archive.org/download/10.ENT.x64.EVAL.USEnglish_201902/10.ENT.x64.EVAL.US-English.gz | gunzip | dd of=/dev/vda
 </code></pre><h2 id="matikan-mode-recovery">Matikan Mode Recovery<a href="#matikan-mode-recovery" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Setelah proses di atas selesai sekarang kita matikan mode recovery di VPS kita, caranya :</p>
 <ul>
@@ -178,11 +220,45 @@ Buat Droplet Proses pertama adalah buat sebuah droplet dengan ukuran yang kalian
 <strong>Username: WhatUpTime.com<br>
 Password: P@ssword64</strong></p>
 <p>Untuk setingan IP Address nya samakan saja dengan yang ada di jendela console</p>
-<!-- raw HTML omitted -->
+
+  <figure class="left" >
+    <img src="/img/digitalocean2.png"   />
+    
+  </figure>
+
+
+<h2 id="ganti-password">Ganti Password<a href="#ganti-password" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Proses terakhir adalah mengganti password Windows kalian agar lebih aman.</p>
 <p>Selamat mencoba!</p>
 
       </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="/tutorial/cara-install-opencv-di-ubuntu/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Cara Install OpenCV di Ubuntu</span>
+            </a>
+        </span>
+        
+        
+        <span class="button next">
+            <a href="/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/">
+                <span class="button__text">Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
 
   
 

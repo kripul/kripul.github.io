@@ -22,5 +22,66 @@ Banyak yang masih bingung bagaimana cara mendownload distro ala-ala MacOS ini. k
 Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi Elementary OS di https://elementary.io/id/</description>
     </item>
     
+    <item>
+      <title>Melakukan Benchmark Menggunakan GeekBench di Linux</title>
+      <link>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</link>
+      <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</guid>
+      <description>Pendahuluan Ingin mengetahui kempuan prosesor kalian?
+GeekBecnh adalah salah satu perangkat lunak yang bisa kita gunakan untuk mengetahui kemampuan prosesor komputer, ponsel pintar atau server kita.
+Download GeekBench wget http://cdn.geekbench.com/Geekbench-4.3.3-Linux.tar.gz Atau download GeekBench di link berikut http://www.geekbench.com/download/linux/ untuk mendapatkan versi terbarunya
+Kemudian ekstrak file yang kita download tadi
+tar -xvf Geekbench*.tar.gz Menjalankan bencmark Pindah ke folder hasil ekstrak
+cd Geekbench-4.3.3-Linux Lalu jalankan benchmark
+./geekbench4 Tunggu proses sampai selesai dan setelah proses selesai maka akan muncul link hasil bencmark kita.</description>
+    </item>
+    
+    <item>
+      <title>Cara Install OpenCV di Ubuntu</title>
+      <link>/tutorial/cara-install-opencv-di-ubuntu/</link>
+      <pubDate>Mon, 25 Feb 2019 13:45:43 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-opencv-di-ubuntu/</guid>
+      <description>Pengenalan OpenCV (Open Source Computer Vision Library) adalah sebuah pustaka perangkat lunak yang berguna sebagai pengelolaan citra dinamis secara real-time, OpenCV dikembangkan oleh Intel.
+OpenCV merupakan open source computer vision library untuk bahasa pemrograman C/C++, dan telah dikembangkan ke phyton, java, matlab
+Ada dua cara untuk menginstall OpenCV
+Install OpenCV Menggunakan Repositori Resmi Ubuntu Sangat mudah menginstall OpenCV menggunakan repositori resmi Ubuntu, tapi biasanya paket yang tersedia bukan paket yang terbaru, untuk menginstallnya jalankan perintah berikut</description>
+    </item>
+    
+    <item>
+      <title>Cara Install Gradle di Sistem Operasi Centos 7</title>
+      <link>/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</link>
+      <pubDate>Thu, 17 Jan 2019 14:28:49 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</guid>
+      <description>Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
+Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
+Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
+sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini</description>
+    </item>
+    
+    <item>
+      <title>Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04</title>
+      <link>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</link>
+      <pubDate>Mon, 14 Jan 2019 04:08:49 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</guid>
+      <description>Apa Itu Phyton? Phyton adalah salah satu bahasa pemograman yang populer di dunia, karena simple dan sangat mudah dipelajari bagi pemula. Kita bisa membuat game, website, aplikasi desktop dengan Phyton. Dan Phyton dapat berjalan di Linux, Windows ataupun MacOs
+Phyton 3.7 adalah versi Phyton mayor rilis terbaru yang memuat beberapa pembaharuan, kalian bisa melihat pembaharuan lengkapnya disini https://docs.python.org/3/whatsnew/3.7.html
+Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 namun bisa juga diterapkan di Ubuntu 16.</description>
+    </item>
+    
+    <item>
+      <title>Mengatasi Error WPS Office &amp;#8220;some formula symbols might not be displayed correctly due to missing fonts&amp;#8221;</title>
+      <link>/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/</link>
+      <pubDate>Sat, 12 Jan 2019 17:34:34 +0700</pubDate>
+      
+      <guid>/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/</guid>
+      <description>Salah satu error yang muncul setelah menginstall WPS Office adalah ada beberapa font yang belum terinstall, sehingga muncul peringatan error some “formula symbols might not be displayed correctly due to missing fonts”, untuk mengatasi error tersebut, kita perlu menginstall beberapa font ke sistem OS kita.
+Untuk mengatasi error some formula symbols might not be displayed correctly due to missing fonts cukup mudah,
+Step Pertama : install git sudo apt install git Step kedua : clone file dari Github Clone repository berikut https://github.</description>
+    </item>
+    
   </channel>
 </rss>

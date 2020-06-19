@@ -22,5 +22,20 @@ Banyak yang masih bingung bagaimana cara mendownload distro ala-ala MacOS ini. k
 Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi Elementary OS di https://elementary.io/id/</description>
     </item>
     
+    <item>
+      <title>Memunculkan Icon Dropbox di Elementary OS Juno</title>
+      <link>/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</link>
+      <pubDate>Sun, 20 Jan 2019 22:26:15 +0700</pubDate>
+      
+      <guid>/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</guid>
+      <description>Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
+Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
+Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana
+wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb Install file wingpanel-indicator-ayatana
+sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
+sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
+OnlyShowIn=Unity;GNOME; dan ubah menjadi</description>
+    </item>
+    
   </channel>
 </rss>

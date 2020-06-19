@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VNC on Nixpoin</title>
+    <link>/tags/vnc/</link>
+    <description>Recent content in VNC on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Jan 2019 07:47:10 +0700</lastBuildDate>
+    
+	<atom:link href="/tags/vnc/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Install VNC Viewer di Ubuntu / Linux Mint</title>
+      <link>/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/</link>
+      <pubDate>Thu, 10 Jan 2019 07:47:10 +0700</pubDate>
+      
+      <guid>/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/</guid>
+      <description>Apa itu VNC? VNC atau Virtual network computing adalah aplikasi untuk remote-control yang memungkinkan untuk mengontrol komputer lain melalui koneksi network.
+VNC bekerja pada model client/server. Sebuah VNC Viewer (atau client) diinstall pada komputer lokal dan dihubungkan dengan server yang harus diinstall di komputer remote.
+Cara Install VNC Client dari RealVNC 1. Download VNC Viewer Download menggunakan browser kalian di link berikut, pilih DEB X64
+https://www.realvnc.com/en/connect/download/viewer/linux/
+2. Install VNC Viewer Pindah ke folder hasil download</description>
+    </item>
+    
+  </channel>
+</rss>

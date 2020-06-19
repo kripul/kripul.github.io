@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux Mint on Nixpoin</title>
+    <link>/tags/linux-mint/</link>
+    <description>Recent content in Linux Mint on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/linux-mint/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cara Install Dropbox Di Ubuntu / Linux Mint</title>
+      <link>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</link>
+      <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</guid>
+      <description>Cara Install Dropbox Di Ubuntu / Linux Mint Dropbox adalah salah satu penyedia file sharing untuk berbagi data ataupun file berkas, tersedia layanan berbasis Free dan Premium.
+Lalu bagaimana cara untuk menginstallnya di Ubuntu atau Linux mint?
+Step : Pertama download dropbox Download dropbox menggunakan browser kalian dari https://www.dropbox.com/install-linux
+Step Kedua : Install dropbox Buka terminal lalau pindah ke folder Downloads / lokasi file dropbox yang kita download tadi
+cd Downloads Lalu install</description>
+    </item>
+    
+  </channel>
+</rss>
