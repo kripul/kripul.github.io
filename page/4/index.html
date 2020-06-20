@@ -13,6 +13,19 @@
 <link rel="canonical" href="/" />
 
 
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-45818699-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
 
 
 <link rel="stylesheet" href="/assets/style.css">
@@ -32,7 +45,7 @@
 
   <meta name="twitter:site" content="" />
 
-<meta name="twitter:creator" content="" />
+<meta name="twitter:creator" content="kripul_" />
 
 
 <meta property="og:locale" content="en" />
@@ -158,11 +171,110 @@
     
       <div class="post on-list">
         <h1 class="post-title">
-          <a href="/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/">Cara Install zsh dan oh-my-zsh di Centos, Ubuntu, Linux Mint</a>
+          <a href="/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/">Memunculkan Icon Dropbox di Elementary OS Juno</a>
         </h1>
         <div class="post-meta">
           <span class="post-date">
-            2019-01-09
+            2019-01-20
+          </span>
+          
+            <span class="post-author">::Nixpoin</span>
+          
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/dropbox/">Dropbox</a>&nbsp;
+            
+            #<a href="/tags/elementaryos/">ElementaryOS</a>&nbsp;
+            
+          </span>
+        
+
+        
+          <img src="/img/ElementaryOS.png" class="post-cover" alt="Memunculkan Icon Dropbox di Elementary OS Juno" />
+        
+
+        <div class="post-content">
+          
+          
+          Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
+Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
+Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana
+wget <a href="http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb">http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb</a> Install file wingpanel-indicator-ayatana
+sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
+sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
+OnlyShowIn=Unity;GNOME; dan ubah menjadi
+          
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/">Read more →</a>
+        </div>
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/">Cara Install Gradle di Sistem Operasi Centos 7</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2019-01-17
+          </span>
+          
+            <span class="post-author">::@Kripul_</span>
+          
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="/tags/linux/">Linux</a>&nbsp;
+            
+            #<a href="/tags/centos/">Centos</a>&nbsp;
+            
+            #<a href="/tags/gradle/">gradle</a>&nbsp;
+            
+            #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
+            
+          </span>
+        
+
+        
+          <img src="/img/gradle-logo.png" class="post-cover" alt="Cara Install Gradle di Sistem Operasi Centos 7" />
+        
+
+        <div class="post-content">
+          
+          
+          Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
+Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
+Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
+sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah terinstall, gunakan perintah di bawah ini
+          
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/">Read more →</a>
+        </div>
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="/tutorial/install-vagrant-di-ubuntu-18-04/">Install Vagrant di Ubuntu 18.04</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2019-01-16
           </span>
           
             <span class="post-author">::Nixpoin</span>
@@ -174,22 +286,22 @@
             
             #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
             
-            #<a href="/tags/zsh/">ZSH</a>&nbsp;
+            #<a href="/tags/ubuntu/">Ubuntu</a>&nbsp;
             
-            #<a href="/tags/oh-my-zsh/">Oh-my-zsh</a>&nbsp;
+            #<a href="/tags/vagrant/">Vagrant</a>&nbsp;
             
           </span>
         
 
         
-          <img src="/img/oh-my-zsh.png" class="post-cover" alt="Cara Install zsh dan oh-my-zsh di Centos, Ubuntu, Linux Mint" />
+          <img src="/img/vagrant-logo.png" class="post-cover" alt="Install Vagrant di Ubuntu 18.04" />
         
 
         <div class="post-content">
           
           
-          Zsh adalah Unix Shell yang dapat digunakan sebagai login sheel, beberapa perbedaannya dengan bash adalah
-Validasi perintah : cukup ketikkan saja “ap” dan tekan tombol tab nanti akan muncul perintah dengan awalan “ap” Koreksi kesalahan pengetikan kapital : misal kita mengetikkan download, lalu kita tekan tab maka akan berubah menjadi Downloads Plugin dan tema : kita bisa menambahkan plugin seperti plugin “Git” dan juga mempercantik zsh dengan oh-my-zsh  Lalu, bagaimana cara menginstallnya?
+          Apa Itu Vagrant? Mungkin diantara kita masih belum familiar dengan nama Vagrant, Secara definisi Vagrant adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
+Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.
           
           
         </div>
@@ -197,18 +309,18 @@ Validasi perintah : cukup ketikkan saja “ap” dan tekan tombol tab nanti akan
         
         <div>
           <a class="read-more button"
-            href="/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/">Read more →</a>
+            href="/tutorial/install-vagrant-di-ubuntu-18-04/">Read more →</a>
         </div>
         
       </div>
     
       <div class="post on-list">
         <h1 class="post-title">
-          <a href="/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/">Cara Install Dropbox Di Ubuntu / Linux Mint</a>
+          <a href="/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/">Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04</a>
         </h1>
         <div class="post-meta">
           <span class="post-date">
-            2019-01-08
+            2019-01-14
           </span>
           
             <span class="post-author">::@Kripul_</span>
@@ -218,29 +330,27 @@ Validasi perintah : cukup ketikkan saja “ap” dan tekan tombol tab nanti akan
         
           <span class="post-tags">
             
-            #<a href="/tags/dropbox/">Dropbox</a>&nbsp;
+            #<a href="/tags/linux/">Linux</a>&nbsp;
+            
+            #<a href="/tags/python/">Python</a>&nbsp;
+            
+            #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
             
             #<a href="/tags/ubuntu/">Ubuntu</a>&nbsp;
             
-            #<a href="/tags/linux-mint/">Linux Mint</a>&nbsp;
-            
-            #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
-            
           </span>
         
 
         
-          <img src="/img/dropbox-logo.jpg" class="post-cover" alt="Cara Install Dropbox Di Ubuntu / Linux Mint" />
+          <img src="/img/python-logo.png" class="post-cover" alt="Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04" />
         
 
         <div class="post-content">
           
           
-          Cara Install Dropbox Di Ubuntu / Linux Mint Dropbox adalah salah satu penyedia file sharing untuk berbagi data ataupun file berkas, tersedia layanan berbasis Free dan Premium.
-Lalu bagaimana cara untuk menginstallnya di Ubuntu atau Linux mint?
-Step : Pertama download dropbox Download dropbox menggunakan browser kalian dari <a href="https://www.dropbox.com/install-linux">https://www.dropbox.com/install-linux</a>
-Step Kedua : Install dropbox Buka terminal lalau pindah ke folder Downloads / lokasi file dropbox yang kita download tadi
-cd Downloads Lalu install
+          Apa Itu Phyton? Phyton adalah salah satu bahasa pemograman yang populer di dunia, karena simple dan sangat mudah dipelajari bagi pemula. Kita bisa membuat game, website, aplikasi desktop dengan Phyton. Dan Phyton dapat berjalan di Linux, Windows ataupun MacOs
+Phyton 3.7 adalah versi Phyton mayor rilis terbaru yang memuat beberapa pembaharuan, kalian bisa melihat pembaharuan lengkapnya disini <a href="https://docs.python.org/3/whatsnew/3.7.html">https://docs.python.org/3/whatsnew/3.7.html</a>
+Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 namun bisa juga diterapkan di Ubuntu 16.
           
           
         </div>
@@ -248,18 +358,18 @@ cd Downloads Lalu install
         
         <div>
           <a class="read-more button"
-            href="/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/">Read more →</a>
+            href="/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/">Read more →</a>
         </div>
         
       </div>
     
       <div class="post on-list">
         <h1 class="post-title">
-          <a href="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/">Belajar Linux Shell : Menghapus Baris Teks Yang Ganda</a>
+          <a href="/review/review-bechmark-contabo-vps/">Review Bechmark Contabo VPS</a>
         </h1>
         <div class="post-meta">
           <span class="post-date">
-            2018-12-28
+            2019-01-13
           </span>
           
             <span class="post-author">::@Kripul_</span>
@@ -269,24 +379,21 @@ cd Downloads Lalu install
         
           <span class="post-tags">
             
-            #<a href="/tags/bash/">bash</a>&nbsp;
+            #<a href="/tags/benchmark/">benchmark</a>&nbsp;
             
-            #<a href="/tags/sort/">sort</a>&nbsp;
+            #<a href="/tags/vps/">VPS</a>&nbsp;
             
           </span>
         
 
         
-          <img src="/img/bash.png" class="post-cover" alt="Belajar Linux Shell : Menghapus Baris Teks Yang Ganda" />
+          <img src="/img/benchmark.jpg" class="post-cover" alt="Review Bechmark Contabo VPS" />
         
 
         <div class="post-content">
           
           
-          Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
-Kita bisa menggunakan perintah sort dan uniq
-Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
-Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda.
+          Spesifikasi CPU model : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz Number of cores : 4 CPU frequency : 2399.996 MHz Total size of Disk : 195.9 GB (13.1 GB Used) Total amount of Mem : 7976 MB (359 MB Used) Total amount of Swap : 2047 MB (0 MB Used) OS : Ubuntu 18.04.1 LTS Arch : x86_64 (64 Bit) Kernel : 4.15.0-39-generic Hasil Benchmark Berikut hasil dari bench.sh
           
           
         </div>
@@ -294,93 +401,7 @@ Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku B
         
         <div>
           <a class="read-more button"
-            href="/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/">Read more →</a>
-        </div>
-        
-      </div>
-    
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="/tutorial/cara-install-dnsmasq-openwrt/">[ HOW TO ] Install DNSCrypt di OpenWrt</a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-date">
-            2017-04-21
-          </span>
-          
-            <span class="post-author">::@Kripul_</span>
-          
-        </div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/openwrt/">openwrt</a>&nbsp;
-            
-            #<a href="/tags/dnscrypt/">dnscrypt</a>&nbsp;
-            
-            #<a href="/tags/tutorial/">Tutorial</a>&nbsp;
-            
-          </span>
-        
-
-        
-          <img src="/img/dnscrypt1.png" class="post-cover" alt="[ HOW TO ] Install DNSCrypt di OpenWrt" />
-        
-
-        <div class="post-content">
-          
-          Karena seringnya hasil googling nyasar ke Reddit tapi situs Reddit diblokir oleh ISP-ISP Indonesia, akhirnya cari cara paling enak untuk buka blokiran ISP
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/tutorial/cara-install-dnsmasq-openwrt/">Read more →</a>
-        </div>
-        
-      </div>
-    
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/">Bagaimana Cara Berkontribusi Pada Proyek yang di Github</a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-date">
-            2017-04-21
-          </span>
-          
-            <span class="post-author">::@Kripul_</span>
-          
-        </div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="/tags/github/">github</a>&nbsp;
-            
-            #<a href="/tags/open-source/">open source</a>&nbsp;
-            
-            #<a href="/tags/tutorial/">tutorial</a>&nbsp;
-            
-          </span>
-        
-
-        
-          <img src="/img/github-mark.png" class="post-cover" alt="Bagaimana Cara Berkontribusi Pada Proyek yang di Github" />
-        
-
-        <div class="post-content">
-          
-          Mungkin sudah terlalu sering kita bekerja mandiri pada project pribadi, disini saya akan menunjukkan bagaimana caranya berkontribusi di project lain yang ada di Github.
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/">Read more →</a>
+            href="/review/review-bechmark-contabo-vps/">Read more →</a>
         </div>
         
       </div>

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 20 Jun 2020 18:07:11 +0700</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Proxy</title>
+      <link>/tags/proxy/</link>
+      <pubDate>Sat, 20 Jun 2020 18:07:11 +0700</pubDate>
+      
+      <guid>/tags/proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Squid</title>
+      <link>/tags/squid/</link>
+      <pubDate>Sat, 20 Jun 2020 18:07:11 +0700</pubDate>
+      
+      <guid>/tags/squid/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>rdp</title>
