@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/tutorial/membuat-loadbalancing-proxy-dengan-squid/</loc>
-    <lastmod>2020-06-20T18:07:11+07:00</lastmod>
+    <loc>/tags/benchmark/</loc>
+    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/</loc>
+    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/review/review-azure-b1ms-cloud-vps/</loc>
+    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/review/</loc>
+    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vps/</loc>
+    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tutorial/membuat-loadbalancing-proxy-dengan-squid/</loc>
     <lastmod>2020-06-20T18:07:11+07:00</lastmod>
   </url>
   
@@ -19,11 +44,6 @@
   
   <url>
     <loc>/tags/squid/</loc>
-    <lastmod>2020-06-20T18:07:11+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
     <lastmod>2020-06-20T18:07:11+07:00</lastmod>
   </url>
   
@@ -44,11 +64,6 @@
   
   <url>
     <loc>/tags/rdp/</loc>
-    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/vps/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -93,17 +108,7 @@
   </url>
   
   <url>
-    <loc>/tags/benchmark/</loc>
-    <lastmod>2019-02-27T20:52:41+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/review/review-vps-digital-ocean-40-lokasi-london/</loc>
-    <lastmod>2019-02-27T20:52:41+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/review/</loc>
     <lastmod>2019-02-27T20:52:41+07:00</lastmod>
   </url>
   
