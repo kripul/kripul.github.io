@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>sort on Nixpoin</title>
-    <link>/tags/sort/</link>
+    <link>https://nixpoin.com/tags/sort/</link>
     <description>Recent content in sort on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 28 Dec 2018 17:35:58 +0700</lastBuildDate>
     
-	<atom:link href="/tags/sort/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Belajar Linux Shell : Menghapus Baris Teks Yang Ganda</title>
-      <link>/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</link>
+      <link>https://nixpoin.com/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</link>
       <pubDate>Fri, 28 Dec 2018 17:35:58 +0700</pubDate>
       
-      <guid>/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</guid>
+      <guid>https://nixpoin.com/tutorial/belajar-linux-shell-menghapus-baris-teks-yang-ganda/</guid>
       <description>Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
 Kita bisa menggunakan perintah sort dan uniq
 Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi

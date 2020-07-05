@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Proxy on Nixpoin</title>
-    <link>/tags/proxy/</link>
+    <link>https://nixpoin.com/tags/proxy/</link>
     <description>Recent content in Proxy on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 20 Jun 2020 18:07:11 +0700</lastBuildDate>
     
-	<atom:link href="/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/proxy/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Membuat Load Balancing Proxy Dengan Squid</title>
-      <link>/tutorial/membuat-loadbalancing-proxy-dengan-squid/</link>
+      <link>https://nixpoin.com/tutorial/membuat-loadbalancing-proxy-dengan-squid/</link>
       <pubDate>Sat, 20 Jun 2020 18:07:11 +0700</pubDate>
       
-      <guid>/tutorial/membuat-loadbalancing-proxy-dengan-squid/</guid>
+      <guid>https://nixpoin.com/tutorial/membuat-loadbalancing-proxy-dengan-squid/</guid>
       <description>Use Case Misalnya kalian melakukan data scraping ke website suatu marketplace untuk mengambil detail produk-produknya, sayangnya data scraping biasanya adalah hal yang dilarang sehingga biasanya marketplace tersebut akan memblokir IP yang dicurigai melakukan scraping karena secara terus menerus me-request ke website tersebut
 Solusinya adalah menggunakan proxy agar IP kita tidak terblokir! 1 proxy juga kadang tidak cukup maka kita butuh merubah IP setiap melakukan request ke webbsite marketplace tersebut.
 Load Balancing Proxy Dengan Squid Anggap saja kita punya list proxy</description>

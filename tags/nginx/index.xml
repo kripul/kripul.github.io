@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Nginx on Nixpoin</title>
-    <link>/tags/nginx/</link>
+    <link>https://nixpoin.com/tags/nginx/</link>
     <description>Recent content in Nginx on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Feb 2019 00:07:43 +0700</lastBuildDate>
     
-	<atom:link href="/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/nginx/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx</title>
-      <link>/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</link>
+      <link>https://nixpoin.com/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</link>
       <pubDate>Tue, 12 Feb 2019 00:07:43 +0700</pubDate>
       
-      <guid>/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</guid>
+      <guid>https://nixpoin.com/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</guid>
       <description>Pendahuluan Pada panduan sebelumnya, kita sudah belajar bagaimana cara memasang Nginx pada Centos 7 dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx
 Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautkan kedua domain tersebut dengan sebuah VPS yang kita punya, maka kita perlu membuat sebuah virtual host agar kita bisa membedakan lokasi file masing-masing untuk domain tersebut di VPS kita.</description>
     </item>
     
     <item>
       <title>Nginx Dasar : #1 Cara instal Nginx pada Centos 7</title>
-      <link>/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</link>
+      <link>https://nixpoin.com/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</link>
       <pubDate>Fri, 08 Feb 2019 01:14:03 +0700</pubDate>
       
-      <guid>/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</guid>
+      <guid>https://nixpoin.com/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</guid>
       <description>Pengenalan Nginx, dibaca engine x adalah free dan open source program yang bisa menangani reserve proxy atau web server seperti Apache2 dengan kelebihan lebih ringan dibandingkan dengan Apache2.
 Dibandingkan dengan Apache2, Nginx mampu menangani koneksi yang lebih banyak namun dengan penggunan resource yang lebih kecil.
 Tutorial kali ini kita akan membahas cara menginstal Nginx di sistem operasi Centos 7.

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Timezone on Nixpoin</title>
-    <link>/tags/timezone/</link>
+    <link>https://nixpoin.com/tags/timezone/</link>
     <description>Recent content in Timezone on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 24 Jan 2019 11:04:42 +0700</lastBuildDate>
     
-	<atom:link href="/tags/timezone/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/timezone/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Mengganti Timezone di Ubuntu 18.04 Server</title>
-      <link>/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</link>
+      <link>https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</link>
       <pubDate>Thu, 24 Jan 2019 11:04:42 +0700</pubDate>
       
-      <guid>/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
+      <guid>https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
 Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
 timedatectl Hasilnya seperti

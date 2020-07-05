@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ZSH on Nixpoin</title>
-    <link>/tags/zsh/</link>
+    <link>https://nixpoin.com/tags/zsh/</link>
     <description>Recent content in ZSH on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 09 Jan 2019 09:57:41 +0700</lastBuildDate>
     
-	<atom:link href="/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/zsh/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cara Install zsh dan oh-my-zsh di Centos, Ubuntu, Linux Mint</title>
-      <link>/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</link>
       <pubDate>Wed, 09 Jan 2019 09:57:41 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</guid>
       <description>Zsh adalah Unix Shell yang dapat digunakan sebagai login sheel, beberapa perbedaannya dengan bash adalah
  Validasi perintah : cukup ketikkan saja “ap” dan tekan tombol tab nanti akan muncul perintah dengan awalan “ap” Koreksi kesalahan pengetikan kapital : misal kita mengetikkan download, lalu kita tekan tab maka akan berubah menjadi Downloads Plugin dan tema : kita bisa menambahkan plugin seperti plugin “Git” dan juga mempercantik zsh dengan oh-my-zsh  Lalu, bagaimana cara menginstallnya?</description>
     </item>

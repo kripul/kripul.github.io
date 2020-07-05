@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linuxes on Nixpoin</title>
-    <link>/linux/</link>
+    <link>https://nixpoin.com/linux/</link>
     <description>Recent content in Linuxes on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Download Elementary OS Gratis</title>
-      <link>/linux/download-elementary-os-gratis/</link>
+      <link>https://nixpoin.com/linux/download-elementary-os-gratis/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/linux/download-elementary-os-gratis/</guid>
+      <guid>https://nixpoin.com/linux/download-elementary-os-gratis/</guid>
       <description>Cara Download Elementary OS Hera Gratis Salah satu distro dengan tampilan yang sangat-sangat menarik adalah Elementary OS, distro keturunan dari Ubuntu ini menggunakan DE (Desktop Environment) sendiri yang bernama Pantheon.
 Banyak yang masih bingung bagaimana cara mendownload distro ala-ala MacOS ini. karena di halaman resminya seperti harus membayar untuk mendownload file ISO nya.
 Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi Elementary OS di https://elementary.io/id/</description>
@@ -24,10 +24,10 @@ Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi
     
     <item>
       <title>Melakukan Benchmark Menggunakan GeekBench di Linux</title>
-      <link>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</link>
+      <link>https://nixpoin.com/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</link>
       <pubDate>Tue, 26 Feb 2019 00:00:00 +0000</pubDate>
       
-      <guid>/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</guid>
+      <guid>https://nixpoin.com/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</guid>
       <description>Pendahuluan Ingin mengetahui kempuan prosesor kalian?
 GeekBecnh adalah salah satu perangkat lunak yang bisa kita gunakan untuk mengetahui kemampuan prosesor komputer, ponsel pintar atau server kita.
 Download GeekBench wget http://cdn.geekbench.com/Geekbench-4.3.3-Linux.tar.gz Atau download GeekBench di link berikut http://www.geekbench.com/download/linux/ untuk mendapatkan versi terbarunya

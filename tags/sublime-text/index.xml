@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sublime Text on Nixpoin</title>
-    <link>/tags/sublime-text/</link>
+    <link>https://nixpoin.com/tags/sublime-text/</link>
     <description>Recent content in Sublime Text on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 25 Jan 2019 23:10:18 +0700</lastBuildDate>
     
-	<atom:link href="/tags/sublime-text/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/sublime-text/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cara Install Sublime Text 3 di Ubuntu 18.04 atau Linux Mint</title>
-      <link>/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/</link>
       <pubDate>Fri, 25 Jan 2019 23:10:18 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-sublime-text-3-di-ubuntu-18-04-atau-linux-mint/</guid>
       <description>Pendahuluan Sublime Text adalah salah satu teks editor favorit saya, Sublime sangat powerfull dan banyak sekali plugin-plugin yang bermanfaat. Sublime sendiri dapat berjalan di sistem berbasin Windows, MacOS atau pun Linux.
 Kali ini kita akan mencoba untuk menginstall Sublime Text 3 di Ubuntu atau pun Linux Mint.
 Untuk Linux Mint sendiri sudah menyediakan Sublime Text di repositori mereka tapi biasanya paket tersebut bukan paket terbaru. Maka kali ini kita akan menginstall Sublime Text menggunakan repositori dari PPA pihak Sublime Text</description>

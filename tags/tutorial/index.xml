@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>tutorial on Nixpoin</title>
-    <link>/tags/tutorial/</link>
+    <link>https://nixpoin.com/tags/tutorial/</link>
     <description>Recent content in tutorial on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 Feb 2019 13:45:43 +0700</lastBuildDate>
     
-	<atom:link href="/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cara Install OpenCV di Ubuntu</title>
-      <link>/tutorial/cara-install-opencv-di-ubuntu/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-opencv-di-ubuntu/</link>
       <pubDate>Mon, 25 Feb 2019 13:45:43 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-opencv-di-ubuntu/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-opencv-di-ubuntu/</guid>
       <description>Pengenalan OpenCV (Open Source Computer Vision Library) adalah sebuah pustaka perangkat lunak yang berguna sebagai pengelolaan citra dinamis secara real-time, OpenCV dikembangkan oleh Intel.
 OpenCV merupakan open source computer vision library untuk bahasa pemrograman C/C++, dan telah dikembangkan ke phyton, java, matlab
 Ada dua cara untuk menginstall OpenCV
@@ -25,20 +25,20 @@ Install OpenCV Menggunakan Repositori Resmi Ubuntu Sangat mudah menginstall Open
     
     <item>
       <title>Nginx Dasar : #2 Menambahkan Virtual Host ( Server Blocks) Nginx</title>
-      <link>/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</link>
+      <link>https://nixpoin.com/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</link>
       <pubDate>Tue, 12 Feb 2019 00:07:43 +0700</pubDate>
       
-      <guid>/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</guid>
+      <guid>https://nixpoin.com/tutorial/nginx-dasar-2-menambahkan-virtual-host-server-blocks-nginx/</guid>
       <description>Pendahuluan Pada panduan sebelumnya, kita sudah belajar bagaimana cara memasang Nginx pada Centos 7 dan pada panduan kedua seri Nginx Dasar, kita akan belajar menambahkan virtual host atau server blocks di Nginx
 Misalnya kita punya 2 domain yaitu meja.com dan kursi.com dan kita ingin menautkan kedua domain tersebut dengan sebuah VPS yang kita punya, maka kita perlu membuat sebuah virtual host agar kita bisa membedakan lokasi file masing-masing untuk domain tersebut di VPS kita.</description>
     </item>
     
     <item>
       <title>Nginx Dasar : #1 Cara instal Nginx pada Centos 7</title>
-      <link>/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</link>
+      <link>https://nixpoin.com/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</link>
       <pubDate>Fri, 08 Feb 2019 01:14:03 +0700</pubDate>
       
-      <guid>/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</guid>
+      <guid>https://nixpoin.com/tutorial/nginx-dasar-1-cara-instal-nginx-pada-centos-7/</guid>
       <description>Pengenalan Nginx, dibaca engine x adalah free dan open source program yang bisa menangani reserve proxy atau web server seperti Apache2 dengan kelebihan lebih ringan dibandingkan dengan Apache2.
 Dibandingkan dengan Apache2, Nginx mampu menangani koneksi yang lebih banyak namun dengan penggunan resource yang lebih kecil.
 Tutorial kali ini kita akan membahas cara menginstal Nginx di sistem operasi Centos 7.
@@ -47,10 +47,10 @@ Ada dua cara untuk menginstal Nginx, dengan paket manager YUM atau menginstalnya
     
     <item>
       <title>Mengganti Timezone di Ubuntu 18.04 Server</title>
-      <link>/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</link>
+      <link>https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</link>
       <pubDate>Thu, 24 Jan 2019 11:04:42 +0700</pubDate>
       
-      <guid>/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
+      <guid>https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
 Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
 timedatectl Hasilnya seperti
@@ -59,10 +59,10 @@ Universal time: Kam 2019-01-24 03:41:21 UTC RTC time: n/a Time zone: UTC (EST, -
     
     <item>
       <title>Cara Install Gradle di Sistem Operasi Centos 7</title>
-      <link>/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:49 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-gradle-di-sistem-operasi-centos-7/</guid>
       <description>Apa itu Gradle Gradle adalah suatu fitur build automation yang open source yang biasanya digunakan untuk proyek berbasis bahasa pemograman java sebagaimana Maven atau Ant.
 Tutorial kali ini akan membahas cara install Gradle di sistem operasi Centos 7, berikut ini caranya
 Install OpenJDK Gradle membutuhkan Java JDK / JRE versi 7 ke atas, disini kita akan menggunakan OpenJDK versi 8
@@ -71,20 +71,20 @@ sudo yum install java-1.8.0-openjdk-devel Untuk mengecek apakah OpenJDK sudah te
     
     <item>
       <title>Install Vagrant di Ubuntu 18.04</title>
-      <link>/tutorial/install-vagrant-di-ubuntu-18-04/</link>
+      <link>https://nixpoin.com/tutorial/install-vagrant-di-ubuntu-18-04/</link>
       <pubDate>Wed, 16 Jan 2019 13:52:05 +0700</pubDate>
       
-      <guid>/tutorial/install-vagrant-di-ubuntu-18-04/</guid>
+      <guid>https://nixpoin.com/tutorial/install-vagrant-di-ubuntu-18-04/</guid>
       <description>Apa Itu Vagrant? Mungkin diantara kita masih belum familiar dengan nama Vagrant, Secara definisi Vagrant adalah sebuah software yang menggunakan teknologi virtual machine dimana kita dapat membuat lingkungan development secara portable, konsisten dan lebih fleksible.
 Dikarenakan vagrant menggunakan teknologi virtual machine maka kita membutuhkan software seperti virtual box dan VmWare. Tujuannya adalah kita ingin membuat sebuah lingkungan development secara portable, contohnya misalnya pada saat production kita akan menggunakan sistem operasi ubuntu maka pada saat development kita akan menggunakan ubuntu sebagai sistem operasi sehingga pada saat proses deploy ke production diharapkan tidak ada lagi permasalahan yang muncul.</description>
     </item>
     
     <item>
       <title>Cara Install Phyton 3.7 di Ubuntu 16.04 / 18.04</title>
-      <link>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</link>
       <pubDate>Mon, 14 Jan 2019 04:08:49 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</guid>
       <description>Apa Itu Phyton? Phyton adalah salah satu bahasa pemograman yang populer di dunia, karena simple dan sangat mudah dipelajari bagi pemula. Kita bisa membuat game, website, aplikasi desktop dengan Phyton. Dan Phyton dapat berjalan di Linux, Windows ataupun MacOs
 Phyton 3.7 adalah versi Phyton mayor rilis terbaru yang memuat beberapa pembaharuan, kalian bisa melihat pembaharuan lengkapnya disini https://docs.python.org/3/whatsnew/3.7.html
 Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 namun bisa juga diterapkan di Ubuntu 16.</description>
@@ -92,10 +92,10 @@ Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 na
     
     <item>
       <title>Install NodeJs di Ubuntu / Linux Mint</title>
-      <link>/tutorial/install-nodejs-di-ubuntu-linux-mint/</link>
+      <link>https://nixpoin.com/tutorial/install-nodejs-di-ubuntu-linux-mint/</link>
       <pubDate>Fri, 11 Jan 2019 08:19:12 +0700</pubDate>
       
-      <guid>/tutorial/install-nodejs-di-ubuntu-linux-mint/</guid>
+      <guid>https://nixpoin.com/tutorial/install-nodejs-di-ubuntu-linux-mint/</guid>
       <description>Install NodeJs di Ubuntu / Linux Mint Ada dua cara untuk menginstall node.js di Ubuntu / Linux Mint, yaitu menggunakan repositori dari pihak Ubuntu atau menggunakan repositori NodeSource
 Perbedaannya adalah, kita bisa memilih versi node.js jika kita menggunakan repositori dari NodeSource, untuk sekarang versi LTS dari Node.Js adalah versi 10 tetapi kalau kita menggunakan repositori resmi dari Ubuntu 18.04 masih menggunakan Node.Js versi 8
 Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita dengan</description>
@@ -103,10 +103,10 @@ Install Node.Js menggunakan repositori Ubuntu update dahulu repositori kita deng
     
     <item>
       <title>Cara Install VNC Viewer di Ubuntu / Linux Mint</title>
-      <link>/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/</link>
       <pubDate>Thu, 10 Jan 2019 07:47:10 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-vnc-viewer-di-ubuntu-linux-mint/</guid>
       <description>Apa itu VNC? VNC atau Virtual network computing adalah aplikasi untuk remote-control yang memungkinkan untuk mengontrol komputer lain melalui koneksi network.
 VNC bekerja pada model client/server. Sebuah VNC Viewer (atau client) diinstall pada komputer lokal dan dihubungkan dengan server yang harus diinstall di komputer remote.
 Cara Install VNC Client dari RealVNC 1. Download VNC Viewer Download menggunakan browser kalian di link berikut, pilih DEB X64
@@ -116,20 +116,20 @@ https://www.realvnc.com/en/connect/download/viewer/linux/
     
     <item>
       <title>Cara Install zsh dan oh-my-zsh di Centos, Ubuntu, Linux Mint</title>
-      <link>/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</link>
       <pubDate>Wed, 09 Jan 2019 09:57:41 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-zsh-dan-oh-my-zsh-di-centos-ubuntu-linux-mint/</guid>
       <description>Zsh adalah Unix Shell yang dapat digunakan sebagai login sheel, beberapa perbedaannya dengan bash adalah
  Validasi perintah : cukup ketikkan saja “ap” dan tekan tombol tab nanti akan muncul perintah dengan awalan “ap” Koreksi kesalahan pengetikan kapital : misal kita mengetikkan download, lalu kita tekan tab maka akan berubah menjadi Downloads Plugin dan tema : kita bisa menambahkan plugin seperti plugin “Git” dan juga mempercantik zsh dengan oh-my-zsh  Lalu, bagaimana cara menginstallnya?</description>
     </item>
     
     <item>
       <title>Cara Install Dropbox Di Ubuntu / Linux Mint</title>
-      <link>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</link>
       <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-dropbox-di-ubuntu-linux-mint/</guid>
       <description>Cara Install Dropbox Di Ubuntu / Linux Mint Dropbox adalah salah satu penyedia file sharing untuk berbagi data ataupun file berkas, tersedia layanan berbasis Free dan Premium.
 Lalu bagaimana cara untuk menginstallnya di Ubuntu atau Linux mint?
 Step : Pertama download dropbox Download dropbox menggunakan browser kalian dari https://www.dropbox.com/install-linux
@@ -139,10 +139,10 @@ cd Downloads Lalu install</description>
     
     <item>
       <title>[ HOW TO ] Install DNSCrypt di OpenWrt</title>
-      <link>/tutorial/cara-install-dnsmasq-openwrt/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-dnsmasq-openwrt/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/cara-install-dnsmasq-openwrt/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-dnsmasq-openwrt/</guid>
       <description>DNSCrypt
  NOTE : Penulis tidak bertanggung jawab atas dosa-dosa yang anda dapat dikarenakan penyalahgunaan panduan ini
  Karena seringnya hasil googling nyasar ke Reddit tapi situs Reddit diblokir oleh ISP-ISP Indonesia, akhirnya cari cara paling enak untuk buka blokiran ISP, pake VPN? Bisa tapi harus ngonekin ke VPN dulu sebelum buka Reddit dan kadang bikin lemot ke beberapa situs lain. Pakai Proxy? Ya sama aja kayak VPN kadang bikin lemot.</description>
@@ -150,10 +150,10 @@ cd Downloads Lalu install</description>
     
     <item>
       <title>Bagaimana Cara Berkontribusi Pada Proyek yang di Github</title>
-      <link>/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/</link>
+      <link>https://nixpoin.com/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/</guid>
+      <guid>https://nixpoin.com/tutorial/bagaimana-berkontribusi-pada-proyek-di-github/</guid>
       <description>Berkontribusi Pada Proyek yang di Github Mungkin sudah terlalu sering kita bekerja mandiri pada project pribadi, disini saya akan menunjukkan bagaimana caranya berkontribusi di project lain. Hal termudah untuk mencapai itu kita cari proyek open sources, apa itu proyek opensources, Proyek perangkat lunak open source merupakan proyek yang memberikan kode program kepada penggunanya secara bebas, dan tak jarang pengembangannya dilakukan secara terbuka: siapapun boleh berkontribusi dalam menulis kode tersebut.
 Menggunakan perangkat lunak open source tentunya sangat baik, karena selain tidak melakukan pembajakan, kita juga mendukung para pengembang dari perangkat lunak yang kita gunakan.</description>
     </item>

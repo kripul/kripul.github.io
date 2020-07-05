@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Wine on Nixpoin</title>
-    <link>/tags/wine/</link>
+    <link>https://nixpoin.com/tags/wine/</link>
     <description>Recent content in Wine on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Jan 2019 14:42:37 +0700</lastBuildDate>
     
-	<atom:link href="/tags/wine/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/wine/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Cara Install Wine 4 di Ubuntu 18.04</title>
-      <link>/tutorial/cara-install-wine-4-di-ubuntu-18-04/</link>
+      <link>https://nixpoin.com/tutorial/cara-install-wine-4-di-ubuntu-18-04/</link>
       <pubDate>Sat, 26 Jan 2019 14:42:37 +0700</pubDate>
       
-      <guid>/tutorial/cara-install-wine-4-di-ubuntu-18-04/</guid>
+      <guid>https://nixpoin.com/tutorial/cara-install-wine-4-di-ubuntu-18-04/</guid>
       <description>Pendahuluan Beberapa saat lalu Wine versi 4 stable dirilis untuk publik, versi baru ini yang membawa beberapa pembaharuan diantaranya penambahan dukungan Vulkan, Direct3D 12, game kontroler.
 Tulisan kali ini kita akan membahas cara install Wine 4 di Ubuntu 18.04, paket Wine sudah ada di repositori resmi Ubuntu 18.04 tetapi paket tersebut versi 3 bukan versi 4.
 Persiapan Jika sistem operasi kalian menggunakan arsitektur 64bit, tambahkan dahulu dukungan 32bit terlebih dahulu dengan menjalankan perintah dibawah ini</description>

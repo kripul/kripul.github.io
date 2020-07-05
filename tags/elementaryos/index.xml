@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ElementaryOS on Nixpoin</title>
-    <link>/tags/elementaryos/</link>
+    <link>https://nixpoin.com/tags/elementaryos/</link>
     <description>Recent content in ElementaryOS on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 06 Apr 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/elementaryos/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/elementaryos/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Download Elementary OS Gratis</title>
-      <link>/linux/download-elementary-os-gratis/</link>
+      <link>https://nixpoin.com/linux/download-elementary-os-gratis/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/linux/download-elementary-os-gratis/</guid>
+      <guid>https://nixpoin.com/linux/download-elementary-os-gratis/</guid>
       <description>Cara Download Elementary OS Hera Gratis Salah satu distro dengan tampilan yang sangat-sangat menarik adalah Elementary OS, distro keturunan dari Ubuntu ini menggunakan DE (Desktop Environment) sendiri yang bernama Pantheon.
 Banyak yang masih bingung bagaimana cara mendownload distro ala-ala MacOS ini. karena di halaman resminya seperti harus membayar untuk mendownload file ISO nya.
 Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi Elementary OS di https://elementary.io/id/</description>
@@ -24,10 +24,10 @@ Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi
     
     <item>
       <title>Memunculkan Icon Dropbox di Elementary OS Juno</title>
-      <link>/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</link>
+      <link>https://nixpoin.com/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</link>
       <pubDate>Sun, 20 Jan 2019 22:26:15 +0700</pubDate>
       
-      <guid>/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</guid>
+      <guid>https://nixpoin.com/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/</guid>
       <description>Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
 Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
 Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana

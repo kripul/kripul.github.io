@@ -2,336 +2,336 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Nixpoin</title>
-    <link>/tags/</link>
+    <link>https://nixpoin.com/tags/</link>
     <description>Recent content in Tags on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://nixpoin.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>benchmark</title>
-      <link>/tags/benchmark/</link>
+      <link>https://nixpoin.com/tags/benchmark/</link>
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/benchmark/</guid>
+      <guid>https://nixpoin.com/tags/benchmark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>vps</title>
-      <link>/tags/vps/</link>
+      <link>https://nixpoin.com/tags/vps/</link>
       <pubDate>Mon, 29 Jun 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/vps/</guid>
+      <guid>https://nixpoin.com/tags/vps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Proxy</title>
-      <link>/tags/proxy/</link>
+      <link>https://nixpoin.com/tags/proxy/</link>
       <pubDate>Sat, 20 Jun 2020 18:07:11 +0700</pubDate>
       
-      <guid>/tags/proxy/</guid>
+      <guid>https://nixpoin.com/tags/proxy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Squid</title>
-      <link>/tags/squid/</link>
+      <link>https://nixpoin.com/tags/squid/</link>
       <pubDate>Sat, 20 Jun 2020 18:07:11 +0700</pubDate>
       
-      <guid>/tags/squid/</guid>
+      <guid>https://nixpoin.com/tags/squid/</guid>
       <description></description>
     </item>
     
     <item>
       <title>rdp</title>
-      <link>/tags/rdp/</link>
+      <link>https://nixpoin.com/tags/rdp/</link>
       <pubDate>Tue, 21 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/rdp/</guid>
+      <guid>https://nixpoin.com/tags/rdp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ElementaryOS</title>
-      <link>/tags/elementaryos/</link>
+      <link>https://nixpoin.com/tags/elementaryos/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/elementaryos/</guid>
+      <guid>https://nixpoin.com/tags/elementaryos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux</title>
-      <link>/tags/linux/</link>
+      <link>https://nixpoin.com/tags/linux/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
       
-      <guid>/tags/linux/</guid>
+      <guid>https://nixpoin.com/tags/linux/</guid>
       <description></description>
     </item>
     
     <item>
       <title>PPTP</title>
-      <link>/tags/pptp/</link>
+      <link>https://nixpoin.com/tags/pptp/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:44 +0700</pubDate>
       
-      <guid>/tags/pptp/</guid>
+      <guid>https://nixpoin.com/tags/pptp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ubuntu</title>
-      <link>/tags/ubuntu/</link>
+      <link>https://nixpoin.com/tags/ubuntu/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:44 +0700</pubDate>
       
-      <guid>/tags/ubuntu/</guid>
+      <guid>https://nixpoin.com/tags/ubuntu/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VPN</title>
-      <link>/tags/vpn/</link>
+      <link>https://nixpoin.com/tags/vpn/</link>
       <pubDate>Tue, 17 Dec 2019 00:00:44 +0700</pubDate>
       
-      <guid>/tags/vpn/</guid>
+      <guid>https://nixpoin.com/tags/vpn/</guid>
       <description></description>
     </item>
     
     <item>
       <title>opencv</title>
-      <link>/tags/opencv/</link>
+      <link>https://nixpoin.com/tags/opencv/</link>
       <pubDate>Mon, 25 Feb 2019 13:45:43 +0700</pubDate>
       
-      <guid>/tags/opencv/</guid>
+      <guid>https://nixpoin.com/tags/opencv/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tutorial</title>
-      <link>/tags/tutorial/</link>
+      <link>https://nixpoin.com/tags/tutorial/</link>
       <pubDate>Mon, 25 Feb 2019 13:45:43 +0700</pubDate>
       
-      <guid>/tags/tutorial/</guid>
+      <guid>https://nixpoin.com/tags/tutorial/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Digital Ocean</title>
-      <link>/tags/digital-ocean/</link>
+      <link>https://nixpoin.com/tags/digital-ocean/</link>
       <pubDate>Fri, 15 Feb 2019 23:29:28 +0700</pubDate>
       
-      <guid>/tags/digital-ocean/</guid>
+      <guid>https://nixpoin.com/tags/digital-ocean/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Centos</title>
-      <link>/tags/centos/</link>
+      <link>https://nixpoin.com/tags/centos/</link>
       <pubDate>Tue, 12 Feb 2019 00:07:43 +0700</pubDate>
       
-      <guid>/tags/centos/</guid>
+      <guid>https://nixpoin.com/tags/centos/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Nginx</title>
-      <link>/tags/nginx/</link>
+      <link>https://nixpoin.com/tags/nginx/</link>
       <pubDate>Tue, 12 Feb 2019 00:07:43 +0700</pubDate>
       
-      <guid>/tags/nginx/</guid>
+      <guid>https://nixpoin.com/tags/nginx/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Gnome</title>
-      <link>/tags/gnome/</link>
+      <link>https://nixpoin.com/tags/gnome/</link>
       <pubDate>Tue, 29 Jan 2019 23:32:02 +0700</pubDate>
       
-      <guid>/tags/gnome/</guid>
+      <guid>https://nixpoin.com/tags/gnome/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Wine</title>
-      <link>/tags/wine/</link>
+      <link>https://nixpoin.com/tags/wine/</link>
       <pubDate>Sat, 26 Jan 2019 14:42:37 +0700</pubDate>
       
-      <guid>/tags/wine/</guid>
+      <guid>https://nixpoin.com/tags/wine/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Sublime Text</title>
-      <link>/tags/sublime-text/</link>
+      <link>https://nixpoin.com/tags/sublime-text/</link>
       <pubDate>Fri, 25 Jan 2019 23:10:18 +0700</pubDate>
       
-      <guid>/tags/sublime-text/</guid>
+      <guid>https://nixpoin.com/tags/sublime-text/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Timezone</title>
-      <link>/tags/timezone/</link>
+      <link>https://nixpoin.com/tags/timezone/</link>
       <pubDate>Thu, 24 Jan 2019 11:04:42 +0700</pubDate>
       
-      <guid>/tags/timezone/</guid>
+      <guid>https://nixpoin.com/tags/timezone/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Dropbox</title>
-      <link>/tags/dropbox/</link>
+      <link>https://nixpoin.com/tags/dropbox/</link>
       <pubDate>Sun, 20 Jan 2019 22:26:15 +0700</pubDate>
       
-      <guid>/tags/dropbox/</guid>
+      <guid>https://nixpoin.com/tags/dropbox/</guid>
       <description></description>
     </item>
     
     <item>
       <title>gradle</title>
-      <link>/tags/gradle/</link>
+      <link>https://nixpoin.com/tags/gradle/</link>
       <pubDate>Thu, 17 Jan 2019 14:28:49 +0700</pubDate>
       
-      <guid>/tags/gradle/</guid>
+      <guid>https://nixpoin.com/tags/gradle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vagrant</title>
-      <link>/tags/vagrant/</link>
+      <link>https://nixpoin.com/tags/vagrant/</link>
       <pubDate>Wed, 16 Jan 2019 13:52:05 +0700</pubDate>
       
-      <guid>/tags/vagrant/</guid>
+      <guid>https://nixpoin.com/tags/vagrant/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>/tags/python/</link>
+      <link>https://nixpoin.com/tags/python/</link>
       <pubDate>Mon, 14 Jan 2019 04:08:49 +0700</pubDate>
       
-      <guid>/tags/python/</guid>
+      <guid>https://nixpoin.com/tags/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>WPS</title>
-      <link>/tags/wps/</link>
+      <link>https://nixpoin.com/tags/wps/</link>
       <pubDate>Sat, 12 Jan 2019 17:34:34 +0700</pubDate>
       
-      <guid>/tags/wps/</guid>
+      <guid>https://nixpoin.com/tags/wps/</guid>
       <description></description>
     </item>
     
     <item>
       <title>NodeJs</title>
-      <link>/tags/nodejs/</link>
+      <link>https://nixpoin.com/tags/nodejs/</link>
       <pubDate>Fri, 11 Jan 2019 08:19:12 +0700</pubDate>
       
-      <guid>/tags/nodejs/</guid>
+      <guid>https://nixpoin.com/tags/nodejs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>VNC</title>
-      <link>/tags/vnc/</link>
+      <link>https://nixpoin.com/tags/vnc/</link>
       <pubDate>Thu, 10 Jan 2019 07:47:10 +0700</pubDate>
       
-      <guid>/tags/vnc/</guid>
+      <guid>https://nixpoin.com/tags/vnc/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Oh-my-zsh</title>
-      <link>/tags/oh-my-zsh/</link>
+      <link>https://nixpoin.com/tags/oh-my-zsh/</link>
       <pubDate>Wed, 09 Jan 2019 09:57:41 +0700</pubDate>
       
-      <guid>/tags/oh-my-zsh/</guid>
+      <guid>https://nixpoin.com/tags/oh-my-zsh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ZSH</title>
-      <link>/tags/zsh/</link>
+      <link>https://nixpoin.com/tags/zsh/</link>
       <pubDate>Wed, 09 Jan 2019 09:57:41 +0700</pubDate>
       
-      <guid>/tags/zsh/</guid>
+      <guid>https://nixpoin.com/tags/zsh/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Linux Mint</title>
-      <link>/tags/linux-mint/</link>
+      <link>https://nixpoin.com/tags/linux-mint/</link>
       <pubDate>Tue, 08 Jan 2019 00:00:00 +0000</pubDate>
       
-      <guid>/tags/linux-mint/</guid>
+      <guid>https://nixpoin.com/tags/linux-mint/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bash</title>
-      <link>/tags/bash/</link>
+      <link>https://nixpoin.com/tags/bash/</link>
       <pubDate>Fri, 28 Dec 2018 17:35:58 +0700</pubDate>
       
-      <guid>/tags/bash/</guid>
+      <guid>https://nixpoin.com/tags/bash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>sort</title>
-      <link>/tags/sort/</link>
+      <link>https://nixpoin.com/tags/sort/</link>
       <pubDate>Fri, 28 Dec 2018 17:35:58 +0700</pubDate>
       
-      <guid>/tags/sort/</guid>
+      <guid>https://nixpoin.com/tags/sort/</guid>
       <description></description>
     </item>
     
     <item>
       <title>CLI</title>
-      <link>/tags/cli/</link>
+      <link>https://nixpoin.com/tags/cli/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/cli/</guid>
+      <guid>https://nixpoin.com/tags/cli/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dnscrypt</title>
-      <link>/tags/dnscrypt/</link>
+      <link>https://nixpoin.com/tags/dnscrypt/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/dnscrypt/</guid>
+      <guid>https://nixpoin.com/tags/dnscrypt/</guid>
       <description></description>
     </item>
     
     <item>
       <title>github</title>
-      <link>/tags/github/</link>
+      <link>https://nixpoin.com/tags/github/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/github/</guid>
+      <guid>https://nixpoin.com/tags/github/</guid>
       <description></description>
     </item>
     
     <item>
       <title>open source</title>
-      <link>/tags/open-source/</link>
+      <link>https://nixpoin.com/tags/open-source/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/open-source/</guid>
+      <guid>https://nixpoin.com/tags/open-source/</guid>
       <description></description>
     </item>
     
     <item>
       <title>openwrt</title>
-      <link>/tags/openwrt/</link>
+      <link>https://nixpoin.com/tags/openwrt/</link>
       <pubDate>Fri, 21 Apr 2017 00:00:00 +0000</pubDate>
       
-      <guid>/tags/openwrt/</guid>
+      <guid>https://nixpoin.com/tags/openwrt/</guid>
       <description></description>
     </item>
     
