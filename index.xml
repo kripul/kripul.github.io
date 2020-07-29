@@ -6,10 +6,20 @@
     <description>Recent content on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nixpoin.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Membuat Proxy IPv6 Dengan 3Proxy</title>
+      <link>https://nixpoin.com/tutorial/cara-install-3proxy-centos/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tutorial/cara-install-3proxy-centos/</guid>
+      <description>Pendahuluan Contoh kasus : kita melakukan scraping data ke website marketplace, dan tentunya kita perlu menggunakan proxy agar tidak diblokir oleh pihak marketplace, masalahnya adalah harga proxy yang sangat mahal (yang murah biasanya ampas) dan berapa lama IPv4 proxy kita bertahan sebelum diblokir oleh pihak marketplace?. Salah satu solusinya adalah menggunakan proxy dengan IPv6.
+Contohnya saja VPS dari Vultr dengan harga 5$ sudah memberikan IPv6 /64 yang artinya kita mendapatkan IPv6 sebanyak 18.</description>
+    </item>
     
     <item>
       <title>Review Azure B1ms Cloud VPS</title>
@@ -44,6 +54,15 @@ Paket Harga PAKET RAM 4GB Harga 50k IDR
 PAKET RAM 8GB Harga 75k IDR
  CPU 2 core RAM 8GB HDD 30GB  Pesan Sekarang!
 PAKET RAM 16GB  Harga 100k IDR CPU 4 core RAM 4GB HDD 30GB  Pesan Sekarang!</description>
+    </item>
+    
+    <item>
+      <title>[HOW TO] Tutorial Install dan Penggunaan SSHUTTLE di OpenWrt</title>
+      <link>https://nixpoin.com/openwrt/tutorial-install-sshuttle-dan-penggunaannya-di-openwrt/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/openwrt/tutorial-install-sshuttle-dan-penggunaannya-di-openwrt/</guid>
+      <description>Persiapan opkg updateopkg install python3 python3-pip iptables-mod-nat-extra iptables-mod-ipoptPengunaan </description>
     </item>
     
     <item>

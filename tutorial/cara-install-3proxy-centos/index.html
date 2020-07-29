@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Membuat Proxy IPv6 Dengan 3Proxy :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pendahuluan Contoh kasus : kita melakukan scraping data ke website marketplace, dan tentunya kita perlu menggunakan proxy agar tidak diblokir oleh pihak marketplace, masalahnya adalah harga proxy yang sangat mahal (yang murah biasanya ampas) dan berapa lama IPv4 proxy kita bertahan sebelum diblokir oleh pihak marketplace?. Salah satu solusinya adalah menggunakan proxy dengan IPv6.
+Contohnya saja VPS dari Vultr dengan harga 5$ sudah memberikan IPv6 /64 yang artinya kita mendapatkan IPv6 sebanyak 18." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://nixpoin.com/tutorial/cara-install-3proxy-centos/" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-45818699-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://nixpoin.com/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nixpoin.com/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nixpoin.com/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="Nixpoin" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Membuat Proxy IPv6 Dengan 3Proxy :: Nixpoin">
+<meta property="og:description" content="Pendahuluan Contoh kasus : kita melakukan scraping data ke website marketplace, dan tentunya kita perlu menggunakan proxy agar tidak diblokir oleh pihak marketplace, masalahnya adalah harga proxy yang sangat mahal (yang murah biasanya ampas) dan berapa lama IPv4 proxy kita bertahan sebelum diblokir oleh pihak marketplace?. Salah satu solusinya adalah menggunakan proxy dengan IPv6.
+Contohnya saja VPS dari Vultr dengan harga 5$ sudah memberikan IPv6 /64 yang artinya kita mendapatkan IPv6 sebanyak 18." />
+<meta property="og:url" content="https://nixpoin.com/tutorial/cara-install-3proxy-centos/" />
+<meta property="og:site_name" content="Membuat Proxy IPv6 Dengan 3Proxy" />
+
+  <meta property="og:image" content="https://nixpoin.com/img/3proxy.svg">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-07-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://nixpoin.com/tutorial/cara-install-3proxy-centos/">Membuat Proxy IPv6 Dengan 3Proxy</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-07-29 
+      </span>
+    
+    
+    <span class="post-author">::
+      Nixpoin
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://nixpoin.com/tags/centos/">Centos</a>&nbsp;
+    
+    #<a href="https://nixpoin.com/tags/3proxy/">3proxy</a>&nbsp;
+    
+  </span>
+  
+
+  
+    <img src="https://nixpoin.com/img/3proxy.svg" class="post-cover" alt="Membuat Proxy IPv6 Dengan 3Proxy" />
+  
+
+  
+
+  <div class="post-content"><div>
+        <h2 id="pendahuluan">Pendahuluan<a href="#pendahuluan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Contoh kasus : kita melakukan scraping data ke website marketplace, dan tentunya kita perlu menggunakan proxy agar tidak diblokir oleh pihak marketplace, masalahnya adalah harga proxy yang sangat mahal (yang murah biasanya ampas) dan berapa lama IPv4 proxy kita bertahan sebelum diblokir oleh pihak marketplace?. Salah satu solusinya adalah menggunakan proxy dengan IPv6.</p>
+
+  <figure class="left" >
+    <img src="/img/3proxy-ipv6calc.png"   />
+    
+  </figure>
+
+
+<p>Contohnya saja VPS dari Vultr dengan harga 5$ sudah memberikan IPv6 /64 yang artinya kita mendapatkan IPv6 sebanyak <strong>18.446.774.073.709.551.616</strong> . Sangat banyak bukan?</p>
+<blockquote>
+<blockquote>
+<p>Konsepnya adalah, nanti kita akan membuat Proxy IPv4 dengan sangat banyak port dan setiap port akan menggunakan IPv6 yang berbeda-beda</p>
+</blockquote>
+</blockquote>
+<h2 id="kebutuhan">Kebutuhan<a href="#kebutuhan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>VPS dengan IPv6 : beli di <strong><a href="https://www.vultr.com/?ref=6961209">Vultr</a></strong></p>
+<h2 id="install">Install<a href="#install" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Install dulu paket develpment-tools dan lainnya</p>
+<pre><code>yum -y install gcc net-tools bsdtar zip git
+yum -y groupinstall &quot;Development Tools&quot;
+</code></pre><p>Lalu install 3proxy dengan perintah dibawah</p>
+<pre><code>git clone https://github.com/z3apa3a/3proxy
+cd 3proxy
+ln -s Makefile.Linux Makefile
+make
+sudo make install
+</code></pre><h2 id="edit-config">Edit Config<a href="#edit-config" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Setelah install, sekarang kita edit confignya. Sebelumnya kita backup dulu config bawaannya</p>
+<pre><code>cd /etc/3proxy/conf
+mv 3proxy.cfg 3proxy.cfg.bak
+</code></pre><p>Lalu kita buat config baru</p>
+<pre><code>nano 3proxy.cfg
+</code></pre><p>Isikan baris di bawah ini, jangan lupa edit username dan password untuk proxy nya!</p>
+<pre><code>nscache 65536
+nserver 8.8.8.8
+nserver 8.8.4.4
+
+config /conf/3proxy.cfg
+monitor /conf/3proxy.cfg
+
+log /logs/3proxy-%y%m%d.log D
+rotate 60
+counter /count/3proxy.3cf
+
+users usernameproxy:CL:passwordforproxy
+
+include /conf/counters
+include /conf/bandlimiters
+
+auth strong
+allow usernameproxy
+proxy -n -p3129
+flush
+</code></pre><p>Lalu start 3proxy dengan perintah</p>
+<pre><code>service 3proxy start
+</code></pre><p>Dengan config seperti di atas, 3proxy berjalan di port 3129 dan di IPv4 saja. Sekarang kita akan mencoba membuat proxy IPv6 nya dengan script dibawah</p>
+<pre><code>cd
+wget https://gist.githubusercontent.com/kripul/9a0e1c3cf04ffb0719718b1747a5ec8b/raw/c05c0b115a034c0a26ff12e49e56de9eb19cedf6/gen3proxy.sh
+bash gen3proxy.sh
+</code></pre><p>Isi data yang diminta, misalkan first port nya adalah 10000 dan jumlah proxynya 500 maka proxy list kalian akan menggunakan port dari 10000 sampai 10500</p>
+<p>Script di atas akan membuat beberapa file</p>
+<ul>
+<li>file iptables untuk membuka port, lokasi filenya ada di <code>/usr/local/3proxy/boot_iptables.sh</code></li>
+<li>file ifconfig untuk menambahkan IPv6, lokasi filenya ada di  <code>/usr/local/3proxy/ifconfig.sh</code></li>
+<li>file <code>3config.cfg</code> tambahan , untuk file config tambahan ini perlu kita tambahkan secara manual ke config 3proxy yang ada di /etc/3proxy/conf</li>
+</ul>
+<p>Cara menambahkan confignya dengan menggunakan perintah</p>
+<pre><code>cat 3proxy.cfg &gt;&gt; /etc/3proxy/conf/3proxy.cfg
+</code></pre><p>Sekarang kita cek file config 3proxynya</p>
+<pre><code>nano /etc/3proxy/conf/3proxy.cfg
+</code></pre><p>Hasilnya akan seperti gambar di bawah</p>
+
+  <figure class="left" >
+    <img src="/img/3proxy-conf.png"   />
+    
+  </figure>
+
+
+<p><strong>NOTE : baris <code>flush</code> harus dipindah ke baris paling bawah</strong></p>
+<p>Terakhir kita restart 3proxynya</p>
+<pre><code>service 3proxy restart
+</code></pre><p>Kita coba langsung di Firefox, install <a href="https://addons.mozilla.org/id/firefox/addon/foxyproxy-standard/">Foxy Proxy</a> lalu setting seperti di bawah ini
+
+  <figure class="left" >
+    <img src="/img/3proxy-foxy.png"   />
+    
+  </figure>
+
+</p>
+<p>Buka <a href="https://whatismyipaddress.com/">https://whatismyipaddress.com/</a></p>
+
+  <figure class="left" >
+    <img src="/img/3proxy-ipaddr.png"   />
+    
+  </figure>
+
+
+<p>Cukup dengan mengganti port proxynya dan nanti akan otomatis berganti IPv6 nya</p>
+<h2 id="kekurangan">Kekurangan<a href="#kekurangan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>Tidak semua website support IPv6</li>
+</ul>
+<p>Selamat mencoba!</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://nixpoin.com/tutorial/membuat-loadbalancing-proxy-dengan-squid/">
+                <span class="button__text">Membuat Load Balancing Proxy Dengan Squid</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://nixpoin.com/assets/main.js"></script>
+<script src="https://nixpoin.com/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

@@ -3,12 +3,37 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://nixpoin.com/tags/benchmark/</loc>
-    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
+    <loc>https://nixpoin.com/tags/3proxy/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tags/centos/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tutorial/cara-install-3proxy-centos/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://nixpoin.com/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tags/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tutorial/</loc>
+    <lastmod>2020-07-29T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tags/benchmark/</loc>
     <lastmod>2020-06-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -19,11 +44,6 @@
   
   <url>
     <loc>https://nixpoin.com/review/</loc>
-    <lastmod>2020-06-29T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nixpoin.com/tags/</loc>
     <lastmod>2020-06-29T00:00:00+00:00</lastmod>
   </url>
   
@@ -48,11 +68,6 @@
   </url>
   
   <url>
-    <loc>https://nixpoin.com/tutorial/</loc>
-    <lastmod>2020-06-20T18:07:11+07:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nixpoin.com/lapak/rdp-murah-full-admin/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -65,6 +80,11 @@
   <url>
     <loc>https://nixpoin.com/tags/rdp/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/openwrt/tutorial-install-sshuttle-dan-penggunaannya-di-openwrt/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -84,6 +104,11 @@
   
   <url>
     <loc>https://nixpoin.com/linux/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/openwrt/</loc>
     <lastmod>2020-04-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -145,11 +170,6 @@
   <url>
     <loc>https://nixpoin.com/tags/digital-ocean/</loc>
     <lastmod>2019-02-15T23:29:28+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nixpoin.com/tags/centos/</loc>
-    <lastmod>2019-02-12T00:07:43+07:00</lastmod>
   </url>
   
   <url>

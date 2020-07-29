@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>[HOW TO] Tutorial Install dan Penggunaan SSHUTTLE di OpenWrt</title>
+      <link>https://nixpoin.com/openwrt/tutorial-install-sshuttle-dan-penggunaannya-di-openwrt/</link>
+      <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/openwrt/tutorial-install-sshuttle-dan-penggunaannya-di-openwrt/</guid>
+      <description>Persiapan opkg updateopkg install python3 python3-pip iptables-mod-nat-extra iptables-mod-ipoptPengunaan </description>
+    </item>
+    
+    <item>
       <title>Download Elementary OS Gratis</title>
       <link>https://nixpoin.com/linux/download-elementary-os-gratis/</link>
       <pubDate>Mon, 06 Apr 2020 00:00:00 +0000</pubDate>

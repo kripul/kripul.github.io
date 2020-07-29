@@ -6,10 +6,28 @@
     <description>Recent content in Tags on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nixpoin.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>3proxy</title>
+      <link>https://nixpoin.com/tags/3proxy/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tags/3proxy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Centos</title>
+      <link>https://nixpoin.com/tags/centos/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tags/centos/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>benchmark</title>
@@ -125,15 +143,6 @@
       <pubDate>Fri, 15 Feb 2019 23:29:28 +0700</pubDate>
       
       <guid>https://nixpoin.com/tags/digital-ocean/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Centos</title>
-      <link>https://nixpoin.com/tags/centos/</link>
-      <pubDate>Tue, 12 Feb 2019 00:07:43 +0700</pubDate>
-      
-      <guid>https://nixpoin.com/tags/centos/</guid>
       <description></description>
     </item>
     

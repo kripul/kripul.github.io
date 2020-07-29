@@ -6,10 +6,20 @@
     <description>Recent content in Tutorials on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 18:07:11 +0700</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nixpoin.com/tutorial/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Membuat Proxy IPv6 Dengan 3Proxy</title>
+      <link>https://nixpoin.com/tutorial/cara-install-3proxy-centos/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tutorial/cara-install-3proxy-centos/</guid>
+      <description>Pendahuluan Contoh kasus : kita melakukan scraping data ke website marketplace, dan tentunya kita perlu menggunakan proxy agar tidak diblokir oleh pihak marketplace, masalahnya adalah harga proxy yang sangat mahal (yang murah biasanya ampas) dan berapa lama IPv4 proxy kita bertahan sebelum diblokir oleh pihak marketplace?. Salah satu solusinya adalah menggunakan proxy dengan IPv6.
+Contohnya saja VPS dari Vultr dengan harga 5$ sudah memberikan IPv6 /64 yang artinya kita mendapatkan IPv6 sebanyak 18.</description>
+    </item>
     
     <item>
       <title>Membuat Load Balancing Proxy Dengan Squid</title>
