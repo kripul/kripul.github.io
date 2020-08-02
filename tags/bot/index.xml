@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bot on Nixpoin</title>
+    <link>https://nixpoin.com/tags/bot/</link>
+    <description>Recent content in bot on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nixpoin.com/tags/bot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tutorial Membuat Bot Discord dengan discord.js</title>
+      <link>https://nixpoin.com/tutorial/cara-membuat-bot-discord/</link>
+      <pubDate>Sun, 02 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tutorial/cara-membuat-bot-discord/</guid>
+      <description>Discord adalah sebuah aplikasi pengirim pesan instan gratis dengan fitur VoIP, obrolan video dan fitur untuk mendukung permainan video seperti integrasi dengan Twitch.tv dan Steam. Discord ditujukan terutama untuk pemain, pembuat konten, pengembang, dan penjual permainan video. Discord digunakan oleh sekitar 56 juta pemain permainan video tiap bulannya karena adanya fitur yang mendukung permainan video. Discord dapat berjalan pada peramban web dan aplikasinya sendiri sumber Wikipedia.
+Syarat  NodeJs silahkan baca di Tutorial cara install NodeJs.</description>
+    </item>
+    
+  </channel>
+</rss>
