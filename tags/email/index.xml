@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>email on Nixpoin</title>
+    <link>https://nixpoin.com/tags/email/</link>
+    <description>Recent content in email on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://nixpoin.com/tags/email/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Membuat Temporary Email dengan Domain Sendiri</title>
+      <link>https://nixpoin.com/tutorial/membuat-temporary-disposable-email/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tutorial/membuat-temporary-disposable-email/</guid>
+      <description>Pernah menggunakan Temporary Disposable email kayak https://temp-mail.org/id/ ? kalian juga bisa bikin sendiri tapi versi simplenya :D Final proyek kita kali ini akan seperti ini :
+Seseorang mengirim email ke domain kita seperti nama@domainkita.com yang mana domain kita sudah terkonfigurasi dengan Mailgun, Mailgun akan mengirimkan data ke webhook yang kita buat di Glitch.com, Kemudian kita buat kode agar data yang masuk ke webhook langsung di kirimkan ke chat lewat telegram.</description>
+    </item>
+    
+  </channel>
+</rss>

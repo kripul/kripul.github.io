@@ -6,10 +6,46 @@
     <description>Recent content in Tags on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 02 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://nixpoin.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>disposable</title>
+      <link>https://nixpoin.com/tags/disposable/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tags/disposable/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>email</title>
+      <link>https://nixpoin.com/tags/email/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tags/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mailgun</title>
+      <link>https://nixpoin.com/tags/mailgun/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tags/mailgun/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>telegram</title>
+      <link>https://nixpoin.com/tags/telegram/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tags/telegram/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>bot</title>

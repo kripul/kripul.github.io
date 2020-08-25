@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Membuat Temporary Email dengan Domain Sendiri :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Pernah menggunakan Temporary Disposable email kayak https://temp-mail.org/id/ ? kalian juga bisa bikin sendiri tapi versi simplenya :D Final proyek kita kali ini akan seperti ini :
+Seseorang mengirim email ke domain kita seperti nama@domainkita.com yang mana domain kita sudah terkonfigurasi dengan Mailgun, Mailgun akan mengirimkan data ke webhook yang kita buat di Glitch.com, Kemudian kita buat kode agar data yang masuk ke webhook langsung di kirimkan ke chat lewat telegram." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://nixpoin.com/tutorial/membuat-temporary-disposable-email/" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-45818699-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://nixpoin.com/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nixpoin.com/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nixpoin.com/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="@Kripul_" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Membuat Temporary Email dengan Domain Sendiri :: Nixpoin">
+<meta property="og:description" content="Mungkin sudah terlalu sering kita bekerja mandiri pada project pribadi, disini saya akan menunjukkan bagaimana caranya berkontribusi di project lain yang ada di Github." />
+<meta property="og:url" content="https://nixpoin.com/tutorial/membuat-temporary-disposable-email/" />
+<meta property="og:site_name" content="Membuat Temporary Email dengan Domain Sendiri" />
+
+  <meta property="og:image" content="https://nixpoin.com/img/temporary-email.png">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-08-24 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://nixpoin.com/tutorial/membuat-temporary-disposable-email/">Membuat Temporary Email dengan Domain Sendiri</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-08-24 
+      </span>
+    
+    
+    <span class="post-author">::
+      @Kripul_
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://nixpoin.com/tags/disposable/">disposable</a>&nbsp;
+    
+    #<a href="https://nixpoin.com/tags/email/">email</a>&nbsp;
+    
+    #<a href="https://nixpoin.com/tags/telegram/">telegram</a>&nbsp;
+    
+    #<a href="https://nixpoin.com/tags/mailgun/">mailgun</a>&nbsp;
+    
+  </span>
+  
+
+  
+    <img src="https://nixpoin.com/img/temporary-email.png" class="post-cover" alt="Membuat Temporary Email dengan Domain Sendiri" />
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>Pernah menggunakan Temporary Disposable email kayak <a href="https://temp-mail.org/id/">https://temp-mail.org/id/</a> ? kalian juga bisa bikin sendiri tapi versi simplenya :D Final proyek kita kali ini akan seperti ini :</p>
+<p>Seseorang mengirim email ke domain kita seperti <a href="mailto:nama@domainkita.com">nama@domainkita.com</a> yang mana domain kita sudah terkonfigurasi dengan Mailgun, Mailgun akan mengirimkan data ke webhook yang kita buat di Glitch.com, Kemudian kita buat kode agar data yang masuk ke webhook langsung di kirimkan ke chat lewat telegram.</p>
+<blockquote>
+<p><strong>Note :Pastikan kalian sudah paham cara mendapatkan token bot Telegram dan bagaimana cara setting DNS untuk mengikuti tutorial ini</strong></p>
+</blockquote>
+<h2 id="kebutuhan">Kebutuhan<a href="#kebutuhan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>Domain</li>
+<li>Akun Mailgun.com</li>
+<li>Akun glitch.com</li>
+<li>Akun Telegram.com</li>
+<li>Akun Mlab.com</li>
+</ul>
+<h2 id="setting-domain-ke-mailgun">Setting Domain ke Mailgun<a href="#setting-domain-ke-mailgun" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Ikuti saja cara di tutorial berikut :</p>
+<ul>
+<li><a href="https://medium.com/@rajputankit22/set-godaddys-domain-in-mailgun-account-for-the-transactional-email-apis-af26721f2ef0">https://medium.com/@rajputankit22/set-godaddys-domain-in-mailgun-account-for-the-transactional-email-apis-af26721f2ef0</a></li>
+<li><a href="https://www.namecheap.com/support/knowledgebase/article.aspx/10086/2208/how-to-connect-a-domain-to-mailgun">https://www.namecheap.com/support/knowledgebase/article.aspx/10086/2208/how-to-connect-a-domain-to-mailgun</a></li>
+<li><a href="https://blog.aaronhktan.com/posts/2018/04/14/setting-up-email-on-a-domain-with-cloudflare">https://blog.aaronhktan.com/posts/2018/04/14/setting-up-email-on-a-domain-with-cloudflare</a></li>
+</ul>
+<p>Kalau domain kalian sudah tercentang hijau, berarti domain kalian sudah verified.</p>
+<h2 id="buat-bot-telegram">Buat bot Telegram<a href="#buat-bot-telegram" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Caranya? Saya lagi males nulis jadi baca saja disini untuk cara membuatnya <a href="https://core.telegram.org/bots#6-botfather">https://core.telegram.org/bots#6-botfather</a></p>
+<blockquote>
+<p>NOTE: Simpan tokennya untuk proses selanjutnya.</p>
+</blockquote>
+<p>Akses di browser kalian <code>https://api.telegram.org/botTOKENBOTKALIAN/getUpdates</code></p>
+<p>Kirim pesan ke akun bot tersebut dengan pesan apa saja.
+
+  <figure class="left" >
+    <img src="/img/email/email3.png"   />
+    
+  </figure>
+
+
+Refresh browser kalian lagi, hasilnya akan seperti di foto, simpan ID telegram pribadi kita untuk proses selanjutnya.</p>
+<h2 id="buat-akun-mlab">Buat akun Mlab<a href="#buat-akun-mlab" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Buat apa kok bikin akun <a href="https://mlab.com/">https://mlab.com/</a> ? Jadi gini, Nanti kita akan menyimpan isi setiap email yang masuk ke domain kita ke Mlab (database mongodb). Setiap ada email masuk secara otomatis bot telegram akan mengirim pesan chat ke akun telegram pribadi kita berisi link isi email karena tidak mungkin mengirimkan isi email yang terlalu panjang via Telegram.</p>
+<p>Sebagai contoh buat saja databse dengan nama <code>tempmail</code> dan collection dengan nama <code>mails</code></p>
+<h2 id="koding-time">Koding Time<a href="#koding-time" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>Pakai bahasa Node.Js</li>
+<li>Pakai Hosting di glitch.com</li>
+</ul>
+<p>Silahkan pakai kode yang sudah saya buat di <a href="https://glitch.com/edit/#!/summer-fearless-garlic">https://glitch.com/edit/#!/summer-fearless-garlic</a> tinggal kalian <code>remix to edit</code> saja dan ganti isi dari file <code>.env</code> sesuai petunjuk di file <code>Read.me</code></p>
+<p>Setelah selesai remix, nanti kalian akan punya proyek baru di akun Glitch kalian. Klik <code>Show</code> -&gt; <code>In a New Window</code> Kalau tidak ada error maka akan muncul halaman <code>{&quot;message&quot;:&quot;Hello World&quot;}</code></p>
+<h2 id="routing-semua-email">Routing semua email<a href="#routing-semua-email" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Balik lagi ke dashboard Mailgun dan buat route agar semua email yang masuk ke domain kalian langsung di arahkan ke webhook yang ada di Glitch. Caranya,</p>
+<ul>
+<li>Akses link <a href="https://app.mailgun.com/app/receiving/routes">https://app.mailgun.com/app/receiving/routes</a></li>
+<li>Lalu klik <code>Create Route</code></li>
+<li>Pilih <code>Catch All</code></li>
+<li>Kolom forward isi dengan domain proyek kalian ditambahi <code>/webhook</code> di link belakangnya, lihat gambar!</li>
+<li>Lalu klik tombol <code>Create Route</code> yang ada di bawah.</li>
+</ul>
+
+  <figure class="left" >
+    <img src="/img/email/email2.png"   />
+    
+  </figure>
+
+
+<p>Viola! sudah selesai. Coba kalian kirim email apa saja ke domain kalian dan cek akun telegram kalian.</p>
+<p>Selamat mencoba!</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://nixpoin.com/tutorial/cara-membuat-bot-discord/">
+                <span class="button__text">Tutorial Membuat Bot Discord dengan discord.js</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://nixpoin.com/assets/main.js"></script>
+<script src="https://nixpoin.com/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
