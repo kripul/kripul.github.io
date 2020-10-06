@@ -100,7 +100,7 @@ if (!doNotTrack) {
     
       
         
-          <li><a href="/about">About</a></li>
+          <li><a href="/bantuan">Butuh Bantuan?</a></li>
         
       
         
@@ -128,7 +128,7 @@ if (!doNotTrack) {
   <ul class="menu__inner menu__inner--mobile">
     
       
-        <li><a href="/about">About</a></li>
+        <li><a href="/bantuan">Butuh Bantuan?</a></li>
       
     
       
@@ -168,6 +168,55 @@ if (!doNotTrack) {
     
     
 
+    
+      <div class="post on-list">
+        <h1 class="post-title">
+          <a href="https://nixpoin.com/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/">Memunculkan Icon Dropbox di Elementary OS Juno</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2019-01-20
+          </span>
+          
+            <span class="post-author">::Nixpoin</span>
+          
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://nixpoin.com/tags/dropbox/">Dropbox</a>&nbsp;
+            
+            #<a href="https://nixpoin.com/tags/elementaryos/">ElementaryOS</a>&nbsp;
+            
+          </span>
+        
+
+        
+          <img src="https://nixpoin.com/img/ElementaryOS.png" class="post-cover" alt="Memunculkan Icon Dropbox di Elementary OS Juno" />
+        
+
+        <div class="post-content">
+          
+          
+          Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
+Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
+Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana
+wget <a href="http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb">http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb</a> Install file wingpanel-indicator-ayatana
+sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
+sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
+OnlyShowIn=Unity;GNOME; dan ubah menjadi
+          
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/">Read more →</a>
+        </div>
+        
+      </div>
     
       <div class="post on-list">
         <h1 class="post-title">
@@ -353,51 +402,6 @@ Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 na
         <div>
           <a class="read-more button"
             href="/review/review-bechmark-contabo-vps/">Read more →</a>
-        </div>
-        
-      </div>
-    
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="https://nixpoin.com/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/">Mengatasi Error WPS Office “some formula symbols might not be displayed correctly due to missing fonts”</a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-date">
-            2019-01-12
-          </span>
-          
-            <span class="post-author">::@Kripul_</span>
-          
-        </div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://nixpoin.com/tags/linux/">Linux</a>&nbsp;
-            
-            #<a href="https://nixpoin.com/tags/wps/">WPS</a>&nbsp;
-            
-          </span>
-        
-
-        
-          <img src="https://nixpoin.com/img/WPS.Office.jpg" class="post-cover" alt="Mengatasi Error WPS Office &amp;#8220;some formula symbols might not be displayed correctly due to missing fonts&amp;#8221;" />
-        
-
-        <div class="post-content">
-          
-          
-          Salah satu error yang muncul setelah menginstall WPS Office adalah ada beberapa font yang belum terinstall, sehingga muncul peringatan error some “formula symbols might not be displayed correctly due to missing fonts”, untuk mengatasi error tersebut, kita perlu menginstall beberapa font ke sistem OS kita.
-Untuk mengatasi error some formula symbols might not be displayed correctly due to missing fonts cukup mudah,
-Step Pertama : install git sudo apt install git Step kedua : clone file dari Github Clone repository berikut https://github.
-          
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/troubleshoot/mengatasi-error-wps-office-some-formula-symbols-might-not-be-displayed-correctly-due-to-missing-fonts/">Read more →</a>
         </div>
         
       </div>
