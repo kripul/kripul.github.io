@@ -6,11 +6,7 @@
     <description>Recent content in Squid on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jun 2020 18:07:11 +0700</lastBuildDate>
-    
-	<atom:link href="https://nixpoin.com/tags/squid/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sat, 20 Jun 2020 18:07:11 +0700</lastBuildDate><atom:link href="https://nixpoin.com/tags/squid/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Membuat Load Balancing Proxy Dengan Squid</title>
       <link>https://nixpoin.com/tutorial/membuat-loadbalancing-proxy-dengan-squid/</link>
