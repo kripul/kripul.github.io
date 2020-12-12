@@ -49,8 +49,8 @@ Ada dua cara untuk menginstal Nginx, dengan paket manager YUM atau menginstalnya
       <guid>https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
 Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
-timedatectl Hasilnya seperti
-Universal time: Kam 2019-01-24 03:41:21 UTC RTC time: n/a Time zone: UTC (EST, -0500) NTP enabled: n/a NTP synchronized: no RTC in local TZ: no DST active: no Last DST change: DST ended at Min 2018-11-04 01:59:59 EDT Min 2018-11-04 01:00:00 EST Next DST change: DST begins (the clock jumps one hour forward) at Min 2019-03-10 01:59:59 EST Min 2019-03-10 03:00:00 EDT Atau bisa juga menggunakan perintah</description>
+timedatectlHasilnya seperti
+Universal time: Kam 2019-01-24 03:41:21 UTCRTC time: n/aTime zone: UTC (EST, -0500)NTP enabled: n/aNTP synchronized: noRTC in local TZ: noDST active: noLast DST change: DST ended atMin 2018-11-04 01:59:59 EDTMin 2018-11-04 01:00:00 ESTNext DST change: DST begins (the clock jumps one hour forward) atMin 2019-03-10 01:59:59 ESTMin 2019-03-10 03:00:00 EDTAtau bisa juga menggunakan perintah</description>
     </item>
     
     <item>
@@ -130,7 +130,7 @@ https://www.realvnc.com/en/connect/download/viewer/linux/
 Lalu bagaimana cara untuk menginstallnya di Ubuntu atau Linux mint?
 Step : Pertama download dropbox Download dropbox menggunakan browser kalian dari https://www.dropbox.com/install-linux
 Step Kedua : Install dropbox Buka terminal lalau pindah ke folder Downloads / lokasi file dropbox yang kita download tadi
-cd Downloads Lalu install</description>
+cd DownloadsLalu install</description>
     </item>
     
     <item>

@@ -4,27 +4,47 @@
   
   <url>
     <loc>https://nixpoin.com/bantuan/butuh-bantuan/</loc>
-    <lastmod>2020-10-07T02:03:15+07:00</lastmod>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://nixpoin.com/bantuan/</loc>
-    <lastmod>2020-10-07T02:03:15+07:00</lastmod>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tutorial/scraping-shopee-dengan-python/</loc>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://nixpoin.com/</loc>
-    <lastmod>2020-10-07T02:03:15+07:00</lastmod>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nixpoin.com/python/scraping-shopee-dengan-python/</loc>
-    <lastmod>2020-10-07T00:40:27+07:00</lastmod>
+    <loc>https://nixpoin.com/tags/python/</loc>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://nixpoin.com/python/</loc>
-    <lastmod>2020-10-07T00:40:27+07:00</lastmod>
+    <loc>https://nixpoin.com/tags/scraper/</loc>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tags/shopee/</loc>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tags/</loc>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tutorial/</loc>
+    <lastmod>2020-10-07T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -48,17 +68,7 @@
   </url>
   
   <url>
-    <loc>https://nixpoin.com/tags/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://nixpoin.com/tags/telegram/</loc>
-    <lastmod>2020-08-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nixpoin.com/tutorial/</loc>
     <lastmod>2020-08-24T00:00:00+00:00</lastmod>
   </url>
   
@@ -128,6 +138,11 @@
   </url>
   
   <url>
+    <loc>https://nixpoin.com/tags/fulladmin/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://nixpoin.com/lapak/rdp-murah-full-admin/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
   </url>
@@ -140,6 +155,16 @@
   <url>
     <loc>https://nixpoin.com/tags/rdp/</loc>
     <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/tags/windows/</loc>
+    <lastmod>2020-04-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/openwrt/tutorial-install-sshuttle-dan-penggunaannya-di-openwrt/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -159,6 +184,11 @@
   
   <url>
     <loc>https://nixpoin.com/linux/</loc>
+    <lastmod>2020-04-06T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://nixpoin.com/openwrt/</loc>
     <lastmod>2020-04-06T00:00:00+00:00</lastmod>
   </url>
   
@@ -324,11 +354,6 @@
   
   <url>
     <loc>https://nixpoin.com/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/</loc>
-    <lastmod>2019-01-14T04:08:49+07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://nixpoin.com/tags/python/</loc>
     <lastmod>2019-01-14T04:08:49+07:00</lastmod>
   </url>
   

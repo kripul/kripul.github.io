@@ -26,11 +26,11 @@ Berikut ini cara Download Elementary OS Hera Gratis Pertama : Buka halaman resmi
       <guid>https://nixpoin.com/linux/melakukan-benchmark-menggunakan-geekbench-di-linux/</guid>
       <description>Pendahuluan Ingin mengetahui kempuan prosesor kalian?
 GeekBecnh adalah salah satu perangkat lunak yang bisa kita gunakan untuk mengetahui kemampuan prosesor komputer, ponsel pintar atau server kita.
-Download GeekBench wget http://cdn.geekbench.com/Geekbench-4.3.3-Linux.tar.gz Atau download GeekBench di link berikut http://www.geekbench.com/download/linux/ untuk mendapatkan versi terbarunya
+Download GeekBench wget http://cdn.geekbench.com/Geekbench-4.3.3-Linux.tar.gzAtau download GeekBench di link berikut http://www.geekbench.com/download/linux/ untuk mendapatkan versi terbarunya
 Kemudian ekstrak file yang kita download tadi
-tar -xvf Geekbench*.tar.gz Menjalankan bencmark Pindah ke folder hasil ekstrak
-cd Geekbench-4.3.3-Linux Lalu jalankan benchmark
-./geekbench4 Tunggu proses sampai selesai dan setelah proses selesai maka akan muncul link hasil bencmark kita.</description>
+tar -xvf Geekbench*.tar.gzMenjalankan bencmark Pindah ke folder hasil ekstrak
+cd Geekbench-4.3.3-LinuxLalu jalankan benchmark
+./geekbench4Tunggu proses sampai selesai dan setelah proses selesai maka akan muncul link hasil bencmark kita.</description>
     </item>
     
   </channel>

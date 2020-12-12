@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>Tutorial Membuat Bot Discord dengan discord.js :: Nixpoin</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Discord adalah sebuah aplikasi pengirim pesan instan gratis dengan fitur VoIP, obrolan video dan fitur untuk mendukung permainan video seperti integrasi dengan Twitch.tv dan Steam. Discord ditujukan terutama untuk pemain, pembuat konten, pengembang, dan penjual permainan video. Discord digunakan oleh sekitar 56 juta pemain permainan video tiap bulannya karena adanya fitur yang mendukung permainan video. Discord dapat berjalan pada peramban web dan aplikasinya sendiri sumber Wikipedia.
+Syarat  NodeJs silahkan baca di Tutorial cara install NodeJs." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<link rel="canonical" href="https://nixpoin.com/tutorial/tutorial-membuat-bot-discord-dengan-discordjs/" />
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-45818699-4', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+<link rel="stylesheet" href="https://nixpoin.com/assets/style.css">
+
+
+
+
+
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://nixpoin.com/img/apple-touch-icon-144-precomposed.png">
+
+  <link rel="shortcut icon" href="https://nixpoin.com/img/favicon/orange.png">
+
+
+
+<meta name="twitter:card" content="summary" />
+
+  <meta name="twitter:site" content="" />
+
+<meta name="twitter:creator" content="@Kripul_" />
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Tutorial Membuat Bot Discord dengan discord.js :: Nixpoin">
+<meta property="og:description" content="Mungkin sudah terlalu sering kita bekerja mandiri pada project pribadi, disini saya akan menunjukkan bagaimana caranya berkontribusi di project lain yang ada di Github." />
+<meta property="og:url" content="https://nixpoin.com/tutorial/tutorial-membuat-bot-discord-dengan-discordjs/" />
+<meta property="og:site_name" content="Tutorial Membuat Bot Discord dengan discord.js" />
+
+  <meta property="og:image" content="https://nixpoin.com/img/discord/discord-logo.jpg">
+
+<meta property="og:image:width" content="2048">
+<meta property="og:image:height" content="1024">
+
+
+  <meta property="article:published_time" content="2020-08-02 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+<div class="container center headings--one-size">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    Nixpoin
+  </div>
+</a>
+
+    </div>
+    <div class="menu-trigger">menu</div>
+  </div>
+  
+    <nav class="menu">
+  <ul class="menu__inner menu__inner--desktop">
+    
+      
+        
+          <li><a href="/about">About</a></li>
+        
+      
+        
+          <li><a href="/lapak">Lapak</a></li>
+        
+      
+        
+          <li><a href="/linux">Linux</a></li>
+        
+      
+        
+          <li><a href="/review">Review</a></li>
+        
+      
+        
+          <li><a href="/tutorial">Tutorial</a></li>
+        
+      
+      
+    
+
+    
+  </ul>
+
+  <ul class="menu__inner menu__inner--mobile">
+    
+      
+        <li><a href="/about">About</a></li>
+      
+    
+      
+        <li><a href="/lapak">Lapak</a></li>
+      
+    
+      
+        <li><a href="/linux">Linux</a></li>
+      
+    
+      
+        <li><a href="/review">Review</a></li>
+      
+    
+      
+        <li><a href="/tutorial">Tutorial</a></li>
+      
+    
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<div class="post">
+  <h1 class="post-title">
+    <a href="https://nixpoin.com/tutorial/tutorial-membuat-bot-discord-dengan-discordjs/">Tutorial Membuat Bot Discord dengan discord.js</a></h1>
+  <div class="post-meta">
+    
+      <span class="post-date">
+        2020-08-02 
+      </span>
+    
+    
+    <span class="post-author">::
+      @Kripul_
+    </span>
+    
+  </div>
+
+  
+  <span class="post-tags">
+    
+    #<a href="https://nixpoin.com/tags/discord/">discord</a>&nbsp;
+    
+    #<a href="https://nixpoin.com/tags/bot/">bot</a>&nbsp;
+    
+  </span>
+  
+
+  
+    <img src="https://nixpoin.com/img/discord/discord-logo.jpg" class="post-cover" alt="Tutorial Membuat Bot Discord dengan discord.js" />
+  
+
+  
+
+  <div class="post-content"><div>
+        <p>Discord adalah sebuah aplikasi pengirim pesan instan gratis dengan fitur VoIP, obrolan video dan fitur untuk mendukung permainan video seperti integrasi dengan Twitch.tv dan Steam. Discord ditujukan terutama untuk pemain, pembuat konten, pengembang, dan penjual permainan video. Discord digunakan oleh sekitar 56 juta pemain permainan video tiap bulannya karena adanya fitur yang mendukung permainan video. Discord dapat berjalan pada peramban web dan aplikasinya sendiri sumber Wikipedia.</p>
+<h2 id="syarat">Syarat<a href="#syarat" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<ul>
+<li>NodeJs silahkan baca di Tutorial cara install NodeJs.</li>
+<li>Akun discord dan server discord (Kamu sebagai adminnya).</li>
+</ul>
+<h2 id="mendaftarkan-bot">Mendaftarkan bot<a href="#mendaftarkan-bot" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Kita harus mendaftarkan bot kita di dashboard developer Discord terlebih dahulu untuk mendapatkan token botnya, caranya buka link <a href="https://discord.com/developers/applications">https://discord.com/developers/applications</a> lalu buat New Aplication lalu masukkan nama aplikasi kalian, disini saya akan mencoba membuat bot jadwal sholat yang saya beri nama <strong>“imsakiyah”</strong>.</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot1.png"   />
+    
+  </figure>
+
+
+<p>Lalu Add bot</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot2.png"   />
+    
+  </figure>
+
+
+<p>Setelah itu bot kita sudah jadi dan catat tokennya</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot3.png"   />
+    
+  </figure>
+
+
+<h2 id="tambahkan-bot-ke-server">Tambahkan bot ke server<a href="#tambahkan-bot-ke-server" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Klik menu OAuth2</p>
+<ul>
+<li>Bagian SCOPES centang BOT</li>
+<li>Bagian BOT PERMISSIONS kalian klik sesuai kebutuhan,kalau saya hanya Send Messages dan Manage Messages</li>
+<li>Copy link yang ada dan buka di browser kalian dan ikuti petunjutknya.
+Lihat gambat untuk lebih jelasnya.</li>
+</ul>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot4.png"   />
+    
+  </figure>
+
+
+<h2 id="install-discordjs">Install discord.js<a href="#install-discordjs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Selanjutnya adalah install discord.js, discord.js adalah library yang akan membantu kita berkomunikasi dengan API dari discord sehingga lebih mudah.</p>
+<p>Buat folder baru dimana saja terserah kalian, lalu buka terminal / powershell dan arahkan foldernya ke folder yang baru kalian buat tadi. Selanjutnya, jalankan perintah dibawah ini.</p>
+<pre><code>npm init
+npm install discord.js express --save
+</code></pre><p>Sewaktu menjalankan perintah npm init, tekan enter saja sampai selesai.</p>
+<h2 id="koding-time">Koding time<a href="#koding-time" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Sekarang waktunya koding, buat file baru bernama index.js lalu isi dengan kode berikut sebagai percobaan :</p>
+<pre><code>const Discord = require('discord.js');
+const client = new Discord.Client();
+const express = require(&quot;express&quot;);
+const app = express();
+
+app.use(express.static(&quot;public&quot;));
+app.get(&quot;/&quot;, function (request, response) {
+    response.sendStatus(200);
+});
+
+var listener = app.listen(process.env.PORT || 3000, function () {
+    console.log(&quot;Your app is listening on port &quot; + listener.address().port);
+});
+
+client.on('ready', () =&gt; {
+  console.log(`Logged in as ${client.user.tag}!`);
+});
+
+client.on('message', msg =&gt; {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
+  }
+});
+client.login('tokenkaliandisini');
+</code></pre><p>Setelah itu jalankan perintah</p>
+<pre><code>node index.js
+</code></pre><p>Jika tidak ada error, maka bot kalian akan berubah statusnya menjadi online</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot5.png"   />
+    
+  </figure>
+
+
+<p>Kalau kalian mengirim pesan ke server dengan kata ping maka bot tersebut akan langsung menjawab dengan pong</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot6.png"   />
+    
+  </figure>
+
+
+<h2 id="upload-kode-ke-hosting">Upload kode ke hosting<a href="#upload-kode-ke-hosting" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
+<p>Bot kalian sudah berjalan lancar tapi agar bisa berjalan 24 jam nonstop, kita perlu men-hosting-nya. Disini saya menggunakan Heroku gratisan silahkan kalian daftar dulu disana.</p>
+<p>Setelah mendaftar di Heroku.com selanjutnya install Heroku CLI, download file di link berikut untuk menginstallnya <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install">https://devcenter.heroku.com/articles/heroku-cli#download-and-install</a></p>
+<p>Jika kalian sudah berhasil menginstall heroku CLI, jalankan perintah di bawah ini untuk login heroku via CLI</p>
+<p><code>heroku login</code></p>
+<p>Lanjut, di folder yang kalian buat tadi akan ada 3 file.</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot7.png"   />
+    
+  </figure>
+
+
+<p>Kita perlu membuat dan mengedit beberapa file agar kode kita bisa berjalan di Heroku.</p>
+<p>Edit file package.json dan tambahkan baris</p>
+<pre><code>    &quot;start&quot;: &quot;node index.js&quot;
+</code></pre><p>Lihat gambar untuk lebih jelasnya</p>
+
+  <figure class="left" >
+    <img src="/img/discord/discord-bot10.png"   />
+    
+  </figure>
+
+
+<ul>
+<li>Buat juga file baru lainnya bernama .gitignore lalu isinya seperti</li>
+</ul>
+<pre><code>/node_modules
+node_modules
+npm-debug.log
+.DS_Store
+/*.env
+</code></pre><p>Saatnya proses upload, jalankan perintah dibawah ini dan kode kalian akan terupload ke heroku</p>
+<pre><code>git init
+git add .
+git commit -m tesbot
+heroku create
+git push heroku master
+</code></pre><p>Bot kalian akan langsung online lagi dan berjalan dengan lancar. Selamat mencoba!</p>
+
+      </div></div>
+
+  
+  
+<div class="pagination">
+    <div class="pagination__title">
+        <span class="pagination__title-h">Read other posts</span>
+        <hr />
+    </div>
+    <div class="pagination__buttons">
+        
+        
+        <span class="button next">
+            <a href="https://nixpoin.com/tutorial/cara-install-3proxy-centos/">
+                <span class="button__text">Membuat Proxy IPv6 Dengan 3Proxy</span>
+                <span class="button__icon">→</span>
+            </a>
+        </span>
+        
+    </div>
+</div>
+
+  
+
+  
+
+</div>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2020 Powered by <a href="http://gohugo.io">Hugo</a></span>
+    
+        <span>:: Theme made by <a href="https://twitter.com/panr">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+<script src="https://nixpoin.com/assets/main.js"></script>
+<script src="https://nixpoin.com/assets/prism.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>

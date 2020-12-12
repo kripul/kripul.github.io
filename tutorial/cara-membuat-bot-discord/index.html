@@ -162,7 +162,7 @@ Syarat  NodeJs silahkan baca di Tutorial cara install NodeJs." />
   <div class="post-meta">
     
       <span class="post-date">
-        2020-08-02 [Updated: 2020-08-02]
+        2020-08-02 
       </span>
     
     
@@ -189,97 +189,87 @@ Syarat  NodeJs silahkan baca di Tutorial cara install NodeJs." />
   
 
   <div class="post-content"><div>
-        <p>Discord adalah sebuah aplikasi pengirim pesan instan gratis dengan fitur VoIP, obrolan video dan fitur untuk mendukung permainan video seperti integrasi dengan Twitch.tv dan Steam. Discord ditujukan terutama untuk pemain, pembuat konten, pengembang, dan penjual permainan video. Discord digunakan oleh sekitar 56 juta pemain permainan video tiap bulannya karena adanya fitur yang mendukung permainan video. Discord dapat berjalan pada peramban web dan aplikasinya sendiri sumber <a href="https://id.wikipedia.org/wiki/Discord">Wikipedia</a>.</p>
+        <p>Discord adalah sebuah aplikasi pengirim pesan instan gratis dengan fitur VoIP, obrolan video dan fitur untuk mendukung permainan video seperti integrasi dengan Twitch.tv dan Steam. Discord ditujukan terutama untuk pemain, pembuat konten, pengembang, dan penjual permainan video. Discord digunakan oleh sekitar 56 juta pemain permainan video tiap bulannya karena adanya fitur yang mendukung permainan video. Discord dapat berjalan pada peramban web dan aplikasinya sendiri sumber Wikipedia.</p>
 <h2 id="syarat">Syarat<a href="#syarat" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <ul>
-<li>NodeJs silahkan baca di <a href="/tutorial/install-nodejs-di-ubuntu-linux-mint/">Tutorial cara install NodeJs</a>.</li>
+<li>NodeJs silahkan baca di Tutorial cara install NodeJs.</li>
 <li>Akun discord dan server discord (Kamu sebagai adminnya).</li>
 </ul>
 <h2 id="mendaftarkan-bot">Mendaftarkan bot<a href="#mendaftarkan-bot" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Kita harus mendaftarkan bot kita di dashboard developer Discord terlebih dahulu untuk mendapatkan token botnya, caranya buka link <a href="https://discord.com/developers/applications">https://discord.com/developers/applications</a> lalu buat <strong>New Aplication</strong> lalu masukkan nama aplikasi kalian, disini saya akan mencoba membuat bot jadwal sholat yang saya beri nama <strong>&ldquo;imsakiyah&rdquo;</strong>.</p>
+<p>Kita harus mendaftarkan bot kita di dashboard developer Discord terlebih dahulu untuk mendapatkan token botnya, caranya buka link <a href="https://discord.com/developers/applications">https://discord.com/developers/applications</a> lalu buat New Aplication lalu masukkan nama aplikasi kalian, disini saya akan mencoba membuat bot jadwal sholat yang saya beri nama <strong>“imsakiyah”</strong>.</p>
 
   <figure class="left" >
-    <img src="/img/discord/discord-bot1.png"   />
+    <img src="img/discord/discord-bot1.png"   />
     
   </figure>
 
 
-<p>Lalu Add bot
+<p>Lalu Add bot</p>
 
   <figure class="left" >
-    <img src="/img/discord/discord-bot2.png"   />
+    <img src="img/discord/discord-bot2.png"   />
     
   </figure>
 
-</p>
-<p>Setelah itu bot kita sudah jadi dan catat tokennya
+
+<p>Setelah itu bot kita sudah jadi dan catat tokennya</p>
 
   <figure class="left" >
-    <img src="/img/discord/discord-bot3.png"   />
+    <img src="img/discord/discord-bot3.png"   />
     
   </figure>
 
-</p>
+
 <h2 id="tambahkan-bot-ke-server">Tambahkan bot ke server<a href="#tambahkan-bot-ke-server" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Klik menu OAuth2</p>
 <ul>
-<li>Bagian <strong>SCOPES</strong> centang <code>BOT</code></li>
-<li>Bagian <strong>BOT PERMISSIONS</strong> kalian klik sesuai kebutuhan,kalau saya hanya <code>Send Messages</code> dan <code>Manage Messages</code></li>
-<li>Copy link yang ada dan buka di browser kalian dan ikuti petunjutknya.</li>
+<li>Bagian SCOPES centang BOT</li>
+<li>Bagian BOT PERMISSIONS kalian klik sesuai kebutuhan,kalau saya hanya Send Messages dan Manage Messages</li>
+<li>Copy link yang ada dan buka di browser kalian dan ikuti petunjutknya.
+Lihat gambat untuk lebih jelasnya.</li>
 </ul>
-<p>Lihat gambat untuk lebih jelasnya.
 
   <figure class="left" >
-    <img src="/img/discord/discord-bot5.png"   />
+    <img src="img/discord/discord-bot5.png"   />
     
   </figure>
 
-</p>
+
 <h2 id="install-discordjs">Install discord.js<a href="#install-discordjs" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Selanjutnya adalah install discord.js, discord.js adalah library yang akan membantu kita berkomunikasi dengan API dari discord sehingga lebih mudah.</p>
-<p>Buat folder baru dimana saja terserah kalian, lalu buka terminal / powershell dan arahkan foldernya ke folder yang baru kalian buat tadi.
-Selanjutnya, jalankan perintah dibawah ini.</p>
+<p>Buat folder baru dimana saja terserah kalian, lalu buka terminal / powershell dan arahkan foldernya ke folder yang baru kalian buat tadi. Selanjutnya, jalankan perintah dibawah ini.</p>
 <pre><code>npm init
 npm install discord.js express --save
-
 </code></pre><p>Sewaktu menjalankan perintah npm init, tekan enter saja sampai selesai.</p>
 <h2 id="koding-time">Koding time<a href="#koding-time" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Sekarang waktunya koding, buat file baru bernama index.js lalu isi dengan kode berikut sebagai percobaan :</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">Discord</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#39;discord.js&#39;</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">client</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Discord</span>.<span style="color:#a6e22e">Client</span>();
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">express</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">require</span>(<span style="color:#e6db74">&#34;express&#34;</span>);
-<span style="color:#66d9ef">const</span> <span style="color:#a6e22e">app</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">express</span>();
+<pre><code>const Discord = require('discord.js');
+const client = new Discord.Client();
+const express = require(&quot;express&quot;);
+const app = express();
 
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">use</span>(<span style="color:#a6e22e">express</span>.<span style="color:#66d9ef">static</span>(<span style="color:#e6db74">&#34;public&#34;</span>));
-<span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">get</span>(<span style="color:#e6db74">&#34;/&#34;</span>, <span style="color:#66d9ef">function</span> (<span style="color:#a6e22e">request</span>, <span style="color:#a6e22e">response</span>) {
-    <span style="color:#a6e22e">response</span>.<span style="color:#a6e22e">sendStatus</span>(<span style="color:#ae81ff">200</span>);
+app.use(express.static(&quot;public&quot;));
+app.get(&quot;/&quot;, function (request, response) {
+    response.sendStatus(200);
 });
 
-<span style="color:#66d9ef">var</span> <span style="color:#a6e22e">listener</span> <span style="color:#f92672">=</span> <span style="color:#a6e22e">app</span>.<span style="color:#a6e22e">listen</span>(<span style="color:#a6e22e">process</span>.<span style="color:#a6e22e">env</span>.<span style="color:#a6e22e">PORT</span> <span style="color:#f92672">||</span> <span style="color:#ae81ff">3000</span>, <span style="color:#66d9ef">function</span> () {
-    <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">&#34;Your app is listening on port &#34;</span> <span style="color:#f92672">+</span> <span style="color:#a6e22e">listener</span>.<span style="color:#a6e22e">address</span>().<span style="color:#a6e22e">port</span>);
+var listener = app.listen(process.env.PORT || 3000, function () {
+    console.log(&quot;Your app is listening on port &quot; + listener.address().port);
 });
 
-<span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;ready&#39;</span>, () =&gt; {
-  <span style="color:#a6e22e">console</span>.<span style="color:#a6e22e">log</span>(<span style="color:#e6db74">`Logged in as </span><span style="color:#e6db74">${</span><span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">user</span>.<span style="color:#a6e22e">tag</span><span style="color:#e6db74">}</span><span style="color:#e6db74">!`</span>);
+client.on('ready', () =&gt; {
+  console.log(`Logged in as ${client.user.tag}!`);
 });
 
-<span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">on</span>(<span style="color:#e6db74">&#39;message&#39;</span>, <span style="color:#a6e22e">msg</span> =&gt; {
-  <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">content</span> <span style="color:#f92672">===</span> <span style="color:#e6db74">&#39;ping&#39;</span>) {
-    <span style="color:#a6e22e">msg</span>.<span style="color:#a6e22e">reply</span>(<span style="color:#e6db74">&#39;Pong!&#39;</span>);
+client.on('message', msg =&gt; {
+  if (msg.content === 'ping') {
+    msg.reply('Pong!');
   }
 });
-
-<span style="color:#a6e22e">client</span>.<span style="color:#a6e22e">login</span>(<span style="color:#e6db74">&#39;tokenkaliandisini&#39;</span>);
-</code></pre></div><p>Setelah itu jalankan perintah</p>
+client.login('tokenkaliandisini');
+</code></pre><p>Setelah itu jalankan perintah</p>
 <pre><code>node index.js
-</code></pre>
-  <figure class="left" >
-    <img src="/img/discord/discord-bot6.png"   />
-    
-  </figure>
-
-
-<p>Jika tidak ada error, maka bot kalian akan berubah statusnya menjadi online
+</code></pre><p>Jika tidak ada error, maka bot kalian akan berubah statusnya menjadi online</p>
 
   <figure class="left" >
     <img src="/img/discord/discord-bot7.png"   />
@@ -287,42 +277,40 @@ npm install discord.js express --save
   </figure>
 
 
-Kalau kalian mengirim pesan ke server dengan kata <code>ping</code> maka bot tersebut akan langsung menjawab dengan <code>pong</code>
+<p>Kalau kalian mengirim pesan ke server dengan kata ping maka bot tersebut akan langsung menjawab dengan pong</p>
 
   <figure class="left" >
     <img src="/img/discord/discord-bot8.png"   />
     
   </figure>
 
-</p>
+
 <h2 id="upload-kode-ke-hosting">Upload kode ke hosting<a href="#upload-kode-ke-hosting" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
-<p>Bot kalian sudah berjalan lancar tapi agar bisa berjalan 24 jam nonstop, kita perlu men-<em>hosting</em>-nya. Disini saya menggunakan <a href="https://heroku.com">Heroku</a> gratisan silahkan kalian daftar dulu disana.</p>
+<p>Bot kalian sudah berjalan lancar tapi agar bisa berjalan 24 jam nonstop, kita perlu men-hosting-nya. Disini saya menggunakan Heroku gratisan silahkan kalian daftar dulu disana.</p>
 <p>Setelah mendaftar di Heroku.com selanjutnya install Heroku CLI, download file di link berikut untuk menginstallnya <a href="https://devcenter.heroku.com/articles/heroku-cli#download-and-install">https://devcenter.heroku.com/articles/heroku-cli#download-and-install</a></p>
 <p>Jika kalian sudah berhasil menginstall heroku CLI, jalankan perintah di bawah ini untuk login heroku via CLI</p>
-<pre><code>heroku login
-</code></pre><p>Lanjut, di folder yang kalian buat tadi akan ada 3 file. 
+<p><code>heroku login</code></p>
+<p>Lanjut, di folder yang kalian buat tadi akan ada 3 file.</p>
 
   <figure class="left" >
     <img src="/img/discord/discord-bot9.png"   />
     
   </figure>
 
-</p>
+
 <p>Kita perlu membuat dan mengedit beberapa file agar kode kita bisa berjalan di Heroku.</p>
-<ul>
-<li>Edit file package.json  dan tambahkan baris</li>
-</ul>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">    <span style="color:#e6db74">&#34;start&#34;</span><span style="color:#960050;background-color:#1e0010">:</span> <span style="color:#e6db74">&#34;node index.js&#34;</span>
-</code></pre></div><p>Lihat gambar untuk lebih jelasnya
+<p>Edit file package.json dan tambahkan baris</p>
+<pre><code>    &quot;start&quot;: &quot;node index.js&quot;
+</code></pre><p>Lihat gambar untuk lebih jelasnya</p>
 
   <figure class="left" >
     <img src="/img/discord/discord-bot10.png"   />
     
   </figure>
 
-</p>
+
 <ul>
-<li>Buat juga file baru lainnya bernama <code>.gitignore</code> lalu isinya seperti</li>
+<li>Buat juga file baru lainnya bernama .gitignore lalu isinya seperti</li>
 </ul>
 <pre><code>/node_modules
 node_modules

@@ -16,7 +16,7 @@
       <description>Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
 Kita bisa menggunakan perintah sort dan uniq
 Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
-Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda.</description>
+Budi pergi ke sekolahRudi membeli bukuAni pergi ke sekolahToni membeli bukuBudi pergi ke sekolahToni membeli bukuBudi pergi ke sekolahKita ingin menghapus baris teks yang ganda.</description>
     </item>
     
     <item>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>scraper on Nixpoin</title>
+    <link>https://nixpoin.com/tags/scraper/</link>
+    <description>Recent content in scraper on Nixpoin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nixpoin.com/tags/scraper/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Anda Butuh Bantuan?</title>
+      <link>https://nixpoin.com/bantuan/butuh-bantuan/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/bantuan/butuh-bantuan/</guid>
+      <description>Anda butuh bantuan lebih terkait tulisan blog ini? Silahkan hubungi saya lewat nomor Whatsapp 62851-5504-2432 tapi jangan lupa bawa gula dan kopi 😝</description>
+    </item>
+    
+    <item>
+      <title>Membuat Web Scraper Shopee Dengan Python</title>
+      <link>https://nixpoin.com/tutorial/scraping-shopee-dengan-python/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tutorial/scraping-shopee-dengan-python/</guid>
+      <description>Banyak sekali aplikasi berbayar untuk scraping produk shopee.co.id, kalian juga bisa membuat aplikasi seperti itu sendiri lho!
+Yang kita butuhkan dan gunakan :  Python sudah terinstall di komputer kalian Chromedriver sesuai OS dan versi chrome kalian https://chromedriver.chromium.org/downloads Module bs4 untuk parsing html (pip install beautifulsoup4)  Proses scraper kita nanti adalah  Membuka halaman pencarian langsung dengan kata kunci, misalnya https://shopee.co.id/search?keyword=sepatu%20converse Cari semua link ke setiap produk yang ada di hasil pencarian Kunjungi link setiap produk yang ada di halaman pencarian Terakhir kita ambil data-data yang kita perlukan dari setiap produk  Mari kita mulai!</description>
+    </item>
+    
+  </channel>
+</rss>

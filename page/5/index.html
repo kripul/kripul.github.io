@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta name="generator" content="Hugo 0.75.1" />
+	<meta name="generator" content="Hugo 0.79.0" />
   
     <title>Nixpoin</title>
   
@@ -171,6 +171,54 @@ if (!doNotTrack) {
     
       <div class="post on-list">
         <h1 class="post-title">
+          <a href="https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/">Mengganti Timezone di Ubuntu 18.04 Server</a>
+        </h1>
+        <div class="post-meta">
+          <span class="post-date">
+            2019-01-24
+          </span>
+          
+            <span class="post-author">::Nixpoin</span>
+          
+        </div>
+
+        
+          <span class="post-tags">
+            
+            #<a href="https://nixpoin.com/tags/tutorial/">Tutorial</a>&nbsp;
+            
+            #<a href="https://nixpoin.com/tags/ubuntu/">Ubuntu</a>&nbsp;
+            
+            #<a href="https://nixpoin.com/tags/timezone/">Timezone</a>&nbsp;
+            
+          </span>
+        
+
+        
+          <img src="https://nixpoin.com/img/ubuntu-logo.png" class="post-cover" alt="Mengganti Timezone di Ubuntu 18.04 Server" />
+        
+
+        <div class="post-content">
+          
+          
+          Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
+Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
+timedatectlHasilnya seperti
+Universal time: Kam 2019-01-24 03:41:21 UTCRTC time: n/aTime zone: UTC (EST, -0500)NTP enabled: n/aNTP synchronized: noRTC in local TZ: noDST active: noLast DST change: DST ended atMin 2018-11-04 01:59:59 EDTMin 2018-11-04 01:00:00 ESTNext DST change: DST begins (the clock jumps one hour forward) atMin 2019-03-10 01:59:59 ESTMin 2019-03-10 03:00:00 EDTAtau bisa juga menggunakan perintah
+          
+          
+        </div>
+
+        
+        <div>
+          <a class="read-more button"
+            href="/tutorial/mengganti-timezone-di-ubuntu-18-04-server/">Read more →</a>
+        </div>
+        
+      </div>
+    
+      <div class="post on-list">
+        <h1 class="post-title">
           <a href="https://nixpoin.com/tutorial/memunculkan-icon-dropbox-di-elementary-os-juno/">Memunculkan Icon Dropbox di Elementary OS Juno</a>
         </h1>
         <div class="post-meta">
@@ -202,10 +250,10 @@ if (!doNotTrack) {
           Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
 Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
 Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana
-wget <a href="http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb">http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb</a> Install file wingpanel-indicator-ayatana
-sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
-sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
-OnlyShowIn=Unity;GNOME; dan ubah menjadi
+wget <a href="http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb">http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb</a>Install file wingpanel-indicator-ayatana
+sudo dpkg -i wingpanel-indicator-ayatan*.debRubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
+sudo nano /etc/xdg/autostart/indicator-application.desktopCari baris
+OnlyShowIn=Unity;GNOME;dan ubah menjadi
           
           
         </div>
@@ -359,49 +407,6 @@ Tutorial kali ini kita akan mencoba menginstall Phyton di sistem Ubuntu 18.04 na
         <div>
           <a class="read-more button"
             href="/tutorial/cara-install-phyton-3-7-di-ubuntu-16-04-18-04/">Read more →</a>
-        </div>
-        
-      </div>
-    
-      <div class="post on-list">
-        <h1 class="post-title">
-          <a href="https://nixpoin.com/review/review-bechmark-contabo-vps/">Review Bechmark Contabo VPS</a>
-        </h1>
-        <div class="post-meta">
-          <span class="post-date">
-            2019-01-13
-          </span>
-          
-            <span class="post-author">::@Kripul_</span>
-          
-        </div>
-
-        
-          <span class="post-tags">
-            
-            #<a href="https://nixpoin.com/tags/benchmark/">benchmark</a>&nbsp;
-            
-            #<a href="https://nixpoin.com/tags/vps/">VPS</a>&nbsp;
-            
-          </span>
-        
-
-        
-          <img src="https://nixpoin.com/img/benchmark.jpg" class="post-cover" alt="Review Bechmark Contabo VPS" />
-        
-
-        <div class="post-content">
-          
-          
-          Spesifikasi CPU model : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz Number of cores : 4 CPU frequency : 2399.996 MHz Total size of Disk : 195.9 GB (13.1 GB Used) Total amount of Mem : 7976 MB (359 MB Used) Total amount of Swap : 2047 MB (0 MB Used) OS : Ubuntu 18.04.1 LTS Arch : x86_64 (64 Bit) Kernel : 4.15.0-39-generic Hasil Benchmark Berikut hasil dari bench.sh
-          
-          
-        </div>
-
-        
-        <div>
-          <a class="read-more button"
-            href="/review/review-bechmark-contabo-vps/">Read more →</a>
         </div>
         
       </div>

@@ -6,7 +6,17 @@
     <description>Recent content in Tutorials on Nixpoin</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nixpoin.com/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 07 Oct 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://nixpoin.com/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Membuat Web Scraper Shopee Dengan Python</title>
+      <link>https://nixpoin.com/tutorial/scraping-shopee-dengan-python/</link>
+      <pubDate>Wed, 07 Oct 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://nixpoin.com/tutorial/scraping-shopee-dengan-python/</guid>
+      <description>Banyak sekali aplikasi berbayar untuk scraping produk shopee.co.id, kalian juga bisa membuat aplikasi seperti itu sendiri lho!
+Yang kita butuhkan dan gunakan :  Python sudah terinstall di komputer kalian Chromedriver sesuai OS dan versi chrome kalian https://chromedriver.chromium.org/downloads Module bs4 untuk parsing html (pip install beautifulsoup4)  Proses scraper kita nanti adalah  Membuka halaman pencarian langsung dengan kata kunci, misalnya https://shopee.co.id/search?keyword=sepatu%20converse Cari semua link ke setiap produk yang ada di hasil pencarian Kunjungi link setiap produk yang ada di halaman pencarian Terakhir kita ambil data-data yang kita perlukan dari setiap produk  Mari kita mulai!</description>
+    </item>
+    
     <item>
       <title>Membuat Temporary Email dengan Domain Sendiri</title>
       <link>https://nixpoin.com/tutorial/membuat-temporary-disposable-email/</link>
@@ -111,7 +121,7 @@ Ada dua cara untuk menginstal Nginx, dengan paket manager YUM atau menginstalnya
       <guid>https://nixpoin.com/tutorial/cara-install-vncserver-dan-gnome-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Kadang kita butuh mengubah server kita menjadi desktop untuk beberapa keperluan padahal kalau kita membeli sebuah VPS biasanya sistem operasi yang terinstall adalah Ubuntu versi server yang hanya ada akses CLI saja.
 Pada tutorial kali ini kita akan mencoba menginstall Gnome dan VNCServer agar VPS kita mempunya tampilan dekstop
-Upgrade sistem operasi sudo apt-get update sudo apt-get upgrade Install Gnome Agar Ubuntu server kita memiliki tampilan sebagaimana Ubuntu desktop, kita harus menginstall paket Gnome dan beberapa paket pendukungnya dengan perintah berikut berikut</description>
+Upgrade sistem operasi sudo apt-get updatesudo apt-get upgradeInstall Gnome Agar Ubuntu server kita memiliki tampilan sebagaimana Ubuntu desktop, kita harus menginstall paket Gnome dan beberapa paket pendukungnya dengan perintah berikut berikut</description>
     </item>
     
     <item>
@@ -144,8 +154,8 @@ Untuk Linux Mint sendiri sudah menyediakan Sublime Text di repositori mereka tap
       <guid>https://nixpoin.com/tutorial/mengganti-timezone-di-ubuntu-18-04-server/</guid>
       <description>Pendahuluan Biasa, ketika kita membeli sebuah VPS atau Dedicated server maka jam pada server tadi sudah tersetting ke timezone yang berbeda dengan waktu di Indonesia. Sehingga kita kalau membaca log error cukup menyusahkan karena berbeda jam.
 Mengecek Timezone di Server Ubuntu 18.04 Untuk mengecek server kita menggunakan timezone apa, kita bisa gunakan perintah
-timedatectl Hasilnya seperti
-Universal time: Kam 2019-01-24 03:41:21 UTC RTC time: n/a Time zone: UTC (EST, -0500) NTP enabled: n/a NTP synchronized: no RTC in local TZ: no DST active: no Last DST change: DST ended at Min 2018-11-04 01:59:59 EDT Min 2018-11-04 01:00:00 EST Next DST change: DST begins (the clock jumps one hour forward) at Min 2019-03-10 01:59:59 EST Min 2019-03-10 03:00:00 EDT Atau bisa juga menggunakan perintah</description>
+timedatectlHasilnya seperti
+Universal time: Kam 2019-01-24 03:41:21 UTCRTC time: n/aTime zone: UTC (EST, -0500)NTP enabled: n/aNTP synchronized: noRTC in local TZ: noDST active: noLast DST change: DST ended atMin 2018-11-04 01:59:59 EDTMin 2018-11-04 01:00:00 ESTNext DST change: DST begins (the clock jumps one hour forward) atMin 2019-03-10 01:59:59 ESTMin 2019-03-10 03:00:00 EDTAtau bisa juga menggunakan perintah</description>
     </item>
     
     <item>
@@ -157,10 +167,10 @@ Universal time: Kam 2019-01-24 03:41:21 UTC RTC time: n/a Time zone: UTC (EST, -
       <description>Memunculkan Icon Dropbox di Elementary OS Juno Salah satu masalah yang muncul di Elementary OS Juno adalah, hilangnya dukungan wingpanel indicator sehingga icon Dropbox tidak muncul.
 Untuk mengatasi masalah ini, kita harus menginstall paket wingpanel-indicator-ayatana
 Install wingpanel-indicator-ayatana Download file deb wingpanel-indicator-ayatana
-wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.deb Install file wingpanel-indicator-ayatana
-sudo dpkg -i wingpanel-indicator-ayatan*.deb Rubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
-sudo nano /etc/xdg/autostart/indicator-application.desktop Cari baris
-OnlyShowIn=Unity;GNOME; dan ubah menjadi</description>
+wget http://ppa.launchpad.net/elementary-os/stable/ubuntu/pool/main/w/wingpanel-indicator-ayatana/wingpanel-indicator-ayatana_2.0.3+r27+pkg17~ubuntu0.4.1.1_amd64.debInstall file wingpanel-indicator-ayatana
+sudo dpkg -i wingpanel-indicator-ayatan*.debRubah file indicator application desktop Selanjutnya kita edit file /etc/xdg/autostart/indicator-application.desktop
+sudo nano /etc/xdg/autostart/indicator-application.desktopCari baris
+OnlyShowIn=Unity;GNOME;dan ubah menjadi</description>
     </item>
     
     <item>
@@ -240,7 +250,7 @@ https://www.realvnc.com/en/connect/download/viewer/linux/
 Lalu bagaimana cara untuk menginstallnya di Ubuntu atau Linux mint?
 Step : Pertama download dropbox Download dropbox menggunakan browser kalian dari https://www.dropbox.com/install-linux
 Step Kedua : Install dropbox Buka terminal lalau pindah ke folder Downloads / lokasi file dropbox yang kita download tadi
-cd Downloads Lalu install</description>
+cd DownloadsLalu install</description>
     </item>
     
     <item>
@@ -252,7 +262,7 @@ cd Downloads Lalu install</description>
       <description>Misalnya kita mempunyai data text entah itu dari file log atau file lainnya dan butuh untuk menghilangkan beberapa baris yang sama, bagaimana cara melakukanya?
 Kita bisa menggunakan perintah sort dan uniq
 Cara menggunakan perintah sort dan uniq Contohnya kita punya file belajar.txt yang berisi
-Budi pergi ke sekolah Rudi membeli buku Ani pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Toni membeli buku Budi pergi ke sekolah Kita ingin menghapus baris teks yang ganda.</description>
+Budi pergi ke sekolahRudi membeli bukuAni pergi ke sekolahToni membeli bukuBudi pergi ke sekolahToni membeli bukuBudi pergi ke sekolahKita ingin menghapus baris teks yang ganda.</description>
     </item>
     
     <item>

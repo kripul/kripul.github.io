@@ -45,13 +45,14 @@ if (!doNotTrack) {
 
   <meta name="twitter:site" content="" />
 
-<meta name="twitter:creator" content="@Kripul_" />
+<meta name="twitter:creator" content="Nixpoin" />
 
 
 <meta property="og:locale" content="en" />
 <meta property="og:type" content="article" />
 <meta property="og:title" content="Membuat Temporary Email dengan Domain Sendiri :: Nixpoin">
-<meta property="og:description" content="Pernah menggunakan Temporary Disposable email kayak https://temp-mail.org/id/ ? kalian juga bisa bikin sendiri tapi versi simplenya :D Final proyek kita kali ini akan seperti ini :" />
+<meta property="og:description" content="Pernah menggunakan Temporary Disposable email kayak https://temp-mail.org/id/ ? kalian juga bisa bikin sendiri tapi versi simplenya :D Final proyek kita kali ini akan seperti ini :
+Seseorang mengirim email ke domain kita seperti nama@domainkita.com yang mana domain kita sudah terkonfigurasi dengan Mailgun, Mailgun akan mengirimkan data ke webhook yang kita buat di Glitch.com, Kemudian kita buat kode agar data yang masuk ke webhook langsung di kirimkan ke chat lewat telegram." />
 <meta property="og:url" content="https://nixpoin.com/tutorial/membuat-temporary-disposable-email/" />
 <meta property="og:site_name" content="Membuat Temporary Email dengan Domain Sendiri" />
 
@@ -161,12 +162,12 @@ if (!doNotTrack) {
   <div class="post-meta">
     
       <span class="post-date">
-        2020-08-24 [Updated: 2020-08-24]
+        2020-08-24 
       </span>
     
     
     <span class="post-author">::
-      @Kripul_
+      Nixpoin
     </span>
     
   </div>
@@ -195,7 +196,7 @@ if (!doNotTrack) {
         <p>Pernah menggunakan Temporary Disposable email kayak <a href="https://temp-mail.org/id/">https://temp-mail.org/id/</a> ? kalian juga bisa bikin sendiri tapi versi simplenya :D Final proyek kita kali ini akan seperti ini :</p>
 <p>Seseorang mengirim email ke domain kita seperti <a href="mailto:nama@domainkita.com">nama@domainkita.com</a> yang mana domain kita sudah terkonfigurasi dengan Mailgun, Mailgun akan mengirimkan data ke webhook yang kita buat di Glitch.com, Kemudian kita buat kode agar data yang masuk ke webhook langsung di kirimkan ke chat lewat telegram.</p>
 <blockquote>
-<p><strong>Note :Pastikan kalian sudah paham cara mendapatkan token bot Telegram dan bagaimana cara setting DNS untuk mengikuti tutorial ini</strong></p>
+<p>Note :Pastikan kalian sudah paham cara mendapatkan token bot Telegram dan bagaimana cara setting DNS untuk mengikuti tutorial ini</p>
 </blockquote>
 <h2 id="kebutuhan">Kebutuhan<a href="#kebutuhan" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <ul>
@@ -218,8 +219,8 @@ if (!doNotTrack) {
 <blockquote>
 <p>NOTE: Simpan tokennya untuk proses selanjutnya.</p>
 </blockquote>
-<p>Akses di browser kalian <code>https://api.telegram.org/botTOKENBOTKALIAN/getUpdates</code></p>
-<p>Kirim pesan ke akun bot tersebut dengan pesan apa saja.
+<p>Akses di browser kalian <a href="https://api.telegram.org/botTOKENBOTKALIAN/getUpdates">https://api.telegram.org/botTOKENBOTKALIAN/getUpdates</a></p>
+<p>Kirim pesan ke akun bot tersebut dengan pesan apa saja.</p>
 
   <figure class="left" >
     <img src="/img/email/email3.png"   />
@@ -227,7 +228,7 @@ if (!doNotTrack) {
   </figure>
 
 
-Refresh browser kalian lagi, hasilnya akan seperti di foto, simpan ID telegram pribadi kita untuk proses selanjutnya.</p>
+<p>Refresh browser kalian lagi, hasilnya akan seperti di foto, simpan ID telegram pribadi kita untuk proses selanjutnya.</p>
 <h2 id="buat-akun-mlab">Buat akun Mlab<a href="#buat-akun-mlab" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Buat apa kok bikin akun <a href="https://mlab.com/">https://mlab.com/</a> ? Jadi gini, Nanti kita akan menyimpan isi setiap email yang masuk ke domain kita ke Mlab (database mongodb). Setiap ada email masuk secara otomatis bot telegram akan mengirim pesan chat ke akun telegram pribadi kita berisi link isi email karena tidak mungkin mengirimkan isi email yang terlalu panjang via Telegram.</p>
 <p>Sebagai contoh buat saja databse dengan nama <code>tempmail</code> dan collection dengan nama <code>mails</code></p>
@@ -236,16 +237,16 @@ Refresh browser kalian lagi, hasilnya akan seperti di foto, simpan ID telegram p
 <li>Pakai bahasa Node.Js</li>
 <li>Pakai Hosting di glitch.com</li>
 </ul>
-<p>Silahkan pakai kode yang sudah saya buat di <a href="https://glitch.com/edit/#!/summer-fearless-garlic">https://glitch.com/edit/#!/summer-fearless-garlic</a> tinggal kalian <code>remix to edit</code> saja dan ganti isi dari file <code>.env</code> sesuai petunjuk di file <code>Read.me</code></p>
-<p>Setelah selesai remix, nanti kalian akan punya proyek baru di akun Glitch kalian. Klik <code>Show</code> -&gt; <code>In a New Window</code> Kalau tidak ada error maka akan muncul halaman <code>{&quot;message&quot;:&quot;Hello World&quot;}</code></p>
+<p>Silahkan pakai kode yang sudah saya buat di <a href="https://glitch.com/edit/#!/summer-fearless-garlic">https://glitch.com/edit/#!/summer-fearless-garlic</a> tinggal kalian remix to edit saja dan ganti isi dari file .env sesuai petunjuk di file Read.me</p>
+<p>Setelah selesai remix, nanti kalian akan punya proyek baru di akun Glitch kalian. Klik Show -&gt; In a New Window Kalau tidak ada error maka akan muncul halaman {&ldquo;message&rdquo;:&ldquo;Hello World&rdquo;}</p>
 <h2 id="routing-semua-email">Routing semua email<a href="#routing-semua-email" class="hanchor" ariaLabel="Anchor">&#8983;</a> </h2>
 <p>Balik lagi ke dashboard Mailgun dan buat route agar semua email yang masuk ke domain kalian langsung di arahkan ke webhook yang ada di Glitch. Caranya,</p>
 <ul>
 <li>Akses link <a href="https://app.mailgun.com/app/receiving/routes">https://app.mailgun.com/app/receiving/routes</a></li>
-<li>Lalu klik <code>Create Route</code></li>
-<li>Pilih <code>Catch All</code></li>
-<li>Kolom forward isi dengan domain proyek kalian ditambahi <code>/webhook</code> di link belakangnya, lihat gambar!</li>
-<li>Lalu klik tombol <code>Create Route</code> yang ada di bawah.</li>
+<li>Lalu klik Create Route</li>
+<li>Pilih Catch All</li>
+<li>Kolom forward isi dengan domain proyek kalian ditambahi /webhook di link belakangnya, lihat gambar!</li>
+<li>Lalu klik tombol Create Route yang ada di bawah.</li>
 </ul>
 
   <figure class="left" >
@@ -267,6 +268,13 @@ Refresh browser kalian lagi, hasilnya akan seperti di foto, simpan ID telegram p
         <hr />
     </div>
     <div class="pagination__buttons">
+        
+        <span class="button previous">
+            <a href="https://nixpoin.com/tutorial/scraping-shopee-dengan-python/">
+                <span class="button__icon">←</span>
+                <span class="button__text">Membuat Web Scraper Shopee Dengan Python</span>
+            </a>
+        </span>
         
         
         <span class="button next">
